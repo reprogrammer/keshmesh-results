@@ -13,11 +13,15 @@ For each project we obtain the profiling results as follows.
     results](https://github.com/reprogrammer/keshmesh/wiki/Profiling-Keshmesh) of
     Keshmesh.
 
-# Machine
+# Operating System
 
 - Ubuntu Release 12.04 (precise) 64-bit
 - Kernel Linux 3.5.0-43-generic
+
+# Hardware
+
 - Processor: Intel Core 2 Quad CPU Q8200 @ 2.33GHz × 4 
+- RAM: 8 GB
 
 # Java
 

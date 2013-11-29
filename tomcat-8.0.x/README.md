@@ -5,3 +5,7 @@
 - [Subversion Revision
   1307597](http://svn.apache.org/repos/asf/!svn/bc/1307597/tomcat/trunk/)
 
+# Eclipse
+
+- -XX:MaxPermSize=256m -Xms40m -Xmx512m
+

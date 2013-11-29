@@ -35,5 +35,4 @@ For each project we obtain the profiling results as follows.
 - Version: Helios Service Release 1
 - Build id: 20100917-0705
 - Keshmesh v1.0.0.201311271834
-- -XX:MaxPermSize=256m -Xms40m -Xmx512m
 

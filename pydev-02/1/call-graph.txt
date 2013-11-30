@@ -30,7 +30,7 @@ BB3
 4   return                                   (line 50)
 BB4
 
-**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V > Context: ReceiverStringContext: [ SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere}]
 **IR:** < Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >
 CFG:
 BB0[-1..-2]
@@ -498,7 +498,7 @@ BB88
 202   return                                 (line 278)
 BB89
 
-**CGNode:** Node: synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; > Context: ReceiverStringContext: [ SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere}]
 **IR:** synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; >
 CFG:
 BB0[0..0]
@@ -523,7 +523,7 @@ BB0[-1..-2]
 Instructions:
 BB0
 
-**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V > Context: ReceiverStringContext: [ SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [ SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]} ]
+**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere}]}]
 **IR:** < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V >
 CFG:
 BB0[-1..-2]
@@ -621,7 +621,7 @@ BB0[-1..-2]
 Instructions:
 BB0
 
-**CGNode:** Node: synthetic < Extension, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z > Context: ReceiverStringContext: [ SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [ SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]} ]
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere}]}]
 **IR:** synthetic < Extension, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z >
 CFG:
 BB0[0..0]

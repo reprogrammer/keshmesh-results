@@ -34,5 +34,4 @@ For each project we obtain the profiling results as follows.
 - Eclipse for RCP and RAP Developers
 - Version: Helios Service Release 1
 - Build id: 20100917-0705
-- Keshmesh v1.0.0.201311271834
 

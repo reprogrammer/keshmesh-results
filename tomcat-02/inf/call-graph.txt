@@ -1,0 +1,634 @@
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/parser/ParsingThread, run()V > Context: JavaTypeContext<point: <Extension,Lorg/python/pydev/parser/ParsingThread>>
+**IR:** synthetic < Extension, Lorg/python/pydev/parser/ParsingThread, run()V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/python/pydev/editor/PyReconciler, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..2]
+    -> BB3
+    -> BB4
+BB3[3..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Ljava/util/HashSet>@0(line 174)
+BB2
+2   invokespecial < Application, Ljava/util/HashSet, <init>()V > v2 @4 exception:v3(line 174)
+BB3
+3   putstatic v2 < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 174)
+4   return                                   (line 50)
+BB4
+
+**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V > Context: ReceiverStringContext: [ :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**IR:** < Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB89
+BB2[2..2]
+    -> BB3
+    -> BB89
+BB3[3..6]
+    -> BB5
+    -> BB4
+BB4[7..7]
+    -> BB89
+BB5[8..11]
+    -> BB6
+    -> BB89
+BB6[12..14]
+    -> BB7
+    -> BB13
+BB7[15..16]
+    -> BB10
+    -> BB8
+BB8[17..18]
+    -> BB9
+    -> BB13
+BB9[19..19]
+    -> BB89
+BB10[20..22]
+    -> BB11
+    -> BB13
+BB11[23..25]
+    -> BB12
+    -> BB13
+BB12[26..26]
+    -> BB15
+BB13[27..28]
+    -> BB14
+    -> BB13
+BB14[29..29]
+    -> BB89
+BB15[30..31]
+    -> BB16
+    -> BB68
+BB16[32..35]
+    -> BB17
+    -> BB68
+BB17[36..36]
+    -> BB18
+    -> BB68
+    -> BB75
+BB18[37..38]
+    -> BB19
+    -> BB62
+    -> BB68
+    -> BB75
+BB19[39..40]
+    -> BB20
+    -> BB75
+BB20[41..42]
+    -> BB21
+    -> BB68
+    -> BB75
+BB21[43..47]
+    -> BB22
+    -> BB68
+BB22[48..51]
+    -> BB48
+BB23[52..54]
+    -> BB24
+    -> BB68
+BB24[55..57]
+    -> BB25
+    -> BB68
+BB25[58..59]
+    -> BB36
+    -> BB26
+BB26[60..61]
+    -> BB27
+    -> BB68
+BB27[62..62]
+    -> BB28
+    -> BB68
+    -> BB75
+BB28[63..64]
+    -> BB36
+    -> BB29
+BB29[65..68]
+    -> BB30
+    -> BB89
+BB30[69..71]
+    -> BB31
+    -> BB33
+BB31[72..74]
+    -> BB32
+    -> BB33
+BB32[75..75]
+    -> BB35
+BB33[76..77]
+    -> BB34
+    -> BB33
+BB34[78..78]
+    -> BB89
+BB35[79..79]
+    -> BB89
+BB36[80..81]
+    -> BB37
+    -> BB68
+    -> BB75
+BB37[82..85]
+    -> BB38
+    -> BB68
+    -> BB75
+BB38[86..87]
+    -> BB47
+    -> BB39
+BB39[88..90]
+    -> BB40
+    -> BB68
+    -> BB75
+BB40[91..92]
+    -> BB47
+    -> BB41
+BB41[93..94]
+    -> BB42
+    -> BB75
+BB42[95..97]
+    -> BB43
+    -> BB68
+    -> BB75
+BB43[98..99]
+    -> BB44
+    -> BB68
+    -> BB75
+BB44[100..100]
+    -> BB45
+    -> BB68
+    -> BB75
+BB45[101..101]
+    -> BB46
+    -> BB68
+    -> BB75
+BB46[102..102]
+    -> BB47
+BB47[103..106]
+    -> BB48
+BB48[107..109]
+    -> BB23
+    -> BB49
+BB49[110..111]
+    -> BB50
+    -> BB68
+    -> BB75
+BB50[112..115]
+    -> BB82
+    -> BB51
+BB51[116..116]
+    -> BB52
+    -> BB75
+BB52[117..120]
+    -> BB53
+    -> BB68
+    -> BB75
+BB53[121..123]
+    -> BB54
+    -> BB68
+BB54[124..125]
+    -> BB55
+    -> BB68
+BB55[126..128]
+    -> BB56
+    -> BB68
+    -> BB75
+BB56[129..129]
+    -> BB57
+    -> BB68
+    -> BB75
+BB57[130..130]
+    -> BB58
+    -> BB68
+BB58[131..132]
+    -> BB59
+    -> BB68
+BB59[133..135]
+    -> BB60
+    -> BB68
+BB60[136..136]
+    -> BB61
+    -> BB68
+    -> BB75
+BB61[137..137]
+    -> BB82
+BB62[138..142]
+    -> BB63
+    -> BB89
+BB63[143..145]
+    -> BB64
+    -> BB66
+BB64[146..148]
+    -> BB65
+    -> BB66
+BB65[149..149]
+    -> BB88
+BB66[150..151]
+    -> BB67
+    -> BB66
+BB67[152..152]
+    -> BB89
+BB68[153..155]
+    -> BB69
+    -> BB75
+BB69[156..160]
+    -> BB70
+    -> BB89
+BB70[161..163]
+    -> BB71
+    -> BB73
+BB71[164..166]
+    -> BB72
+    -> BB73
+BB72[167..167]
+    -> BB88
+BB73[168..169]
+    -> BB74
+    -> BB73
+BB74[170..170]
+    -> BB89
+BB75[171..175]
+    -> BB76
+    -> BB89
+BB76[176..178]
+    -> BB77
+    -> BB79
+BB77[179..181]
+    -> BB78
+    -> BB79
+BB78[182..182]
+    -> BB81
+BB79[183..184]
+    -> BB80
+    -> BB79
+BB80[185..185]
+    -> BB89
+BB81[186..187]
+    -> BB89
+BB82[188..191]
+    -> BB83
+    -> BB89
+BB83[192..194]
+    -> BB84
+    -> BB86
+BB84[195..197]
+    -> BB85
+    -> BB86
+BB85[198..198]
+    -> BB88
+BB86[199..200]
+    -> BB87
+    -> BB86
+BB87[201..201]
+    -> BB89
+BB88[202..202]
+    -> BB89
+BB89[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fViewer, <Application,Lorg/eclipse/jface/text/source/ISourceViewer> > v1(line 218)
+BB2
+2   v6 = invokeinterface < Application, Lorg/eclipse/jface/text/source/ISourceViewer, getAnnotationModel()Lorg/eclipse/jface/text/source/IAnnotationModel; > v4 @4 exception:v5(line 218)
+BB3
+6   conditional branch(ne) v6,v7:#null       (line 220)
+BB4
+7   return                                   (line 221)
+BB5
+8   v8 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 227)
+11   monitorenter v8                         (line 227)
+BB6
+12   v9 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 228)
+14   v11 = invokevirtual < Application, Ljava/util/HashSet, contains(Ljava/lang/Object;)Z > v9,v6 @25 exception:v10(line 228)
+BB7
+16   conditional branch(eq) v11,v12:#0       (line 228)
+BB8
+18   monitorexit v8                          (line 229)
+BB9
+19   return                                  (line 229)
+BB10
+20   v13 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 231)
+22   v15 = invokevirtual < Application, Ljava/util/HashSet, add(Ljava/lang/Object;)Z > v13,v6 @38 exception:v14(line 231)
+BB11
+25   monitorexit v8                          (line 227)
+BB12
+26   goto                                    (line 227)
+BB13<Handler>
+           v104 = getCaughtException 
+28   monitorexit v8                          (line 227)
+BB14
+29   throw v104                              (line 227)
+BB15
+31   v16 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fDocument, <Application,Lorg/eclipse/jface/text/IDocument> > v1(line 238)
+BB16
+35   v18 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fDocument, <Application,Lorg/eclipse/jface/text/IDocument> > v1(line 241)
+BB17
+36   v20 = invokeinterface < Application, Lorg/eclipse/jface/text/IDocument, getLength()I > v18 @61 exception:v19(line 241)
+BB18
+38   v22 = invokestatic < Application, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; > v16,v17:#__PYTHON_PARTITION_TYPE,v12:#0,v20,v12:#0 @67 exception:v21(line 237)
+BB19
+40   v29 = new <Application,Ljava/util/ArrayList>@71(line 245)
+BB20
+42   invokespecial < Application, Ljava/util/ArrayList, <init>()V > v29 @75 exception:v30(line 245)
+BB21
+47   v31 = arraylength v22                   (line 246)
+BB22
+51   goto                                    (line 246)
+BB23
+54   v32 = arrayload v22[v55]                (line 246)
+BB24
+57   v33 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fProgressMonitor, <Application,Lorg/eclipse/core/runtime/IProgressMonitor> > v1(line 247)
+BB25
+59   conditional branch(eq) v33,v7:#null     (line 247)
+BB26
+61   v34 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fProgressMonitor, <Application,Lorg/eclipse/core/runtime/IProgressMonitor> > v1(line 247)
+BB27
+62   v36 = invokeinterface < Application, Lorg/eclipse/core/runtime/IProgressMonitor, isCanceled()Z > v34 @111 exception:v35(line 247)
+BB28
+64   conditional branch(eq) v36,v12:#0       (line 247)
+BB29
+65   v99 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 274)
+68   monitorenter v99                        (line 274)
+BB30
+69   v100 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 275)
+71   v102 = invokevirtual < Application, Ljava/util/HashSet, remove(Ljava/lang/Object;)Z > v100,v6 @130 exception:v101(line 275)
+BB31
+74   monitorexit v99                         (line 274)
+BB32
+75   goto                                    (line 274)
+BB33<Handler>
+           v103 = getCaughtException 
+77   monitorexit v99                         (line 274)
+BB34
+78   throw v103                              (line 274)
+BB35
+79   return                                  (line 248)
+BB36
+81   v38 = invokeinterface < Application, Lorg/eclipse/jface/text/ITypedRegion, getType()Ljava/lang/String; > v32 @147 exception:v37(line 251)
+BB37
+85   v41 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > v38,v39:#__dftl_partition_content_type @158 exception:v40(line 253)
+BB38
+87   conditional branch(ne) v41,v12:#0       (line 253)
+BB39
+90   v44 = invokevirtual < Application, Ljava/lang/String, equals(Ljava/lang/Object;)Z > v38,v42:#__python_backquotes @168 exception:v43(line 253)
+BB40
+92   conditional branch(ne) v44,v12:#0       (line 253)
+BB41
+94   v45 = new <Application,Lorg/eclipse/jface/text/Region>@176(line 255)
+BB42
+97   v47 = invokeinterface < Application, Lorg/eclipse/jface/text/ITypedRegion, getOffset()I > v32 @182 exception:v46(line 255)
+BB43
+99   v49 = invokeinterface < Application, Lorg/eclipse/jface/text/ITypedRegion, getLength()I > v32 @189 exception:v48(line 255)
+BB44
+100   invokespecial < Application, Lorg/eclipse/jface/text/Region, <init>(II)V > v45,v47,v49 @194 exception:v50(line 255)
+BB45
+101   v52 = invokevirtual < Application, Ljava/util/ArrayList, add(Ljava/lang/Object;)Z > v29,v45 @197 exception:v51(line 255)
+BB46
+BB47
+105   v54 = binaryop(add) v55 , v53:#1       (line 246)
+BB48
+           v55 = phi  v12:#0,v54
+109   conditional branch(lt) v55,v31         (line 246)
+BB49
+111   v57 = invokevirtual < Application, Ljava/util/ArrayList, size()I > v29 @213 exception:v56(line 259)
+BB50
+115   conditional branch(le) v57,v12:#0      (line 260)
+BB51
+116   v58 = new <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223(line 262)
+BB52
+120   invokespecial < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V > v58,v1,v6 @229 exception:v59(line 262)
+BB53
+123   v60 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fSpellingService, <Application,Lorg/eclipse/ui/texteditor/spelling/SpellingService> > v1(line 263)
+BB54
+125   v61 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fDocument, <Application,Lorg/eclipse/jface/text/IDocument> > v1(line 263)
+BB55
+128   v62 = new <Application,[Lorg/eclipse/jface/text/IRegion>@246v57 (line 263)
+BB56
+129   v64 = invokevirtual < Application, Ljava/util/ArrayList, toArray([Ljava/lang/Object;)[Ljava/lang/Object; > v29,v62 @249 exception:v63(line 263)
+BB57
+130   v65 = checkcast <Application,[Lorg/eclipse/jface/text/IRegion>v64(line 263)
+BB58
+132   v66 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fSpellingContext, <Application,Lorg/eclipse/ui/texteditor/spelling/SpellingContext> > v1(line 263)
+BB59
+135   v67 = getfield < Application, Lorg/python/pydev/editor/PyReconciler, fProgressMonitor, <Application,Lorg/eclipse/core/runtime/IProgressMonitor> > v1(line 264)
+BB60
+136   invokevirtual < Application, Lorg/eclipse/ui/texteditor/spelling/SpellingService, check(Lorg/eclipse/jface/text/IDocument;[Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/ui/texteditor/spelling/SpellingContext;Lorg/eclipse/ui/texteditor/spelling/ISpellingProblemCollector;Lorg/eclipse/core/runtime/IProgressMonitor;)V > v60,v61,v65,v66,v58,v67 @265 exception:v68(line 263)
+BB61
+137   goto                                   (line 263)
+BB62<Handler>
+           v23 = getCaughtException 
+139   v24 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 274)
+142   monitorenter v24                       (line 274)
+BB63
+143   v25 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 275)
+145   v27 = invokevirtual < Application, Ljava/util/HashSet, remove(Ljava/lang/Object;)Z > v25,v6 @283 exception:v26(line 275)
+BB64
+148   monitorexit v24                        (line 274)
+BB65
+149   goto                                   (line 274)
+BB66<Handler>
+           v28 = getCaughtException 
+151   monitorexit v24                        (line 274)
+BB67
+152   throw v28                              (line 274)
+BB68<Handler>
+           v75 = getCaughtException 
+155   v80 = invokestatic < Application, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; > v75 @299 exception:v79(line 271)
+BB69
+157   v90 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 274)
+160   monitorenter v90                       (line 274)
+BB70
+161   v91 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 275)
+163   v93 = invokevirtual < Application, Ljava/util/HashSet, remove(Ljava/lang/Object;)Z > v91,v6 @314 exception:v92(line 275)
+BB71
+166   monitorexit v90                        (line 274)
+BB72
+167   goto                                   (line 274)
+BB73<Handler>
+           v94 = getCaughtException 
+169   monitorexit v90                        (line 274)
+BB74
+170   throw v94                              (line 274)
+BB75<Handler>
+           v81 = getCaughtException 
+172   v85 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 274)
+175   monitorenter v85                       (line 274)
+BB76
+176   v86 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 275)
+178   v88 = invokevirtual < Application, Ljava/util/HashSet, remove(Ljava/lang/Object;)Z > v86,v6 @341 exception:v87(line 275)
+BB77
+181   monitorexit v85                        (line 274)
+BB78
+182   goto                                   (line 274)
+BB79<Handler>
+           v89 = getCaughtException 
+184   monitorexit v85                        (line 274)
+BB80
+185   throw v89                              (line 274)
+BB81
+187   throw v81                              (line 277)
+BB82
+188   v70 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 274)
+191   monitorenter v70                       (line 274)
+BB83
+192   v71 = getstatic < Application, Lorg/python/pydev/editor/PyReconciler, modelBeingChecked, <Application,Ljava/util/HashSet> >(line 275)
+194   v73 = invokevirtual < Application, Ljava/util/HashSet, remove(Ljava/lang/Object;)Z > v71,v6 @369 exception:v72(line 275)
+BB84
+197   monitorexit v70                        (line 274)
+BB85
+198   goto                                   (line 274)
+BB86<Handler>
+           v74 = getCaughtException 
+200   monitorexit v70                        (line 274)
+BB87
+201   throw v74                              (line 274)
+BB88
+202   return                                 (line 278)
+BB89
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; > Context: ReceiverStringContext: [ :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**IR:** synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, computePartitioning(Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v6                                
+BB1
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, <clinit>()V > Context: Everywhere
+**IR:** synthetic < Extension, Lorg/eclipse/jface/text/TextUtilities, <clinit>()V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/jface/text/Region, <init>(II)V > Context: JavaTypeContext<point: <Extension,Lorg/eclipse/jface/text/Region>>
+**IR:** synthetic < Extension, Lorg/eclipse/jface/text/Region, <init>(II)V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V > Context: ReceiverStringContext: [ :: SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [ :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**IR:** < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, <init>(Lorg/python/pydev/editor/PyReconciler;Lorg/eclipse/jface/text/source/IAnnotationModel;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB9
+BB2[3..4]
+    -> BB3
+    -> BB9
+BB3[5..7]
+    -> BB5
+    -> BB4
+BB4[8..9]
+    -> BB6
+BB5[10..10]
+    -> BB6
+BB6[11..11]
+    -> BB7
+    -> BB9
+BB7[12..15]
+    -> BB8
+    -> BB9
+BB8[16..16]
+    -> BB9
+BB9[-1..-2]
+Instructions:
+BB0
+BB1
+2   putfield v1 = v2 < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, this$0, <Application,Lorg/python/pydev/editor/PyReconciler> >(line 71)
+BB2
+4   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @6 exception:v5(line 68)
+BB3
+7   conditional branch(eq) v3,v6:#null       (line 69)
+BB4
+9   goto                                     (line 69)
+BB5
+BB6
+           v9 = phi  v8:#1,v7:#0
+11   v11 = invokestatic < Application, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z > v9 @18 exception:v10(line 69)
+BB7
+15   putfield v1 = v3 < Application, Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector, fAnnotationModel, <Application,Lorg/eclipse/jface/text/source/IAnnotationModel> >(line 70)
+BB8
+16   return                                  (line 70)
+BB9
+
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; > Context: JavaTypeContext<point: <Primordial,Ljava/lang/NullPointerException>>
+**IR:** synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; > Context: JavaTypeContext<point: <Primordial,Ljava/lang/NegativeArraySizeException>>
+**IR:** synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; > Context: JavaTypeContext<point: <Primordial,Ljava/lang/ArrayIndexOutOfBoundsException>>
+**IR:** synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; > Context: JavaTypeContext<point: <Primordial,Ljava/lang/ClassCastException>>
+**IR:** synthetic < Extension, Lorg/python/pydev/core/log/Log, log(Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/CoreException; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+
+**CGNode:** Node: synthetic < Extension, Lorg/python/pydev/core/log/Log, <clinit>()V > Context: Everywhere
+**IR:** synthetic < Extension, Lorg/python/pydev/core/log/Log, <clinit>()V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z > Context: ReceiverStringContext: [ :: SITE_IN_NODE{< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler$SpellingProblemCollector>@223 in ReceiverStringContext: [ :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/editor/PyReconciler>@4 in Everywhere} ]
+**IR:** synthetic < Extension, Lorg/eclipse/core/runtime/Assert, isLegal(Z)Z >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+

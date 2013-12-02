@@ -1,0 +1,3443 @@
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 32)
+BB2
+4   putfield v1 = v4:#0 < Application, Lorg/apache/commons/pool2/BaseObjectPool, closed, <Primordial,Z> >(line 130)
+BB3
+5   return                                   (line 32)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, borrowObject(J)Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, borrowObject(J)Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB112
+BB2[2..5]
+    -> BB3
+    -> BB112
+BB3[6..9]
+    -> BB75
+BB4[10..14]
+    -> BB30
+    -> BB5
+BB5[15..16]
+    -> BB6
+    -> BB112
+BB6[17..17]
+    -> BB7
+    -> BB112
+BB7[18..18]
+    -> BB8
+    -> BB112
+BB8[19..22]
+    -> BB11
+    -> BB9
+BB9[23..26]
+    -> BB10
+    -> BB112
+BB10[27..27]
+    -> BB11
+BB11[28..30]
+    -> BB23
+    -> BB12
+BB12[31..35]
+    -> BB17
+    -> BB13
+BB13[36..37]
+    -> BB14
+    -> BB112
+BB14[38..38]
+    -> BB15
+    -> BB112
+BB15[39..39]
+    -> BB16
+    -> BB112
+BB16[40..41]
+    -> BB23
+BB17[42..42]
+    -> BB18
+    -> BB112
+BB18[43..45]
+    -> BB19
+    -> BB112
+BB19[46..48]
+    -> BB20
+    -> BB112
+BB20[49..49]
+    -> BB21
+    -> BB112
+BB21[50..51]
+    -> BB22
+    -> BB112
+BB22[52..54]
+    -> BB23
+BB23[55..57]
+    -> BB27
+    -> BB24
+BB24[58..58]
+    -> BB25
+    -> BB112
+BB25[59..61]
+    -> BB26
+    -> BB112
+BB26[62..62]
+    -> BB112
+BB27[63..64]
+    -> BB28
+    -> BB112
+BB28[65..66]
+    -> BB43
+    -> BB29
+BB29[67..69]
+    -> BB43
+BB30[70..71]
+    -> BB31
+    -> BB112
+BB31[72..72]
+    -> BB32
+    -> BB112
+BB32[73..73]
+    -> BB33
+    -> BB112
+BB33[74..77]
+    -> BB36
+    -> BB34
+BB34[78..81]
+    -> BB35
+    -> BB112
+BB35[82..82]
+    -> BB36
+BB36[83..85]
+    -> BB40
+    -> BB37
+BB37[86..86]
+    -> BB38
+    -> BB112
+BB38[87..89]
+    -> BB39
+    -> BB112
+BB39[90..90]
+    -> BB112
+BB40[91..92]
+    -> BB41
+    -> BB112
+BB41[93..94]
+    -> BB43
+    -> BB42
+BB42[95..96]
+    -> BB43
+BB43[97..99]
+    -> BB75
+    -> BB44
+BB44[100..101]
+    -> BB45
+    -> BB48
+BB45[102..103]
+    -> BB46
+    -> BB48
+    -> BB112
+BB46[104..104]
+    -> BB47
+    -> BB48
+    -> BB112
+BB47[105..105]
+    -> BB56
+BB48[106..109]
+    -> BB49
+    -> BB50
+    -> BB112
+BB49[110..110]
+    -> BB51
+BB50[111..111]
+    -> BB51
+BB51[112..116]
+    -> BB56
+    -> BB52
+BB52[117..117]
+    -> BB53
+    -> BB112
+BB53[118..120]
+    -> BB54
+    -> BB112
+BB54[121..124]
+    -> BB55
+    -> BB112
+BB55[125..127]
+    -> BB112
+BB56[128..130]
+    -> BB75
+    -> BB57
+BB57[131..132]
+    -> BB58
+    -> BB112
+BB58[133..134]
+    -> BB75
+    -> BB59
+BB59[135..140]
+    -> BB60
+    -> BB63
+BB60[141..142]
+    -> BB61
+    -> BB63
+BB61[143..143]
+    -> BB62
+    -> BB63
+BB62[144..145]
+    -> BB64
+BB63[146..148]
+    -> BB64
+    -> BB112
+BB64[149..151]
+    -> BB75
+    -> BB65
+BB65[152..154]
+    -> BB66
+    -> BB69
+    -> BB112
+BB66[155..156]
+    -> BB67
+    -> BB69
+BB67[157..157]
+    -> BB68
+    -> BB69
+    -> BB112
+BB68[158..159]
+    -> BB70
+BB69[160..160]
+    -> BB70
+BB70[161..165]
+    -> BB75
+    -> BB71
+BB71[166..166]
+    -> BB72
+    -> BB112
+BB72[167..169]
+    -> BB73
+    -> BB112
+BB73[170..173]
+    -> BB74
+    -> BB112
+BB74[174..176]
+    -> BB112
+BB75[177..179]
+    -> BB4
+    -> BB76
+BB76[180..181]
+    -> BB77
+    -> BB112
+BB77[182..182]
+    -> BB78
+    -> BB112
+BB78[183..185]
+    -> BB79
+    -> BB112
+BB79[186..188]
+    -> BB80
+    -> BB112
+BB80[189..190]
+    -> BB81
+    -> BB88
+BB81[191..192]
+    -> BB82
+    -> BB88
+BB82[193..193]
+    -> BB83
+    -> BB88
+BB83[194..194]
+    -> BB84
+    -> BB88
+BB84[195..197]
+    -> BB85
+    -> BB88
+BB85[198..198]
+    -> BB86
+    -> BB88
+BB86[199..201]
+    -> BB87
+    -> BB88
+BB87[202..202]
+    -> BB90
+BB88[203..204]
+    -> BB89
+    -> BB88
+BB89[205..205]
+    -> BB112
+BB90[206..207]
+    -> BB91
+    -> BB112
+BB91[208..210]
+    -> BB92
+    -> BB112
+BB92[211..212]
+    -> BB93
+    -> BB99
+BB93[213..214]
+    -> BB94
+    -> BB99
+BB94[215..215]
+    -> BB95
+    -> BB99
+BB95[216..218]
+    -> BB96
+    -> BB99
+BB96[219..219]
+    -> BB97
+    -> BB99
+BB97[220..222]
+    -> BB98
+    -> BB99
+BB98[223..223]
+    -> BB101
+BB99[224..225]
+    -> BB100
+    -> BB99
+BB100[226..226]
+    -> BB112
+BB101[227..228]
+    -> BB102
+    -> BB112
+BB102[229..231]
+    -> BB103
+    -> BB112
+BB103[232..234]
+    -> BB104
+    -> BB108
+BB104[235..237]
+    -> BB106
+    -> BB105
+BB105[238..240]
+    -> BB106
+    -> BB108
+BB106[241..242]
+    -> BB107
+    -> BB108
+BB107[243..243]
+    -> BB110
+BB108[244..245]
+    -> BB109
+    -> BB108
+BB109[246..246]
+    -> BB112
+BB110[247..248]
+    -> BB111
+    -> BB112
+BB111[249..249]
+    -> BB112
+BB112[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, assertOpen()V > v1 @1 exception:v4(line 725)
+BB2
+5   v6 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, blockWhenExhausted, <Primordial,Z> > v1(line 731)
+BB3
+9   goto                                     (line 736)
+BB4
+14   conditional branch(eq) v6,v8:#0         (line 738)
+BB5
+16   v9 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 739)
+BB6
+17   v11 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, pollFirst()Ljava/lang/Object; > v9 @30 exception:v10(line 739)
+BB7
+18   v12 = checkcast <Application,Lorg/apache/commons/pool2/impl/PooledObject>v11(line 739)
+BB8
+22   conditional branch(ne) v12,v5:#null     (line 740)
+BB9
+26   v15 = invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; > v1 @45 exception:v14(line 742)
+BB10
+BB11
+           v16 = phi  v12,v15
+           v17 = phi  v8:#0,v13:#1
+30   conditional branch(ne) v16,v5:#null     (line 744)
+BB12
+33   v18 = compare v2,v7:#0 opcode=cmp       (line 745)
+35   conditional branch(ge) v18,v8:#0        (line 745)
+BB13
+37   v19 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 746)
+BB14
+38   v21 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, takeFirst()Ljava/lang/Object; > v19 @63 exception:v20(line 746)
+BB15
+39   v22 = checkcast <Application,Lorg/apache/commons/pool2/impl/PooledObject>v21(line 746)
+BB16
+41   goto                                    (line 746)
+BB17
+42   v24 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @73 exception:v23(line 748)
+BB18
+45   v25 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 749)
+BB19
+47   v26 = getstatic < Application, Ljava/util/concurrent/TimeUnit, MILLISECONDS, <Application,Ljava/util/concurrent/TimeUnit> >(line 750)
+48   v28 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, pollFirst(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object; > v25,v2,v26 @86 exception:v27(line 749)
+BB20
+49   v29 = checkcast <Application,Lorg/apache/commons/pool2/impl/PooledObject>v28(line 749)
+BB21
+51   v31 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @93 exception:v30(line 751)
+BB22
+53   v32 = binaryop(sub) v31 , v24           (line 751)
+BB23
+           v33 = phi  v16,v22,v29
+           v34 = phi  v51,v51,v32
+57   conditional branch(ne) v33,v5:#null     (line 754)
+BB24
+58   v131 = new <Application,Ljava/util/NoSuchElementException>@105(line 755)
+BB25
+61   invokespecial < Application, Ljava/util/NoSuchElementException, <init>(Ljava/lang/String;)V > v131,v132:#Timeout waiting for idle object @112 exception:v133(line 755)
+BB26
+62   throw v131                              (line 755)
+BB27
+64   v36 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, allocate()Z > v33 @117 exception:v35(line 758)
+BB28
+66   conditional branch(ne) v36,v8:#0        (line 758)
+BB29
+69   goto                                    (line 759)
+BB30
+71   v37 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 762)
+BB31
+72   v39 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, pollFirst()Ljava/lang/Object; > v37 @132 exception:v38(line 762)
+BB32
+73   v40 = checkcast <Application,Lorg/apache/commons/pool2/impl/PooledObject>v39(line 762)
+BB33
+77   conditional branch(ne) v40,v5:#null     (line 763)
+BB34
+81   v42 = invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; > v1 @147 exception:v41(line 765)
+BB35
+BB36
+           v43 = phi  v40,v42
+           v44 = phi  v8:#0,v13:#1
+85   conditional branch(ne) v43,v5:#null     (line 767)
+BB37
+86   v118 = new <Application,Ljava/util/NoSuchElementException>@155(line 768)
+BB38
+89   invokespecial < Application, Ljava/util/NoSuchElementException, <init>(Ljava/lang/String;)V > v118,v119:#Pool exhausted @162 exception:v120(line 768)
+BB39
+90   throw v118                              (line 768)
+BB40
+92   v46 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, allocate()Z > v43 @167 exception:v45(line 770)
+BB41
+94   conditional branch(ne) v46,v8:#0        (line 770)
+BB42
+BB43
+           v47 = phi  v33,v5:#null,v43,v5:#null
+           v48 = phi  v17,v17,v44,v44
+           v49 = phi  v34,v34,v51,v51
+99   conditional branch(eq) v47,v5:#null     (line 775)
+BB44
+101   v52 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 777)
+BB45
+103   v54 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v47 @184 exception:v53(line 777)
+BB46
+104   invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, activateObject(Ljava/lang/Object;)V > v52,v54 @187 exception:v55(line 777)
+BB47
+105   goto                                   (line 777)
+BB48<Handler>
+           v56 = getCaughtException 
+109   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v47 @199 exception:v57(line 780)
+BB49
+110   goto                                   (line 780)
+BB50<Handler>
+           v58 = getCaughtException 
+BB51
+116   conditional branch(eq) v48,v8:#0       (line 785)
+BB52
+117   v121 = new <Application,Ljava/util/NoSuchElementException>@214(line 786)
+BB53
+120   invokespecial < Application, Ljava/util/NoSuchElementException, <init>(Ljava/lang/String;)V > v121,v122:#Unable to activate object @221 exception:v123(line 786)
+BB54
+124   v125 = invokevirtual < Application, Ljava/util/NoSuchElementException, initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable; > v121,v56 @230 exception:v124(line 788)
+BB55
+127   throw v121                             (line 789)
+BB56
+           v60 = phi  v47,v5:#null
+130   conditional branch(eq) v60,v5:#null    (line 792)
+BB57
+132   v63 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestOnBorrow()Z > v1 @242 exception:v62(line 792)
+BB58
+134   conditional branch(eq) v63,v8:#0       (line 792)
+BB59
+140   v64 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 796)
+BB60
+142   v66 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v60 @259 exception:v65(line 796)
+BB61
+143   v68 = invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, validateObject(Ljava/lang/Object;)Z > v64,v66 @262 exception:v67(line 796)
+BB62
+145   goto                                   (line 796)
+BB63<Handler>
+           v69 = getCaughtException 
+148   invokestatic < Application, Lorg/apache/commons/pool2/PoolUtils, checkRethrow(Ljava/lang/Throwable;)V > v69 @276 exception:v70(line 798)
+BB64
+           v72 = phi  v68,v8:#0
+151   conditional branch(ne) v72,v8:#0       (line 800)
+BB65
+154   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v60 @286 exception:v78(line 802)
+BB66
+156   v79 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedByBorrowValidationCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 803)
+BB67
+157   v81 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v79 @293 exception:v80(line 803)
+BB68
+159   goto                                   (line 803)
+BB69<Handler>
+           v82 = getCaughtException 
+BB70
+165   conditional branch(eq) v48,v8:#0       (line 808)
+BB71
+166   v126 = new <Application,Ljava/util/NoSuchElementException>@309(line 809)
+BB72
+169   invokespecial < Application, Ljava/util/NoSuchElementException, <init>(Ljava/lang/String;)V > v126,v127:#Unable to validate object @316 exception:v128(line 809)
+BB73
+173   v130 = invokevirtual < Application, Ljava/util/NoSuchElementException, initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable; > v126,v5:#null @325 exception:v129(line 811)
+BB74
+176   throw v126                             (line 812)
+BB75
+           v50 = phi  v5:#null,v47,v60,v60,v60,v5:#null
+           v51 = phi  v7:#0,v49,v49,v49,v49,v49
+179   conditional branch(eq) v50,v5:#null    (line 736)
+BB76
+181   v87 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, borrowedCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 819)
+BB77
+182   v89 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v87 @340 exception:v88(line 819)
+BB78
+185   v90 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleTimes, <Application,Ljava/util/LinkedList> > v1(line 820)
+BB79
+188   monitorenter v90                       (line 820)
+BB80
+190   v91 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleTimes, <Application,Ljava/util/LinkedList> > v1(line 821)
+BB81
+192   v93 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getIdleTimeMillis()J > v50 @357 exception:v92(line 821)
+BB82
+193   v95 = invokestatic < Application, Ljava/lang/Long, valueOf(J)Ljava/lang/Long; > v93 @360 exception:v94(line 821)
+BB83
+194   v97 = invokevirtual < Application, Ljava/util/LinkedList, add(Ljava/lang/Object;)Z > v91,v95 @363 exception:v96(line 821)
+BB84
+197   v98 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleTimes, <Application,Ljava/util/LinkedList> > v1(line 822)
+BB85
+198   v100 = invokevirtual < Application, Ljava/util/LinkedList, poll()Ljava/lang/Object; > v98 @371 exception:v99(line 822)
+BB86
+201   monitorexit v90                        (line 820)
+BB87
+202   goto                                   (line 820)
+BB88<Handler>
+           v101 = getCaughtException 
+204   monitorexit v90                        (line 820)
+BB89
+205   throw v101                             (line 820)
+BB90
+207   v102 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, waitTimes, <Application,Ljava/util/LinkedList> > v1(line 824)
+BB91
+210   monitorenter v102                      (line 824)
+BB92
+212   v103 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, waitTimes, <Application,Ljava/util/LinkedList> > v1(line 825)
+BB93
+214   v105 = invokestatic < Application, Ljava/lang/Long, valueOf(J)Ljava/lang/Long; > v51 @399 exception:v104(line 825)
+BB94
+215   v107 = invokevirtual < Application, Ljava/util/LinkedList, add(Ljava/lang/Object;)Z > v103,v105 @402 exception:v106(line 825)
+BB95
+218   v108 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, waitTimes, <Application,Ljava/util/LinkedList> > v1(line 826)
+BB96
+219   v110 = invokevirtual < Application, Ljava/util/LinkedList, poll()Ljava/lang/Object; > v108 @410 exception:v109(line 826)
+BB97
+222   monitorexit v102                       (line 824)
+BB98
+223   goto                                   (line 824)
+BB99<Handler>
+           v111 = getCaughtException 
+225   monitorexit v102                       (line 824)
+BB100
+226   throw v111                             (line 824)
+BB101
+228   v112 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, maxBorrowWaitTimeMillisLock, <Application,Ljava/lang/Object> > v1(line 828)
+BB102
+231   monitorenter v112                      (line 828)
+BB103
+234   v113 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, maxBorrowWaitTimeMillis, <Primordial,J> > v1(line 829)
+BB104
+235   v114 = compare v51,v113 opcode=cmp     (line 829)
+237   conditional branch(le) v114,v8:#0      (line 829)
+BB105
+240   putfield v1 = v51 < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, maxBorrowWaitTimeMillis, <Primordial,J> >(line 830)
+BB106
+242   monitorexit v112                       (line 828)
+BB107
+243   goto                                   (line 828)
+BB108<Handler>
+           v115 = getCaughtException 
+245   monitorexit v112                       (line 828)
+BB109
+246   throw v115                             (line 828)
+BB110
+248   v117 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v50 @459 exception:v116(line 833)
+BB111
+249   return v117                            (line 833)
+BB112
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 32)
+BB2
+4   putfield v1 = v4:#0 < Application, Lorg/apache/commons/pool2/BaseObjectPool, closed, <Primordial,Z> >(line 130)
+BB3
+5   return                                   (line 32)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB13
+BB2[2..3]
+    -> BB6
+    -> BB3
+BB3[4..5]
+    -> BB4
+    -> BB13
+BB4[6..6]
+    -> BB5
+    -> BB13
+BB5[7..9]
+    -> BB6
+    -> BB13
+BB6[10..14]
+    -> BB12
+    -> BB7
+BB7[15..16]
+    -> BB8
+    -> BB13
+BB8[17..20]
+    -> BB9
+    -> BB13
+BB9[21..21]
+    -> BB10
+    -> BB13
+BB10[22..23]
+    -> BB11
+    -> BB13
+BB11[24..26]
+    -> BB12
+    -> BB13
+BB12[27..27]
+    -> BB13
+BB13[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictor, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor> > v1(line 1232)
+BB2
+3   conditional branch(eq) v4,v5:#null       (line 1232)
+BB3
+5   v6 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictor, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor> > v1(line 1233)
+BB4
+6   invokestatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, cancel(Ljava/util/TimerTask;)V > v6 @11 exception:v7(line 1233)
+BB5
+9   putfield v1 = v5:#null < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictor, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor> >(line 1234)
+BB6
+12   v9 = compare v2,v8:#0 opcode=cmp        (line 1236)
+14   conditional branch(le) v9,v10:#0        (line 1236)
+BB7
+16   v11 = new <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26(line 1237)
+BB8
+20   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor;)V > v11,v1,v5:#null @32 exception:v12(line 1237)
+BB9
+21   putfield v1 = v11 < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictor, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor> >(line 1237)
+BB10
+23   v13 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictor, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor> > v1(line 1238)
+BB11
+26   invokestatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V > v13,v2,v2 @44 exception:v14(line 1238)
+BB12
+27   return                                  (line 1240)
+BB13
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, assertOpen()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, assertOpen()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB7
+BB2[2..3]
+    -> BB6
+    -> BB3
+BB3[4..4]
+    -> BB4
+    -> BB7
+BB4[5..7]
+    -> BB5
+    -> BB7
+BB5[8..8]
+    -> BB7
+BB6[9..9]
+    -> BB7
+BB7[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z > v1 @1 exception:v3(line 124)
+BB2
+3   conditional branch(eq) v4,v5:#0          (line 124)
+BB3
+4   v6 = new <Application,Ljava/lang/IllegalStateException>@7(line 125)
+BB4
+7   invokespecial < Application, Ljava/lang/IllegalStateException, <init>(Ljava/lang/String;)V > v6,v7:#Pool not open @13 exception:v8(line 125)
+BB5
+8   throw v6                                 (line 125)
+BB6
+9   return                                   (line 127)
+BB7
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB23
+BB2[2..4]
+    -> BB3
+    -> BB23
+BB3[5..5]
+    -> BB4
+    -> BB23
+BB4[6..9]
+    -> BB6
+    -> BB5
+BB5[10..15]
+    -> BB7
+    -> BB6
+BB6[16..20]
+    -> BB10
+    -> BB7
+BB7[21..22]
+    -> BB8
+    -> BB23
+BB8[23..23]
+    -> BB9
+    -> BB23
+BB9[24..26]
+    -> BB23
+BB10[27..30]
+    -> BB11
+    -> BB13
+BB11[31..31]
+    -> BB12
+    -> BB13
+    -> BB23
+BB12[32..33]
+    -> BB16
+BB13[34..36]
+    -> BB14
+    -> BB23
+BB14[37..37]
+    -> BB15
+    -> BB23
+BB15[38..40]
+    -> BB23
+BB16[41..41]
+    -> BB17
+    -> BB23
+BB17[42..44]
+    -> BB18
+    -> BB23
+BB18[45..47]
+    -> BB19
+    -> BB23
+BB19[48..48]
+    -> BB20
+    -> BB23
+BB20[49..51]
+    -> BB21
+    -> BB23
+BB21[52..54]
+    -> BB22
+    -> BB23
+BB22[55..57]
+    -> BB23
+BB23[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I > v1 @1 exception:v3(line 1133)
+BB2
+4   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1134)
+BB3
+5   v7 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v5 @9 exception:v6(line 1134)
+BB4
+9   conditional branch(le) v4,v8:#-1         (line 1135)
+BB5
+12   v9 = conversion(J) v4                   (line 1135)
+13   v10 = compare v7,v9 opcode=cmp          (line 1135)
+15   conditional branch(gt) v10,v11:#0       (line 1135)
+BB6
+18   v13 = compare v7,v12:#2147483647 opcode=cmp(line 1136)
+20   conditional branch(le) v13,v11:#0       (line 1136)
+BB7
+22   v30 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1137)
+BB8
+23   v32 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v30 @37 exception:v31(line 1137)
+BB9
+26   return v14:#null                        (line 1138)
+BB10
+30   v15 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1143)
+BB11
+31   v17 = invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, makeObject()Ljava/lang/Object; > v15 @50 exception:v16(line 1143)
+BB12
+33   goto                                    (line 1143)
+BB13<Handler>
+           v18 = getCaughtException 
+36   v19 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1145)
+BB14
+37   v21 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v19 @66 exception:v20(line 1145)
+BB15
+40   throw v18                               (line 1146)
+BB16
+41   v22 = new <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73(line 1149)
+BB17
+44   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V > v22,v17 @79 exception:v23(line 1149)
+BB18
+47   v24 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createdCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1150)
+BB19
+48   v26 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v24 @88 exception:v25(line 1150)
+BB20
+51   v27 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, allObjects, <Application,Ljava/util/Map> > v1(line 1151)
+BB21
+54   v29 = invokeinterface < Application, Ljava/util/Map, put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; > v27,v17,v22 @100 exception:v28(line 1151)
+BB22
+57   return v22                              (line 1152)
+BB23
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB21
+BB2[2..3]
+    -> BB3
+    -> BB21
+BB3[4..5]
+    -> BB4
+    -> BB21
+BB4[6..8]
+    -> BB5
+    -> BB21
+BB5[9..10]
+    -> BB6
+    -> BB21
+BB6[11..11]
+    -> BB7
+    -> BB21
+BB7[12..14]
+    -> BB8
+    -> BB11
+BB8[15..16]
+    -> BB9
+    -> BB11
+BB9[17..17]
+    -> BB10
+    -> BB11
+BB10[18..18]
+    -> BB16
+BB11[19..21]
+    -> BB12
+    -> BB21
+BB12[22..22]
+    -> BB13
+    -> BB21
+BB13[23..25]
+    -> BB14
+    -> BB21
+BB14[26..26]
+    -> BB15
+    -> BB21
+BB15[27..29]
+    -> BB21
+BB16[30..31]
+    -> BB17
+    -> BB21
+BB17[32..32]
+    -> BB18
+    -> BB21
+BB18[33..35]
+    -> BB19
+    -> BB21
+BB19[36..36]
+    -> BB20
+    -> BB21
+BB20[37..38]
+    -> BB21
+BB21[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, invalidate()V > v2 @1 exception:v4(line 1156)
+BB2
+3   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1157)
+BB3
+5   v7 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, remove(Ljava/lang/Object;)Z > v5,v2 @9 exception:v6(line 1157)
+BB4
+8   v8 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, allObjects, <Application,Ljava/util/Map> > v1(line 1158)
+BB5
+10   v10 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v2 @18 exception:v9(line 1158)
+BB6
+11   v12 = invokeinterface < Application, Ljava/util/Map, remove(Ljava/lang/Object;)Ljava/lang/Object; > v8,v10 @21 exception:v11(line 1158)
+BB7
+14   v13 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1160)
+BB8
+16   v15 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v2 @32 exception:v14(line 1160)
+BB9
+17   invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, destroyObject(Ljava/lang/Object;)V > v13,v15 @35 exception:v16(line 1160)
+BB10
+18   goto                                    (line 1160)
+BB11<Handler>
+           v17 = getCaughtException 
+21   v18 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1162)
+BB12
+22   v20 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v18 @48 exception:v19(line 1162)
+BB13
+25   v21 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1163)
+BB14
+26   v23 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v21 @56 exception:v22(line 1163)
+BB15
+29   throw v17                               (line 1164)
+BB16
+31   v24 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1162)
+BB17
+32   v26 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v24 @66 exception:v25(line 1162)
+BB18
+35   v27 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1163)
+BB19
+36   v29 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v27 @74 exception:v28(line 1163)
+BB20
+38   return                                  (line 1165)
+BB21
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestOnBorrow()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestOnBorrow()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, testOnBorrow, <Primordial,Z> > v1(line 409)
+BB2
+2   return v3                                (line 409)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/PoolUtils, checkRethrow(Ljava/lang/Throwable;)V > Context: ReceiverStringContext: [[<Primordial,Ljava/lang/NullPointerException>] :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/PoolUtils, checkRethrow(Ljava/lang/Throwable;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB4
+    -> BB2
+BB2[4..5]
+    -> BB3
+    -> BB8
+BB3[6..6]
+    -> BB8
+BB4[7..10]
+    -> BB7
+    -> BB5
+BB5[11..12]
+    -> BB6
+    -> BB8
+BB6[13..13]
+    -> BB8
+BB7[14..14]
+    -> BB8
+BB8[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = instanceof v1 <Application,Ljava/lang/ThreadDeath>(line 64)
+3   conditional branch(eq) v3,v4:#0          (line 64)
+BB2
+5   v7 = checkcast <Application,Ljava/lang/ThreadDeath>v1(line 65)
+BB3
+6   throw v7                                 (line 65)
+BB4
+8   v5 = instanceof v1 <Application,Ljava/lang/VirtualMachineError>(line 67)
+10   conditional branch(eq) v5,v4:#0         (line 67)
+BB5
+12   v6 = checkcast <Application,Ljava/lang/VirtualMachineError>v1(line 68)
+BB6
+13   throw v6                                (line 68)
+BB7
+14   return                                  (line 71)
+BB8
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, cancel(Ljava/util/TimerTask;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, cancel(Ljava/util/TimerTask;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB6
+BB2[2..9]
+    -> BB5
+    -> BB3
+BB3[10..11]
+    -> BB4
+    -> BB6
+BB4[12..13]
+    -> BB5
+BB5[14..14]
+    -> BB6
+BB6[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Ljava/util/TimerTask, cancel()Z > v1 @1 exception:v3(line 84)
+BB2
+3   v5 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _usageCount, <Primordial,I> >(line 85)
+5   v7 = binaryop(sub) v5 , v6:#1            (line 85)
+6   putstatic v7 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _usageCount, <Primordial,I> >(line 85)
+7   v8 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _usageCount, <Primordial,I> >(line 86)
+9   conditional branch(ne) v8,v9:#0          (line 86)
+BB3
+10   v10 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _timer, <Application,Ljava/util/Timer> >(line 87)
+11   invokevirtual < Application, Ljava/util/Timer, cancel()V > v10 @22 exception:v11(line 87)
+BB4
+13   putstatic v12:#null < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _timer, <Application,Ljava/util/Timer> >(line 88)
+BB5
+14   return                                  (line 90)
+BB6
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB3
+BB2[3..3]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+2   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V > v1,v2 @2 exception:v5(line 1353)
+BB2
+3   return                                   (line 1353)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB22
+    -> BB2
+BB2[3..3]
+    -> BB3
+    -> BB24
+BB3[4..6]
+    -> BB4
+    -> BB24
+BB4[7..7]
+    -> BB5
+    -> BB24
+BB5[8..8]
+    -> BB6
+    -> BB24
+BB6[9..10]
+    -> BB7
+    -> BB14
+BB7[11..12]
+    -> BB8
+    -> BB14
+BB8[13..13]
+    -> BB9
+    -> BB14
+BB9[14..14]
+    -> BB10
+    -> BB14
+BB10[15..15]
+    -> BB11
+    -> BB14
+BB11[16..17]
+    -> BB12
+    -> BB14
+BB12[18..21]
+    -> BB13
+    -> BB14
+BB13[22..23]
+    -> BB18
+BB14[24..25]
+    -> BB15
+    -> BB24
+BB15[26..28]
+    -> BB16
+    -> BB24
+BB16[29..29]
+    -> BB17
+    -> BB24
+BB17[30..32]
+    -> BB24
+BB18[33..33]
+    -> BB19
+    -> BB24
+BB19[34..36]
+    -> BB20
+    -> BB24
+BB20[37..37]
+    -> BB21
+    -> BB24
+BB21[38..38]
+    -> BB22
+BB22[39..47]
+    -> BB23
+    -> BB24
+BB23[48..48]
+    -> BB24
+BB24[-1..-2]
+Instructions:
+BB0
+BB1
+0   v5 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _timer, <Application,Ljava/util/Timer> >(line 62)
+2   conditional branch(ne) v5,v6:#null       (line 62)
+BB2
+3   v7 = new <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6(line 66)
+BB3
+6   invokespecial < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>(Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl;)V > v7,v6:#null @11 exception:v8(line 66)
+BB4
+7   v10 = invokestatic < Application, Ljava/security/AccessController, doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; > v7 @14 exception:v9(line 65)
+BB5
+8   v11 = checkcast <Application,Ljava/lang/ClassLoader>v10(line 65)
+BB6
+10   v12 = new <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22(line 68)
+BB7
+12   v13 = load_metadata: <Primordial,Lorg/apache/commons/pool2/impl/EvictionTimer>, <Primordial,Ljava/lang/Class>(line 69)
+BB8
+13   v15 = invokevirtual < Application, Ljava/lang/Class, getClassLoader()Ljava/lang/ClassLoader; > v13 @28 exception:v14(line 69)
+BB9
+14   invokespecial < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > v12,v15 @31 exception:v16(line 68)
+BB10
+15   v18 = invokestatic < Application, Ljava/security/AccessController, doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; > v12 @34 exception:v17(line 68)
+BB11
+17   v19 = new <Application,Ljava/util/Timer>@38(line 70)
+BB12
+21   invokespecial < Application, Ljava/util/Timer, <init>(Ljava/lang/String;Z)V > v19,v20:#commons-pool-EvictionTimer,v21:#1 @45 exception:v22(line 70)
+BB13
+22   putstatic v19 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _timer, <Application,Ljava/util/Timer> >(line 70)
+23   goto                                    (line 70)
+BB14<Handler>
+           v23 = getCaughtException 
+25   v24 = new <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56(line 72)
+BB15
+28   invokespecial < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > v24,v11 @62 exception:v25(line 72)
+BB16
+29   v27 = invokestatic < Application, Ljava/security/AccessController, doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; > v24 @65 exception:v26(line 72)
+BB17
+32   throw v23                               (line 73)
+BB18
+33   v28 = new <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72(line 72)
+BB19
+36   invokespecial < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > v28,v11 @78 exception:v29(line 72)
+BB20
+37   v31 = invokestatic < Application, Ljava/security/AccessController, doPrivileged(Ljava/security/PrivilegedAction;)Ljava/lang/Object; > v28 @81 exception:v30(line 72)
+BB21
+BB22
+39   v32 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _usageCount, <Primordial,I> >(line 75)
+41   v33 = binaryop(add) v32 , v21:#1        (line 75)
+42   putstatic v33 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _usageCount, <Primordial,I> >(line 75)
+43   v34 = getstatic < Application, Lorg/apache/commons/pool2/impl/EvictionTimer, _timer, <Application,Ljava/util/Timer> >(line 76)
+47   invokevirtual < Application, Ljava/util/Timer, schedule(Ljava/util/TimerTask;JJ)V > v34,v1,v2,v3 @99 exception:v35(line 76)
+BB23
+48   return                                  (line 77)
+BB24
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/BaseObjectPool, closed, <Primordial,Z> > v1(line 115)
+BB2
+2   return v3                                (line 115)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, maxTotal, <Primordial,I> > v1(line 269)
+BB2
+2   return v3                                (line 269)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB12
+BB2[2..4]
+    -> BB3
+    -> BB12
+BB3[5..7]
+    -> BB4
+    -> BB12
+BB4[8..9]
+    -> BB5
+    -> BB12
+BB5[10..10]
+    -> BB6
+    -> BB12
+BB6[11..12]
+    -> BB7
+    -> BB12
+BB7[13..13]
+    -> BB8
+    -> BB12
+BB8[14..15]
+    -> BB9
+    -> BB12
+BB9[16..16]
+    -> BB10
+    -> BB12
+BB10[17..19]
+    -> BB11
+    -> BB12
+BB11[20..20]
+    -> BB12
+BB12[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 32)
+BB2
+4   putfield v1 = v5:#null < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> >(line 26)
+BB3
+6   v6 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, IDLE, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 27)
+7   putfield v1 = v6 < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 27)
+BB4
+9   v8 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @17 exception:v7(line 28)
+BB5
+10   putfield v1 = v8 < Application, Lorg/apache/commons/pool2/impl/PooledObject, createTime, <Primordial,J> >(line 28)
+BB6
+12   v10 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @24 exception:v9(line 29)
+BB7
+13   putfield v1 = v10 < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastBorrowTime, <Primordial,J> >(line 29)
+BB8
+15   v12 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @31 exception:v11(line 30)
+BB9
+16   putfield v1 = v12 < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastReturnTime, <Primordial,J> >(line 30)
+BB10
+19   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> >(line 33)
+BB11
+20   return                                  (line 34)
+BB12
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, <init>(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB4
+BB2[3..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+2   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, this$0, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool> >(line 1353)
+BB2
+4   invokespecial < Application, Ljava/util/TimerTask, <init>()V > v1 @6 exception:v4(line 1353)
+BB3
+5   return                                   (line 1353)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>(Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>(Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>()V > v1 @1 exception:v4(line 95)
+BB2
+2   return                                   (line 95)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 117)
+BB2
+4   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> >(line 118)
+BB3
+5   return                                   (line 119)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 117)
+BB2
+4   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> >(line 118)
+BB3
+5   return                                   (line 119)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, <init>(Ljava/lang/ClassLoader;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 117)
+BB2
+4   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> >(line 118)
+BB3
+5   return                                   (line 119)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB27
+BB2[1..4]
+    -> BB3
+    -> BB27
+BB3[5..6]
+    -> BB4
+    -> BB27
+BB4[7..10]
+    -> BB5
+    -> BB27
+BB5[11..12]
+    -> BB6
+    -> BB27
+BB6[13..16]
+    -> BB7
+    -> BB27
+BB7[17..18]
+    -> BB8
+    -> BB27
+BB8[19..22]
+    -> BB9
+    -> BB27
+BB9[23..24]
+    -> BB10
+    -> BB27
+BB10[25..28]
+    -> BB11
+    -> BB27
+BB11[29..30]
+    -> BB12
+    -> BB27
+BB12[31..34]
+    -> BB13
+    -> BB27
+BB13[35..36]
+    -> BB14
+    -> BB27
+BB14[37..40]
+    -> BB15
+    -> BB27
+BB15[41..42]
+    -> BB16
+    -> BB27
+BB16[43..46]
+    -> BB17
+    -> BB27
+BB17[47..49]
+    -> BB18
+    -> BB27
+BB18[50..53]
+    -> BB19
+    -> BB27
+BB19[54..57]
+    -> BB20
+    -> BB27
+BB20[58..61]
+    -> BB21
+    -> BB27
+BB21[62..65]
+    -> BB22
+    -> BB27
+BB22[66..69]
+    -> BB23
+    -> BB27
+BB23[70..73]
+    -> BB24
+    -> BB27
+BB24[74..77]
+    -> BB25
+    -> BB27
+BB25[78..81]
+    -> BB26
+    -> BB27
+BB26[82..83]
+    -> BB27
+BB27[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@0(line 28)
+BB2
+4   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v2,v3:#IDLE,v4:#0 @7 exception:v5(line 28)
+BB3
+5   putstatic v2 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, IDLE, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 28)
+6   v6 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@13(line 33)
+BB4
+10   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v6,v7:#ALLOCATED,v8:#1 @20 exception:v9(line 33)
+BB5
+11   putstatic v6 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, ALLOCATED, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 33)
+12   v10 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@26(line 38)
+BB6
+16   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v10,v11:#MAINTAIN_EVICTION,v12:#2 @33 exception:v13(line 38)
+BB7
+17   putstatic v10 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 38)
+18   v14 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@39(line 48)
+BB8
+22   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v14,v15:#MAINTAIN_EVICTION_RETURN_TO_HEAD,v16:#3 @46 exception:v17(line 48)
+BB9
+23   putstatic v14 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION_RETURN_TO_HEAD, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 48)
+24   v18 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@52(line 53)
+BB10
+28   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v18,v19:#MAINTAIN_VALIDATION,v20:#4 @59 exception:v21(line 53)
+BB11
+29   putstatic v18 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 53)
+30   v22 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@65(line 61)
+BB12
+34   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v22,v23:#MAINTAIN_VALIDATION_PREALLOCATED,v24:#5 @72 exception:v25(line 61)
+BB13
+35   putstatic v22 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION_PREALLOCATED, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 61)
+36   v26 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@78(line 69)
+BB14
+40   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v26,v27:#MAINTAIN_VALIDATION_RETURN_TO_HEAD,v28:#6 @86 exception:v29(line 69)
+BB15
+41   putstatic v26 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION_RETURN_TO_HEAD, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 69)
+42   v30 = new <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@92(line 75)
+BB16
+46   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > v30,v31:#INVALID,v32:#7 @100 exception:v33(line 75)
+BB17
+47   putstatic v30 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, INVALID, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 75)
+49   v35 = new <Application,[Lorg/apache/commons/pool2/impl/PooledObjectState>@108v34:#8 (line 24)
+BB18
+52   v36 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, IDLE, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+53   arraystore v35[v4:#0] = v36             (line 24)
+BB19
+56   v37 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, ALLOCATED, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+57   arraystore v35[v8:#1] = v37             (line 24)
+BB20
+60   v38 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+61   arraystore v35[v12:#2] = v38            (line 24)
+BB21
+64   v39 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION_RETURN_TO_HEAD, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+65   arraystore v35[v16:#3] = v39            (line 24)
+BB22
+68   v40 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+69   arraystore v35[v20:#4] = v40            (line 24)
+BB23
+72   v41 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION_PREALLOCATED, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+73   arraystore v35[v24:#5] = v41            (line 24)
+BB24
+76   v42 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_VALIDATION_RETURN_TO_HEAD, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+77   arraystore v35[v28:#6] = v42            (line 24)
+BB25
+80   v43 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, INVALID, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+81   arraystore v35[v32:#7] = v43            (line 24)
+BB26
+82   putstatic v35 < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, ENUM$VALUES, <Application,[Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 24)
+83   return                                  (line 24)
+BB27
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 95)
+BB2
+2   return                                   (line 95)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, run()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, run()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, run()Ljava/lang/ClassLoader; > v1 @1 exception:v3(line 1)
+BB2
+2   return v4                                (line 1)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > v1 @1 exception:v3(line 1)
+BB2
+2   return v4                                (line 1)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > v1 @1 exception:v3(line 1)
+BB2
+2   return v4                                (line 1)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > v1 @1 exception:v3(line 1)
+BB2
+2   return v4                                (line 1)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@0 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@13 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@26 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@39 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@52 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@65 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@78 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <clinit>()V >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObjectState>@92 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, <init>(Ljava/lang/String;I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB3
+BB2[4..4]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+3   invokespecial < Application, Ljava/lang/Enum, <init>(Ljava/lang/String;I)V > v1,v2,v3 @3 exception:v5(line 24)
+BB2
+4   return                                   (line 24)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, run()Ljava/lang/ClassLoader; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl>@6 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedGetTccl, run()Ljava/lang/ClassLoader; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..1]
+    -> BB3
+    -> BB4
+BB3[2..2]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 101)
+BB2
+1   v6 = invokevirtual < Application, Ljava/lang/Thread, getContextClassLoader()Ljava/lang/ClassLoader; > v4 @3 exception:v5(line 101)
+BB3
+2   return v6                                (line 101)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@22 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@56 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/EvictionTimer, schedule(Ljava/util/TimerTask;JJ)V >:NEW <Application,Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl>@72 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, run()Ljava/lang/Void; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB5
+BB2[1..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..5]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 125)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/EvictionTimer$PrivilegedSetTccl, cl, <Application,Ljava/lang/ClassLoader> > v1(line 125)
+BB3
+3   invokevirtual < Application, Ljava/lang/Thread, setContextClassLoader(Ljava/lang/ClassLoader;)V > v4,v5 @7 exception:v6(line 125)
+BB4
+5   return v7:#null                          (line 126)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, run()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, run()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..2]
+    -> BB3
+    -> BB4
+    -> BB5
+    -> BB11
+BB3[3..3]
+    -> BB6
+BB4[4..5]
+    -> BB6
+BB5[6..9]
+    -> BB6
+    -> BB11
+BB6[10..11]
+    -> BB7
+    -> BB9
+BB7[12..12]
+    -> BB8
+    -> BB9
+    -> BB11
+BB8[13..13]
+    -> BB10
+BB9[14..14]
+    -> BB10
+BB10[15..15]
+    -> BB11
+BB11[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, this$0, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool> > v1(line 1361)
+BB2
+2   invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evict()V > v3 @4 exception:v4(line 1361)
+BB3
+3   goto                                     (line 1361)
+BB4<Handler>
+           v8 = getCaughtException 
+5   goto                                     (line 1362)
+BB5<Handler>
+           v5 = getCaughtException 
+8   v6 = getstatic < Application, Ljava/lang/System, err, <Application,Ljava/io/PrintStream> >(line 1367)
+9   invokevirtual < Application, Ljava/lang/OutOfMemoryError, printStackTrace(Ljava/io/PrintStream;)V > v5,v6 @19 exception:v7(line 1367)
+BB6
+11   v11 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor, this$0, <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool> > v1(line 1370)
+BB7
+12   invokestatic < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, access$0(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V > v11 @26 exception:v12(line 1370)
+BB8
+13   goto                                    (line 1370)
+BB9<Handler>
+           v13 = getCaughtException 
+BB10
+15   return                                  (line 1374)
+BB11
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evict()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evict()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB88
+BB2[2..3]
+    -> BB3
+    -> BB88
+BB3[4..4]
+    -> BB4
+    -> BB88
+BB4[5..6]
+    -> BB6
+    -> BB5
+BB5[7..7]
+    -> BB88
+BB6[8..11]
+    -> BB7
+    -> BB88
+BB7[12..18]
+    -> BB8
+    -> BB88
+BB8[19..22]
+    -> BB11
+    -> BB9
+BB9[23..24]
+    -> BB10
+    -> BB88
+BB10[25..25]
+    -> BB11
+BB11[26..27]
+    -> BB12
+    -> BB88
+BB12[28..31]
+    -> BB15
+    -> BB13
+BB13[32..33]
+    -> BB14
+    -> BB88
+BB14[34..34]
+    -> BB15
+BB15[35..38]
+    -> BB16
+    -> BB88
+BB16[39..40]
+    -> BB86
+BB17[41..42]
+    -> BB18
+    -> BB88
+BB18[43..44]
+    -> BB22
+    -> BB19
+BB19[45..46]
+    -> BB20
+    -> BB88
+BB20[47..47]
+    -> BB21
+    -> BB88
+BB21[48..49]
+    -> BB31
+    -> BB22
+BB22[50..51]
+    -> BB23
+    -> BB88
+BB23[52..53]
+    -> BB28
+    -> BB24
+BB24[54..56]
+    -> BB25
+    -> BB88
+BB25[57..57]
+    -> BB26
+    -> BB88
+BB26[58..58]
+    -> BB27
+    -> BB88
+BB27[59..59]
+    -> BB31
+BB28[60..62]
+    -> BB29
+    -> BB88
+BB29[63..63]
+    -> BB30
+    -> BB88
+BB30[64..64]
+    -> BB31
+    -> BB88
+BB31[65..66]
+    -> BB32
+    -> BB88
+BB32[67..67]
+    -> BB33
+    -> BB88
+BB33[68..69]
+    -> BB35
+    -> BB34
+BB34[70..70]
+    -> BB88
+BB35[71..72]
+    -> BB36
+    -> BB88
+BB36[73..73]
+    -> BB37
+    -> BB39
+    -> BB88
+BB37[74..74]
+    -> BB38
+    -> BB88
+BB38[75..76]
+    -> BB41
+BB39[77..84]
+    -> BB40
+    -> BB88
+BB40[85..85]
+    -> BB85
+BB41[86..87]
+    -> BB42
+    -> BB88
+BB42[88..89]
+    -> BB44
+    -> BB43
+BB43[90..94]
+    -> BB85
+BB44[95..97]
+    -> BB45
+    -> BB88
+BB45[98..100]
+    -> BB52
+    -> BB46
+BB46[101..103]
+    -> BB47
+    -> BB88
+BB47[104..106]
+    -> BB56
+    -> BB48
+BB48[107..108]
+    -> BB49
+    -> BB88
+BB49[109..110]
+    -> BB50
+    -> BB88
+BB50[111..111]
+    -> BB51
+    -> BB88
+BB51[112..112]
+    -> BB56
+    -> BB52
+BB52[113..115]
+    -> BB53
+    -> BB88
+BB53[116..117]
+    -> BB54
+    -> BB88
+BB54[118..118]
+    -> BB55
+    -> BB88
+BB55[119..120]
+    -> BB85
+BB56[121..123]
+    -> BB82
+    -> BB57
+BB57[124..127]
+    -> BB58
+    -> BB61
+BB58[128..129]
+    -> BB59
+    -> BB61
+    -> BB88
+BB59[130..130]
+    -> BB60
+    -> BB61
+    -> BB88
+BB60[131..133]
+    -> BB65
+BB61[134..137]
+    -> BB62
+    -> BB88
+BB62[138..139]
+    -> BB63
+    -> BB88
+BB63[140..140]
+    -> BB64
+    -> BB88
+BB64[141..141]
+    -> BB65
+BB65[142..144]
+    -> BB82
+    -> BB66
+BB66[145..146]
+    -> BB67
+    -> BB88
+BB67[147..148]
+    -> BB68
+    -> BB88
+BB68[149..149]
+    -> BB69
+    -> BB88
+BB69[150..151]
+    -> BB74
+    -> BB70
+BB70[152..154]
+    -> BB71
+    -> BB88
+BB71[155..156]
+    -> BB72
+    -> BB88
+BB72[157..157]
+    -> BB73
+    -> BB88
+BB73[158..159]
+    -> BB82
+BB74[160..161]
+    -> BB75
+    -> BB78
+BB75[162..163]
+    -> BB76
+    -> BB78
+    -> BB88
+BB76[164..164]
+    -> BB77
+    -> BB78
+    -> BB88
+BB77[165..165]
+    -> BB82
+BB78[166..169]
+    -> BB79
+    -> BB88
+BB79[170..171]
+    -> BB80
+    -> BB88
+BB80[172..172]
+    -> BB81
+    -> BB88
+BB81[173..173]
+    -> BB82
+BB82[174..176]
+    -> BB83
+    -> BB88
+BB83[177..177]
+    -> BB84
+    -> BB88
+BB84[178..178]
+    -> BB85
+BB85[179..182]
+    -> BB86
+BB86[183..185]
+    -> BB17
+    -> BB87
+BB87[186..186]
+    -> BB88
+BB88[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, assertOpen()V > v1 @1 exception:v3(line 1044)
+BB2
+3   v4 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1046)
+BB3
+4   v6 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, size()I > v4 @8 exception:v5(line 1046)
+BB4
+6   conditional branch(ne) v6,v7:#0          (line 1046)
+BB5
+7   return                                   (line 1047)
+BB6
+11   v10 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestWhileIdle()Z > v1 @18 exception:v9(line 1052)
+BB7
+18   v13 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinEvictableIdleTimeMillis()J > v1 @32 exception:v12(line 1056)
+BB8
+20   v15 = compare v13,v14:#0 opcode=cmp     (line 1056)
+22   conditional branch(le) v15,v7:#0        (line 1056)
+BB9
+24   v17 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinEvictableIdleTimeMillis()J > v1 @41 exception:v16(line 1057)
+BB10
+BB11
+           v18 = phi  v11:#9223372036854775807,v17
+27   v20 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getSoftMinEvictableIdleTimeMillis()J > v1 @46 exception:v19(line 1059)
+BB12
+29   v21 = compare v20,v14:#0 opcode=cmp     (line 1059)
+31   conditional branch(le) v21,v7:#0        (line 1059)
+BB13
+33   v23 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getSoftMinEvictableIdleTimeMillis()J > v1 @55 exception:v22(line 1060)
+BB14
+BB15
+           v24 = phi  v11:#9223372036854775807,v23
+38   v26 = invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getNumTests()I > v1 @64 exception:v25(line 1063)
+BB16
+40   goto                                    (line 1063)
+BB17
+42   v27 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> > v1(line 1064)
+BB18
+44   conditional branch(eq) v27,v8:#null     (line 1064)
+BB19
+46   v28 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> > v1(line 1064)
+BB20
+47   v30 = invokeinterface < Application, Ljava/util/Iterator, hasNext()Z > v28 @83 exception:v29(line 1064)
+BB21
+49   conditional branch(ne) v30,v7:#0        (line 1064)
+BB22
+51   v32 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z > v1 @92 exception:v31(line 1065)
+BB23
+53   conditional branch(eq) v32,v7:#0        (line 1065)
+BB24
+56   v33 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1066)
+BB25
+57   v35 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, descendingIterator()Ljava/util/Iterator; > v33 @103 exception:v34(line 1066)
+BB26
+58   putfield v1 = v35 < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> >(line 1066)
+BB27
+59   goto                                    (line 1066)
+BB28
+62   v36 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1068)
+BB29
+63   v38 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, iterator()Ljava/util/Iterator; > v36 @117 exception:v37(line 1068)
+BB30
+64   putfield v1 = v38 < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> >(line 1068)
+BB31
+66   v39 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> > v1(line 1071)
+BB32
+67   v41 = invokeinterface < Application, Ljava/util/Iterator, hasNext()Z > v39 @127 exception:v40(line 1071)
+BB33
+69   conditional branch(ne) v41,v7:#0        (line 1071)
+BB34
+70   return                                  (line 1073)
+BB35
+72   v42 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> > v1(line 1077)
+BB36
+73   v44 = invokeinterface < Application, Ljava/util/Iterator, next()Ljava/lang/Object; > v42 @140 exception:v43(line 1077)
+BB37
+74   v48 = checkcast <Application,Lorg/apache/commons/pool2/impl/PooledObject>v44(line 1077)
+BB38
+76   goto                                    (line 1077)
+BB39<Handler>
+           v45 = getCaughtException 
+80   v47 = binaryop(add) v108 , v46:#-1      (line 1081)
+84   putfield v1 = v8:#null < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, evictionIterator, <Application,Ljava/util/Iterator> >(line 1082)
+BB40
+85   goto                                    (line 1083)
+BB41
+87   v50 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, startEvictionTest()Z > v48 @166 exception:v49(line 1086)
+BB42
+89   conditional branch(ne) v50,v7:#0        (line 1086)
+BB43
+92   v51 = binaryop(add) v108 , v46:#-1      (line 1089)
+94   goto                                    (line 1090)
+BB44
+97   v53 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getIdleTimeMillis()J > v48 @180 exception:v52(line 1093)
+BB45
+98   v54 = compare v18,v53 opcode=cmp        (line 1093)
+100   conditional branch(lt) v54,v7:#0       (line 1093)
+BB46
+103   v56 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getIdleTimeMillis()J > v48 @190 exception:v55(line 1094)
+BB47
+104   v57 = compare v24,v56 opcode=cmp       (line 1094)
+106   conditional branch(ge) v57,v7:#0       (line 1094)
+BB48
+108   v59 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I > v1 @198 exception:v58(line 1095)
+BB49
+110   v60 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1095)
+BB50
+111   v62 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, size()I > v60 @205 exception:v61(line 1095)
+BB51
+112   conditional branch(ge) v59,v62         (line 1095)
+BB52
+115   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v48 @213 exception:v63(line 1096)
+BB53
+117   v64 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedByEvictorCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1097)
+BB54
+118   v66 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v64 @220 exception:v65(line 1097)
+BB55
+120   goto                                   (line 1097)
+BB56
+123   conditional branch(eq) v10,v7:#0       (line 1099)
+BB57
+127   v67 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1102)
+BB58
+129   v69 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v48 @239 exception:v68(line 1102)
+BB59
+130   invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, activateObject(Ljava/lang/Object;)V > v67,v69 @242 exception:v70(line 1102)
+BB60
+133   goto                                   (line 1103)
+BB61<Handler>
+           v72 = getCaughtException 
+137   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v48 @257 exception:v73(line 1105)
+BB62
+139   v74 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedByEvictorCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1106)
+BB63
+140   v76 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v74 @264 exception:v75(line 1106)
+BB64
+BB65
+           v78 = phi  v71:#1,v7:#0
+144   conditional branch(eq) v78,v7:#0       (line 1108)
+BB66
+146   v79 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1109)
+BB67
+148   v81 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v48 @278 exception:v80(line 1109)
+BB68
+149   v83 = invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, validateObject(Ljava/lang/Object;)Z > v79,v81 @281 exception:v82(line 1109)
+BB69
+151   conditional branch(ne) v83,v7:#0       (line 1109)
+BB70
+154   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v48 @291 exception:v84(line 1110)
+BB71
+156   v85 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedByEvictorCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1111)
+BB72
+157   v87 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v85 @298 exception:v86(line 1111)
+BB73
+159   goto                                   (line 1111)
+BB74
+161   v88 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1114)
+BB75
+163   v90 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v48 @310 exception:v89(line 1114)
+BB76
+164   invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, passivateObject(Ljava/lang/Object;)V > v88,v90 @313 exception:v91(line 1114)
+BB77
+165   goto                                   (line 1114)
+BB78<Handler>
+           v92 = getCaughtException 
+169   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > v1,v48 @325 exception:v93(line 1116)
+BB79
+171   v94 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedByEvictorCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1117)
+BB80
+172   v96 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v94 @332 exception:v95(line 1117)
+BB81
+BB82
+176   v99 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1122)
+BB83
+177   v101 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, endEvictionTest(Lorg/apache/commons/pool2/impl/LinkedBlockingDeque;)Z > v48,v99 @341 exception:v100(line 1122)
+BB84
+BB85
+           v103 = phi  v47,v51,v108,v108
+181   v105 = binaryop(add) v103 , v71:#1     (line 1063)
+BB86
+           v108 = phi  v7:#0,v105
+185   conditional branch(lt) v108,v26        (line 1063)
+BB87
+186   return                                 (line 1129)
+BB88
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, access$0(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, access$0(Lorg/apache/commons/pool2/impl/GenericObjectPool;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, ensureMinIdle()V > v1 @1 exception:v3(line 1174)
+BB2
+2   return                                   (line 1174)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, assertOpen()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, assertOpen()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB7
+BB2[2..3]
+    -> BB6
+    -> BB3
+BB3[4..4]
+    -> BB4
+    -> BB7
+BB4[5..7]
+    -> BB5
+    -> BB7
+BB5[8..8]
+    -> BB7
+BB6[9..9]
+    -> BB7
+BB7[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z > v1 @1 exception:v3(line 124)
+BB2
+3   conditional branch(eq) v4,v5:#0          (line 124)
+BB3
+4   v6 = new <Application,Ljava/lang/IllegalStateException>@7(line 125)
+BB4
+7   invokespecial < Application, Ljava/lang/IllegalStateException, <init>(Ljava/lang/String;)V > v6,v7:#Pool not open @13 exception:v8(line 125)
+BB5
+8   throw v6                                 (line 125)
+BB6
+9   return                                   (line 127)
+BB7
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestWhileIdle()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getTestWhileIdle()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, testWhileIdle, <Primordial,Z> > v1(line 592)
+BB2
+2   return v3                                (line 592)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinEvictableIdleTimeMillis()J > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinEvictableIdleTimeMillis()J >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, minEvictableIdleTimeMillis, <Primordial,J> > v1(line 524)
+BB2
+2   return v3                                (line 524)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getSoftMinEvictableIdleTimeMillis()J > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getSoftMinEvictableIdleTimeMillis()J >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, softMinEvictableIdleTimeMillis, <Primordial,J> > v1(line 560)
+BB2
+2   return v3                                (line 560)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getNumTests()I > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getNumTests()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB14
+BB2[2..3]
+    -> BB8
+    -> BB3
+BB3[4..5]
+    -> BB4
+    -> BB14
+BB4[6..7]
+    -> BB5
+    -> BB14
+BB5[8..8]
+    -> BB6
+    -> BB14
+BB6[9..9]
+    -> BB7
+    -> BB14
+BB7[10..10]
+    -> BB14
+BB8[11..12]
+    -> BB9
+    -> BB14
+BB9[13..13]
+    -> BB10
+    -> BB14
+BB10[14..16]
+    -> BB11
+    -> BB14
+BB11[17..18]
+    -> BB12
+    -> BB14
+BB12[19..20]
+    -> BB13
+    -> BB14
+BB13[21..22]
+    -> BB14
+BB14[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, numTestsPerEvictionRun, <Primordial,I> > v1(line 1269)
+BB2
+3   conditional branch(lt) v3,v4:#0          (line 1269)
+BB3
+5   v17 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, numTestsPerEvictionRun, <Primordial,I> > v1(line 1270)
+BB4
+7   v18 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1270)
+BB5
+8   v20 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, size()I > v18 @15 exception:v19(line 1270)
+BB6
+9   v22 = invokestatic < Application, Ljava/lang/Math, min(II)I > v17,v20 @18 exception:v21(line 1270)
+BB7
+10   return v22                              (line 1270)
+BB8
+12   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1272)
+BB9
+13   v7 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, size()I > v5 @26 exception:v6(line 1272)
+BB10
+14   v8 = conversion(D) v7                   (line 1272)
+16   v9 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, numTestsPerEvictionRun, <Primordial,I> > v1(line 1273)
+BB11
+17   v10 = conversion(D) v9                  (line 1273)
+18   v12 = invokestatic < Application, Ljava/lang/Math, abs(D)D > v10 @35 exception:v11(line 1273)
+BB12
+19   v13 = binaryop(div) v8 , v12            (line 1272)
+20   v15 = invokestatic < Application, Ljava/lang/Math, ceil(D)D > v13 @39 exception:v14(line 1272)
+BB13
+21   v16 = conversion(I) v15                 (line 1272)
+22   return v16                              (line 1272)
+BB14
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, lifo, <Primordial,Z> > v1(line 621)
+BB2
+2   return v3                                (line 621)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, minIdle, <Primordial,I> > v1(line 395)
+BB2
+2   return v3                                (line 395)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroy(Lorg/apache/commons/pool2/impl/PooledObject;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB21
+BB2[2..3]
+    -> BB3
+    -> BB21
+BB3[4..5]
+    -> BB4
+    -> BB21
+BB4[6..8]
+    -> BB5
+    -> BB21
+BB5[9..10]
+    -> BB6
+    -> BB21
+BB6[11..11]
+    -> BB7
+    -> BB21
+BB7[12..14]
+    -> BB8
+    -> BB11
+BB8[15..16]
+    -> BB9
+    -> BB11
+BB9[17..17]
+    -> BB10
+    -> BB11
+BB10[18..18]
+    -> BB16
+BB11[19..21]
+    -> BB12
+    -> BB21
+BB12[22..22]
+    -> BB13
+    -> BB21
+BB13[23..25]
+    -> BB14
+    -> BB21
+BB14[26..26]
+    -> BB15
+    -> BB21
+BB15[27..29]
+    -> BB21
+BB16[30..31]
+    -> BB17
+    -> BB21
+BB17[32..32]
+    -> BB18
+    -> BB21
+BB18[33..35]
+    -> BB19
+    -> BB21
+BB19[36..36]
+    -> BB20
+    -> BB21
+BB20[37..38]
+    -> BB21
+BB21[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, invalidate()V > v2 @1 exception:v4(line 1156)
+BB2
+3   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1157)
+BB3
+5   v7 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, remove(Ljava/lang/Object;)Z > v5,v2 @9 exception:v6(line 1157)
+BB4
+8   v8 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, allObjects, <Application,Ljava/util/Map> > v1(line 1158)
+BB5
+10   v10 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v2 @18 exception:v9(line 1158)
+BB6
+11   v12 = invokeinterface < Application, Ljava/util/Map, remove(Ljava/lang/Object;)Ljava/lang/Object; > v8,v10 @21 exception:v11(line 1158)
+BB7
+14   v13 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1160)
+BB8
+16   v15 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > v2 @32 exception:v14(line 1160)
+BB9
+17   invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, destroyObject(Ljava/lang/Object;)V > v13,v15 @35 exception:v16(line 1160)
+BB10
+18   goto                                    (line 1160)
+BB11<Handler>
+           v17 = getCaughtException 
+21   v18 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1162)
+BB12
+22   v20 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v18 @48 exception:v19(line 1162)
+BB13
+25   v21 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1163)
+BB14
+26   v23 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v21 @56 exception:v22(line 1163)
+BB15
+29   throw v17                               (line 1164)
+BB16
+31   v24 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, destroyedCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1162)
+BB17
+32   v26 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v24 @66 exception:v25(line 1162)
+BB18
+35   v27 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1163)
+BB19
+36   v29 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v27 @74 exception:v28(line 1163)
+BB20
+38   return                                  (line 1165)
+BB21
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, ensureMinIdle()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, ensureMinIdle()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB18
+BB2[2..5]
+    -> BB14
+    -> BB3
+BB3[6..6]
+    -> BB18
+BB4[7..8]
+    -> BB5
+    -> BB18
+BB5[9..12]
+    -> BB7
+    -> BB6
+BB6[13..13]
+    -> BB17
+BB7[14..15]
+    -> BB8
+    -> BB18
+BB8[16..17]
+    -> BB12
+    -> BB9
+BB9[18..19]
+    -> BB10
+    -> BB18
+BB10[20..21]
+    -> BB11
+    -> BB18
+BB11[22..22]
+    -> BB14
+BB12[23..24]
+    -> BB13
+    -> BB18
+BB13[25..26]
+    -> BB14
+    -> BB18
+BB14[27..28]
+    -> BB15
+    -> BB18
+BB15[29..29]
+    -> BB16
+    -> BB18
+BB16[30..31]
+    -> BB4
+    -> BB17
+BB17[32..32]
+    -> BB18
+BB18[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I > v1 @1 exception:v3(line 1175)
+BB2
+5   conditional branch(ge) v4,v5:#1          (line 1176)
+BB3
+6   return                                   (line 1177)
+BB4
+8   v10 = invokespecial < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; > v1 @12 exception:v9(line 1181)
+BB5
+12   conditional branch(ne) v10,v11:#null    (line 1182)
+BB6
+13   goto                                    (line 1185)
+BB7
+15   v13 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z > v1 @24 exception:v12(line 1187)
+BB8
+17   conditional branch(eq) v13,v14:#0       (line 1187)
+BB9
+19   v15 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1188)
+BB10
+21   invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, addFirst(Ljava/lang/Object;)V > v15,v10 @35 exception:v16(line 1188)
+BB11
+22   goto                                    (line 1188)
+BB12
+24   v17 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1190)
+BB13
+26   invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, addLast(Ljava/lang/Object;)V > v17,v10 @46 exception:v18(line 1190)
+BB14
+28   v6 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, idleObjects, <Application,Lorg/apache/commons/pool2/impl/LinkedBlockingDeque> > v1(line 1180)
+BB15
+29   v8 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/LinkedBlockingDeque, size()I > v6 @53 exception:v7(line 1180)
+BB16
+31   conditional branch(lt) v8,v4            (line 1180)
+BB17
+32   return                                  (line 1193)
+BB18
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/BaseObjectPool, isClosed()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/BaseObjectPool, closed, <Primordial,Z> > v1(line 115)
+BB2
+2   return v3                                (line 115)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMinIdle()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, minIdle, <Primordial,I> > v1(line 395)
+BB2
+2   return v3                                (line 395)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB23
+BB2[2..4]
+    -> BB3
+    -> BB23
+BB3[5..5]
+    -> BB4
+    -> BB23
+BB4[6..9]
+    -> BB6
+    -> BB5
+BB5[10..15]
+    -> BB7
+    -> BB6
+BB6[16..20]
+    -> BB10
+    -> BB7
+BB7[21..22]
+    -> BB8
+    -> BB23
+BB8[23..23]
+    -> BB9
+    -> BB23
+BB9[24..26]
+    -> BB23
+BB10[27..30]
+    -> BB11
+    -> BB13
+BB11[31..31]
+    -> BB12
+    -> BB13
+    -> BB23
+BB12[32..33]
+    -> BB16
+BB13[34..36]
+    -> BB14
+    -> BB23
+BB14[37..37]
+    -> BB15
+    -> BB23
+BB15[38..40]
+    -> BB23
+BB16[41..41]
+    -> BB17
+    -> BB23
+BB17[42..44]
+    -> BB18
+    -> BB23
+BB18[45..47]
+    -> BB19
+    -> BB23
+BB19[48..48]
+    -> BB20
+    -> BB23
+BB20[49..51]
+    -> BB21
+    -> BB23
+BB21[52..54]
+    -> BB22
+    -> BB23
+BB22[55..57]
+    -> BB23
+BB23[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I > v1 @1 exception:v3(line 1133)
+BB2
+4   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1134)
+BB3
+5   v7 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v5 @9 exception:v6(line 1134)
+BB4
+9   conditional branch(le) v4,v8:#-1         (line 1135)
+BB5
+12   v9 = conversion(J) v4                   (line 1135)
+13   v10 = compare v7,v9 opcode=cmp          (line 1135)
+15   conditional branch(gt) v10,v11:#0       (line 1135)
+BB6
+18   v13 = compare v7,v12:#2147483647 opcode=cmp(line 1136)
+20   conditional branch(le) v13,v11:#0       (line 1136)
+BB7
+22   v30 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1137)
+BB8
+23   v32 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v30 @37 exception:v31(line 1137)
+BB9
+26   return v14:#null                        (line 1138)
+BB10
+30   v15 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, factory, <Application,Lorg/apache/commons/pool2/PoolableObjectFactory> > v1(line 1143)
+BB11
+31   v17 = invokeinterface < Application, Lorg/apache/commons/pool2/PoolableObjectFactory, makeObject()Ljava/lang/Object; > v15 @50 exception:v16(line 1143)
+BB12
+33   goto                                    (line 1143)
+BB13<Handler>
+           v18 = getCaughtException 
+36   v19 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1145)
+BB14
+37   v21 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, decrementAndGet()J > v19 @66 exception:v20(line 1145)
+BB15
+40   throw v18                               (line 1146)
+BB16
+41   v22 = new <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73(line 1149)
+BB17
+44   invokespecial < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V > v22,v17 @79 exception:v23(line 1149)
+BB18
+47   v24 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, createdCount, <Application,Ljava/util/concurrent/atomic/AtomicLong> > v1(line 1150)
+BB19
+48   v26 = invokevirtual < Application, Ljava/util/concurrent/atomic/AtomicLong, incrementAndGet()J > v24 @88 exception:v25(line 1150)
+BB20
+51   v27 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, allObjects, <Application,Ljava/util/Map> > v1(line 1151)
+BB21
+54   v29 = invokeinterface < Application, Ljava/util/Map, put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; > v27,v17,v22 @100 exception:v28(line 1151)
+BB22
+57   return v22                              (line 1152)
+BB23
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getLifo()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, lifo, <Primordial,Z> > v1(line 621)
+BB2
+2   return v3                                (line 621)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, getMaxTotal()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, maxTotal, <Primordial,I> > v1(line 269)
+BB2
+2   return v3                                (line 269)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere} :: SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, startEvictor(J)V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool$Evictor>@26 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@4 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, <init>(Ljava/lang/Object;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB12
+BB2[2..4]
+    -> BB3
+    -> BB12
+BB3[5..7]
+    -> BB4
+    -> BB12
+BB4[8..9]
+    -> BB5
+    -> BB12
+BB5[10..10]
+    -> BB6
+    -> BB12
+BB6[11..12]
+    -> BB7
+    -> BB12
+BB7[13..13]
+    -> BB8
+    -> BB12
+BB8[14..15]
+    -> BB9
+    -> BB12
+BB9[16..16]
+    -> BB10
+    -> BB12
+BB10[17..19]
+    -> BB11
+    -> BB12
+BB11[20..20]
+    -> BB12
+BB12[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 32)
+BB2
+4   putfield v1 = v5:#null < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> >(line 26)
+BB3
+6   v6 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, IDLE, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 27)
+7   putfield v1 = v6 < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 27)
+BB4
+9   v8 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @17 exception:v7(line 28)
+BB5
+10   putfield v1 = v8 < Application, Lorg/apache/commons/pool2/impl/PooledObject, createTime, <Primordial,J> >(line 28)
+BB6
+12   v10 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @24 exception:v9(line 29)
+BB7
+13   putfield v1 = v10 < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastBorrowTime, <Primordial,J> >(line 29)
+BB8
+15   v12 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @31 exception:v11(line 30)
+BB9
+16   putfield v1 = v12 < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastReturnTime, <Primordial,J> >(line 30)
+BB10
+19   putfield v1 = v2 < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> >(line 33)
+BB11
+20   return                                  (line 34)
+BB12
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, allocate()Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, allocate()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB12
+BB2[2..3]
+    -> BB7
+    -> BB3
+BB3[4..6]
+    -> BB4
+    -> BB12
+BB4[7..8]
+    -> BB5
+    -> BB12
+BB5[9..9]
+    -> BB6
+    -> BB12
+BB6[10..11]
+    -> BB12
+BB7[12..13]
+    -> BB8
+    -> BB12
+BB8[14..15]
+    -> BB11
+    -> BB9
+BB9[16..18]
+    -> BB10
+    -> BB12
+BB10[19..20]
+    -> BB12
+BB11[21..22]
+    -> BB12
+BB12[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> > v1(line 134)
+BB2
+2   v4 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, IDLE, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 134)
+3   conditional branch(ne) v3,v4             (line 134)
+BB3
+5   v9 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, ALLOCATED, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 135)
+6   putfield v1 = v9 < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 135)
+BB4
+8   v11 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @18 exception:v10(line 136)
+BB5
+9   putfield v1 = v11 < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastBorrowTime, <Primordial,J> >(line 136)
+BB6
+11   return v12:#1                           (line 137)
+BB7
+13   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> > v1(line 138)
+BB8
+14   v6 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 138)
+15   conditional branch(ne) v5,v6            (line 138)
+BB9
+17   v8 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, MAINTAIN_EVICTION_RETURN_TO_HEAD, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 140)
+18   putfield v1 = v8 < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 140)
+BB10
+20   return v7:#0                            (line 141)
+BB11
+22   return v7:#0                            (line 145)
+BB12
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> > v1(line 41)
+BB2
+2   return v3                                (line 41)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, getObject()Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/apache/commons/pool2/impl/PooledObject, object, <Application,Ljava/lang/Object> > v1(line 41)
+BB2
+2   return v3                                (line 41)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, invalidate()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, invalidate()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB3
+BB2[3..3]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getstatic < Application, Lorg/apache/commons/pool2/impl/PooledObjectState, INVALID, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 159)
+2   putfield v1 = v3 < Application, Lorg/apache/commons/pool2/impl/PooledObject, state, <Application,Lorg/apache/commons/pool2/impl/PooledObjectState> >(line 159)
+BB2
+3   return                                   (line 160)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/commons/pool2/impl/PooledObject, getIdleTimeMillis()J > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/commons/pool2/impl/GenericObjectPool, create()Lorg/apache/commons/pool2/impl/PooledObject; >:NEW <Application,Lorg/apache/commons/pool2/impl/PooledObject>@73 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/commons/pool2/impl/GenericObjectPool>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/commons/pool2/impl/PooledObject, getIdleTimeMillis()J >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..2]
+    -> BB3
+    -> BB4
+BB3[3..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/System, currentTimeMillis()J > @0 exception:v3(line 71)
+BB2
+2   v5 = getfield < Application, Lorg/apache/commons/pool2/impl/PooledObject, lastReturnTime, <Primordial,J> > v1(line 71)
+BB3
+3   v6 = binaryop(sub) v4 , v5               (line 71)
+4   return v6                                (line 71)
+BB4
+

@@ -1,0 +1,3225 @@
+**CGNode:** Node: < Application, Lelevator/Elevator, main([Ljava/lang/String;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Elevator, main([Ljava/lang/String;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB18
+BB2[1..4]
+    -> BB3
+    -> BB18
+BB3[5..5]
+    -> BB4
+    -> BB18
+BB4[6..7]
+    -> BB5
+    -> BB18
+BB5[8..9]
+    -> BB6
+    -> BB18
+BB6[10..10]
+    -> BB7
+    -> BB18
+BB7[11..13]
+    -> BB8
+    -> BB18
+BB8[14..15]
+    -> BB9
+    -> BB18
+BB9[16..16]
+    -> BB10
+    -> BB18
+BB10[17..18]
+    -> BB11
+    -> BB18
+BB11[19..19]
+    -> BB12
+    -> BB18
+BB12[20..22]
+    -> BB13
+    -> BB18
+BB13[23..25]
+    -> BB14
+    -> BB18
+BB14[26..29]
+    -> BB15
+    -> BB18
+BB15[30..30]
+    -> BB16
+    -> BB18
+BB16[31..31]
+    -> BB17
+    -> BB18
+BB17[32..32]
+    -> BB18
+BB18[-1..-2]
+Instructions:
+BB0
+BB1
+0   v3 = new <Application,Lelevator/Elevator>@0(line 118)
+BB2
+4   v5 = arrayload v1[v4:#0]                 (line 118)
+BB3
+5   invokespecial < Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V > v3,v5 @7 exception:v6(line 118)
+BB4
+7   v7 = new <Application,Ljava/util/Date>@11(line 119)
+BB5
+9   invokespecial < Application, Ljava/util/Date, <init>()V > v7 @15 exception:v8(line 119)
+BB6
+10   v10 = invokevirtual < Application, Ljava/util/Date, getTime()J > v7 @18 exception:v9(line 119)
+BB7
+13   invokespecial < Application, Lelevator/Elevator, begin()V > v3 @23 exception:v11(line 120)
+BB8
+15   invokespecial < Application, Lelevator/Elevator, waitForLiftsToFinishOperation()V > v3 @27 exception:v12(line 121)
+BB9
+16   v13 = new <Application,Ljava/util/Date>@30(line 122)
+BB10
+18   invokespecial < Application, Ljava/util/Date, <init>()V > v13 @34 exception:v14(line 122)
+BB11
+19   v16 = invokevirtual < Application, Ljava/util/Date, getTime()J > v13 @37 exception:v15(line 122)
+BB12
+21   v17 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 124)
+22   v18 = new <Application,Ljava/lang/StringBuilder>@45(line 124)
+BB13
+25   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v18,v19:#Time taken in ms :  @51 exception:v20(line 124)
+BB14
+28   v21 = binaryop(sub) v16 , v10           (line 124)
+29   v23 = invokevirtual < Application, Ljava/lang/StringBuilder, append(J)Ljava/lang/StringBuilder; > v18,v21 @58 exception:v22(line 124)
+BB15
+30   v25 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v23 @61 exception:v24(line 124)
+BB16
+31   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v17,v25 @64 exception:v26(line 124)
+BB17
+32   return                                  (line 125)
+BB18
+
+**CGNode:** Node: < Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB52
+BB2[2..4]
+    -> BB3
+    -> BB52
+BB3[5..6]
+    -> BB4
+    -> BB52
+BB4[7..9]
+    -> BB5
+    -> BB7
+    -> BB52
+BB5[10..10]
+    -> BB6
+    -> BB52
+BB6[11..12]
+    -> BB9
+BB7[13..15]
+    -> BB8
+    -> BB52
+BB8[16..17]
+    -> BB9
+    -> BB52
+BB9[18..18]
+    -> BB10
+    -> BB52
+BB10[19..21]
+    -> BB11
+    -> BB52
+BB11[22..25]
+    -> BB12
+    -> BB52
+BB12[26..27]
+    -> BB13
+    -> BB52
+BB13[28..29]
+    -> BB14
+    -> BB52
+BB14[30..31]
+    -> BB15
+    -> BB52
+BB15[32..32]
+    -> BB16
+    -> BB52
+BB16[33..39]
+    -> BB17
+    -> BB29
+    -> BB52
+BB17[40..43]
+    -> BB18
+    -> BB29
+    -> BB52
+BB18[44..50]
+    -> BB19
+BB19[51..53]
+    -> BB20
+    -> BB29
+    -> BB52
+BB20[54..57]
+    -> BB27
+    -> BB21
+BB21[58..60]
+    -> BB22
+    -> BB29
+    -> BB52
+BB22[61..64]
+    -> BB23
+    -> BB29
+    -> BB52
+BB23[65..67]
+    -> BB24
+    -> BB52
+BB24[68..68]
+    -> BB25
+    -> BB52
+BB25[69..73]
+    -> BB26
+    -> BB52
+BB26[74..74]
+    -> BB27
+    -> BB52
+BB27[75..77]
+    -> BB19
+    -> BB28
+BB28[78..78]
+    -> BB37
+BB29[79..81]
+    -> BB30
+    -> BB52
+BB30[82..84]
+    -> BB31
+    -> BB52
+BB31[85..86]
+    -> BB32
+    -> BB52
+BB32[87..87]
+    -> BB33
+    -> BB52
+BB33[88..88]
+    -> BB34
+    -> BB52
+BB34[89..89]
+    -> BB35
+    -> BB52
+BB35[90..92]
+    -> BB36
+    -> BB52
+BB36[93..94]
+    -> BB37
+    -> BB52
+BB37[95..96]
+    -> BB38
+    -> BB52
+BB38[97..99]
+    -> BB39
+    -> BB52
+BB39[100..100]
+    -> BB40
+    -> BB52
+BB40[101..103]
+    -> BB41
+    -> BB52
+BB41[104..106]
+    -> BB42
+    -> BB52
+BB42[107..107]
+    -> BB43
+    -> BB52
+BB43[108..110]
+    -> BB50
+BB44[111..112]
+    -> BB45
+    -> BB52
+BB45[113..114]
+    -> BB46
+    -> BB52
+BB46[115..118]
+    -> BB47
+    -> BB52
+BB47[119..119]
+    -> BB48
+    -> BB52
+BB48[120..120]
+    -> BB49
+    -> BB52
+BB49[121..124]
+    -> BB50
+BB50[125..127]
+    -> BB44
+    -> BB51
+BB51[128..128]
+    -> BB52
+BB52[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 26)
+BB2
+4   v6 = new <Application,Ljava/io/InputStreamReader>@6(line 29)
+BB3
+6   v7 = new <Application,Ljava/io/FileInputStream>@10(line 29)
+BB4
+9   invokespecial < Application, Ljava/io/FileInputStream, <init>(Ljava/lang/String;)V > v7,v2 @15 exception:v8(line 29)
+BB5
+10   invokespecial < Application, Ljava/io/InputStreamReader, <init>(Ljava/io/InputStream;)V > v6,v7 @18 exception:v13(line 29)
+BB6
+12   goto                                    (line 29)
+BB7<Handler>
+           v9 = getCaughtException 
+15   invokevirtual < Application, Ljava/io/FileNotFoundException, printStackTrace()V > v9 @27 exception:v10(line 31)
+BB8
+17   invokestatic < Application, Ljava/lang/System, exit(I)V > v11:#1 @31 exception:v12(line 32)
+BB9
+           v15 = phi  v6,v5:#null
+18   v16 = new <Application,Ljava/io/StreamTokenizer>@34(line 34)
+BB10
+21   invokespecial < Application, Ljava/io/StreamTokenizer, <init>(Ljava/io/Reader;)V > v16,v15 @39 exception:v17(line 34)
+BB11
+25   invokevirtual < Application, Ljava/io/StreamTokenizer, lowerCaseMode(Z)V > v16,v11:#1 @45 exception:v18(line 35)
+BB12
+27   invokevirtual < Application, Ljava/io/StreamTokenizer, parseNumbers()V > v16 @49 exception:v19(line 36)
+BB13
+29   v20 = new <Application,Ljava/util/Vector>@53(line 38)
+BB14
+31   invokespecial < Application, Ljava/util/Vector, <init>()V > v20 @57 exception:v21(line 38)
+BB15
+32   putfield v1 = v20 < Application, Lelevator/Elevator, events, <Application,Ljava/util/Vector> >(line 38)
+BB16
+39   v24 = invokespecial < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > v1,v16 @71 exception:v23(line 42)
+BB17
+43   v26 = invokespecial < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > v1,v16 @78 exception:v25(line 43)
+BB18
+BB19
+53   v28 = invokespecial < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > v1,v16 @94 exception:v27(line 47)
+BB20
+57   conditional branch(eq) v28,v22:#0       (line 48)
+BB21
+60   v30 = invokespecial < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > v1,v16 @106 exception:v29(line 49)
+BB22
+64   v32 = invokespecial < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > v1,v16 @113 exception:v31(line 50)
+BB23
+67   v33 = getfield < Application, Lelevator/Elevator, events, <Application,Ljava/util/Vector> > v1(line 51)
+BB24
+68   v34 = new <Application,Lelevator/ButtonPress>@122(line 51)
+BB25
+73   invokespecial < Application, Lelevator/ButtonPress, <init>(III)V > v34,v28,v30,v32 @132 exception:v35(line 51)
+BB26
+74   invokevirtual < Application, Ljava/util/Vector, addElement(Ljava/lang/Object;)V > v33,v34 @135 exception:v36(line 51)
+BB27
+77   conditional branch(ne) v28,v22:#0       (line 53)
+BB28
+78   goto                                    (line 53)
+BB29<Handler>
+           v43 = phi  v22:#0,v24,v24,v24,v24
+           v44 = phi  v22:#0,v22:#0,v26,v26,v26
+           v42 = getCaughtException 
+80   v47 = getstatic < Application, Ljava/lang/System, err, <Application,Ljava/io/PrintStream> >(line 56)
+81   v48 = new <Application,Ljava/lang/StringBuilder>@151(line 56)
+BB30
+84   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v48,v49:#error reading input:  @157 exception:v50(line 56)
+BB31
+86   v52 = invokevirtual < Application, Ljava/io/IOException, getMessage()Ljava/lang/String; > v42 @162 exception:v51(line 56)
+BB32
+87   v54 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v48,v52 @165 exception:v53(line 56)
+BB33
+88   v56 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v54 @168 exception:v55(line 56)
+BB34
+89   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v47,v56 @171 exception:v57(line 56)
+BB35
+91   v58 = getstatic < Application, Ljava/lang/System, err, <Application,Ljava/io/PrintStream> >(line 57)
+92   invokevirtual < Application, Ljava/io/IOException, printStackTrace(Ljava/io/PrintStream;)V > v42,v58 @179 exception:v59(line 57)
+BB36
+94   invokestatic < Application, Ljava/lang/System, exit(I)V > v11:#1 @183 exception:v60(line 58)
+BB37
+           v62 = phi  v24,v43
+           v63 = phi  v26,v44
+96   v67 = new <Application,Lelevator/Controls>@187(line 62)
+BB38
+99   invokespecial < Application, Lelevator/Controls, <init>(I)V > v67,v62 @193 exception:v68(line 62)
+BB39
+100   putfield v1 = v67 < Application, Lelevator/Elevator, controls, <Application,Lelevator/Controls> >(line 62)
+BB40
+103   putfield v1 = v63 < Application, Lelevator/Elevator, numberOfLifts, <Primordial,I> >(line 63)
+BB41
+106   v69 = new <Application,[Lelevator/Lift>@208v63 (line 64)
+BB42
+107   putfield v1 = v69 < Application, Lelevator/Elevator, lifts, <Application,[Lelevator/Lift> >(line 64)
+BB43
+110   goto                                   (line 66)
+BB44
+112   v70 = getfield < Application, Lelevator/Elevator, lifts, <Application,[Lelevator/Lift> > v1(line 67)
+BB45
+114   v71 = new <Application,Lelevator/Lift>@226(line 67)
+BB46
+118   v72 = getfield < Application, Lelevator/Elevator, controls, <Application,Lelevator/Controls> > v1(line 67)
+BB47
+119   invokespecial < Application, Lelevator/Lift, <init>(ILelevator/Controls;)V > v71,v62,v72 @236 exception:v73(line 67)
+BB48
+120   arraystore v70[v75] = v71              (line 67)
+BB49
+123   v74 = binaryop(add) v75 , v11:#1       (line 66)
+BB50
+           v75 = phi  v22:#0,v74
+127   conditional branch(lt) v75,v63         (line 66)
+BB51
+128   return                                 (line 68)
+BB52
+
+**CGNode:** Node: < Application, Lelevator/Elevator, begin()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Elevator, begin()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB30
+BB2[1..6]
+    -> BB26
+BB3[7..8]
+    -> BB4
+    -> BB30
+BB4[9..10]
+    -> BB5
+    -> BB30
+BB5[11..11]
+    -> BB6
+    -> BB30
+BB6[12..15]
+    -> BB7
+    -> BB30
+BB7[16..16]
+    -> BB22
+    -> BB8
+BB8[17..19]
+    -> BB9
+    -> BB30
+BB9[20..21]
+    -> BB10
+    -> BB30
+BB10[22..23]
+    -> BB11
+    -> BB30
+BB11[24..24]
+    -> BB17
+    -> BB12
+BB12[25..26]
+    -> BB13
+    -> BB30
+BB13[27..28]
+    -> BB14
+    -> BB30
+BB14[29..30]
+    -> BB15
+    -> BB30
+BB15[31..31]
+    -> BB16
+    -> BB30
+BB16[32..32]
+    -> BB21
+BB17[33..34]
+    -> BB18
+    -> BB30
+BB18[35..36]
+    -> BB19
+    -> BB30
+BB19[37..38]
+    -> BB20
+    -> BB30
+BB20[39..39]
+    -> BB21
+    -> BB30
+BB21[40..43]
+    -> BB22
+BB22[44..45]
+    -> BB23
+    -> BB24
+    -> BB30
+BB23[46..46]
+    -> BB25
+BB24[47..47]
+    -> BB25
+BB25[48..51]
+    -> BB26
+BB26[52..54]
+    -> BB27
+    -> BB30
+BB27[55..55]
+    -> BB28
+    -> BB30
+BB28[56..56]
+    -> BB3
+    -> BB29
+BB29[57..57]
+    -> BB30
+BB30[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v3(line 73)
+BB2
+6   goto                                     (line 77)
+BB3
+8   v10 = getfield < Application, Lelevator/Elevator, events, <Application,Ljava/util/Vector> > v1(line 78)
+BB4
+10   v12 = invokevirtual < Application, Ljava/util/Vector, elementAt(I)Ljava/lang/Object; > v10,v37 @16 exception:v11(line 78)
+BB5
+11   v13 = checkcast <Application,Lelevator/ButtonPress>v12(line 78)
+BB6
+15   v14 = getfield < Application, Lelevator/ButtonPress, time, <Primordial,I> > v13(line 81)
+BB7
+16   conditional branch(ne) v36,v14          (line 81)
+BB8
+17   v15 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 82)
+19   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v15,v16:#Elevator::begin - its time to press a button @38 exception:v17(line 82)
+BB9
+21   v18 = getfield < Application, Lelevator/ButtonPress, onFloor, <Primordial,I> > v13(line 83)
+BB10
+23   v19 = getfield < Application, Lelevator/ButtonPress, toFloor, <Primordial,I> > v13(line 83)
+BB11
+24   conditional branch(le) v18,v19          (line 83)
+BB12
+26   v20 = getfield < Application, Lelevator/Elevator, controls, <Application,Lelevator/Controls> > v1(line 84)
+BB13
+28   v21 = getfield < Application, Lelevator/ButtonPress, onFloor, <Primordial,I> > v13(line 84)
+BB14
+30   v22 = getfield < Application, Lelevator/ButtonPress, toFloor, <Primordial,I> > v13(line 84)
+BB15
+31   invokevirtual < Application, Lelevator/Controls, pushDown(II)V > v20,v21,v22 @68 exception:v23(line 84)
+BB16
+32   goto                                    (line 84)
+BB17
+34   v24 = getfield < Application, Lelevator/Elevator, controls, <Application,Lelevator/Controls> > v1(line 86)
+BB18
+36   v25 = getfield < Application, Lelevator/ButtonPress, onFloor, <Primordial,I> > v13(line 86)
+BB19
+38   v26 = getfield < Application, Lelevator/ButtonPress, toFloor, <Primordial,I> > v13(line 86)
+BB20
+39   invokevirtual < Application, Lelevator/Controls, pushUp(II)V > v24,v25,v26 @88 exception:v27(line 86)
+BB21
+42   v28 = binaryop(add) v37 , v5:#1         (line 87)
+BB22
+           v29 = phi  v37,v28
+45   invokestatic < Application, Ljava/lang/Thread, sleep(J)V > v30:#500 @97 exception:v31(line 91)
+BB23
+46   goto                                    (line 91)
+BB24<Handler>
+           v32 = getCaughtException 
+BB25
+50   v34 = binaryop(add) v36 , v5:#1         (line 93)
+BB26
+           v36 = phi  v5:#1,v34
+           v37 = phi  v6:#0,v29
+54   v7 = getfield < Application, Lelevator/Elevator, events, <Application,Ljava/util/Vector> > v1(line 77)
+BB27
+55   v9 = invokevirtual < Application, Ljava/util/Vector, size()I > v7 @113 exception:v8(line 77)
+BB28
+56   conditional branch(lt) v37,v9           (line 77)
+BB29
+57   return                                  (line 95)
+BB30
+
+**CGNode:** Node: < Application, Lelevator/Elevator, waitForLiftsToFinishOperation()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Elevator, waitForLiftsToFinishOperation()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB13
+BB2[3..4]
+    -> BB3
+    -> BB16
+BB3[5..6]
+    -> BB4
+    -> BB16
+BB4[7..7]
+    -> BB5
+    -> BB6
+    -> BB16
+BB5[8..8]
+    -> BB12
+BB6[9..11]
+    -> BB7
+    -> BB16
+BB7[12..14]
+    -> BB8
+    -> BB16
+BB8[15..16]
+    -> BB9
+    -> BB16
+BB9[17..18]
+    -> BB10
+    -> BB16
+BB10[19..19]
+    -> BB11
+    -> BB16
+BB11[20..20]
+    -> BB12
+    -> BB16
+BB12[21..24]
+    -> BB13
+BB13[25..27]
+    -> BB14
+    -> BB16
+BB14[28..28]
+    -> BB2
+    -> BB15
+BB15[29..29]
+    -> BB16
+BB16[-1..-2]
+Instructions:
+BB0
+BB1
+2   goto                                     (line 106)
+BB2
+4   v5 = getfield < Application, Lelevator/Elevator, lifts, <Application,[Lelevator/Lift> > v1(line 108)
+BB3
+6   v6 = arrayload v5[v25]                   (line 108)
+BB4
+7   invokevirtual < Application, Lelevator/Lift, join()V > v6 @11 exception:v7(line 108)
+BB5
+8   goto                                     (line 108)
+BB6<Handler>
+           v8 = getCaughtException 
+10   v9 = getstatic < Application, Ljava/lang/System, err, <Application,Ljava/io/PrintStream> >(line 111)
+11   v10 = new <Application,Ljava/lang/StringBuilder>@21(line 111)
+BB7
+14   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v10,v11:#Error while waitinf for lift @27 exception:v12(line 111)
+BB8
+16   v14 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v10,v25 @31 exception:v13(line 111)
+BB9
+18   v17 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v14,v15:#to finish @36 exception:v16(line 111)
+BB10
+19   v19 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v17 @39 exception:v18(line 111)
+BB11
+20   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v9,v19 @42 exception:v20(line 111)
+BB12
+23   v23 = binaryop(add) v25 , v22:#1        (line 106)
+BB13
+           v25 = phi  v3:#0,v23
+27   v4 = getfield < Application, Lelevator/Elevator, numberOfLifts, <Primordial,I> > v1(line 106)
+BB14
+28   conditional branch(lt) v25,v4           (line 106)
+BB15
+29   return                                  (line 114)
+BB16
+
+**CGNode:** Node: < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Elevator, readNum(Ljava/io/StreamTokenizer;)I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB8
+BB2[2..5]
+    -> BB6
+    -> BB3
+BB3[6..6]
+    -> BB4
+    -> BB8
+BB4[7..9]
+    -> BB5
+    -> BB8
+BB5[10..10]
+    -> BB8
+BB6[11..12]
+    -> BB7
+    -> BB8
+BB7[13..14]
+    -> BB8
+BB8[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = invokevirtual < Application, Ljava/io/StreamTokenizer, nextToken()I > v2 @1 exception:v4(line 98)
+BB2
+5   conditional branch(eq) v5,v6:#-2         (line 100)
+BB3
+6   v9 = new <Application,Ljava/io/IOException>@11(line 101)
+BB4
+9   invokespecial < Application, Ljava/io/IOException, <init>(Ljava/lang/String;)V > v9,v10:#Number expected! @17 exception:v11(line 101)
+BB5
+10   throw v9                                (line 101)
+BB6
+12   v7 = getfield < Application, Ljava/io/StreamTokenizer, nval, <Primordial,D> > v2(line 102)
+BB7
+13   v8 = conversion(I) v7                   (line 102)
+14   return v8                               (line 102)
+BB8
+
+**CGNode:** Node: < Application, Lelevator/ButtonPress, <init>(III)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/ButtonPress>@122 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/ButtonPress, <init>(III)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB6
+BB2[2..4]
+    -> BB3
+    -> BB6
+BB3[5..7]
+    -> BB4
+    -> BB6
+BB4[8..10]
+    -> BB5
+    -> BB6
+BB5[11..11]
+    -> BB6
+BB6[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v6(line 22)
+BB2
+4   putfield v1 = v3 < Application, Lelevator/ButtonPress, onFloor, <Primordial,I> >(line 23)
+BB3
+7   putfield v1 = v4 < Application, Lelevator/ButtonPress, toFloor, <Primordial,I> >(line 24)
+BB4
+10   putfield v1 = v2 < Application, Lelevator/ButtonPress, time, <Primordial,I> >(line 25)
+BB5
+11   return                                  (line 26)
+BB6
+
+**CGNode:** Node: < Application, Lelevator/Controls, <init>(I)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Controls, <init>(I)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB12
+BB2[2..6]
+    -> BB3
+    -> BB12
+BB3[7..7]
+    -> BB4
+    -> BB12
+BB4[8..10]
+    -> BB10
+BB5[11..12]
+    -> BB6
+    -> BB12
+BB6[13..14]
+    -> BB7
+    -> BB12
+BB7[15..16]
+    -> BB8
+    -> BB12
+BB8[17..17]
+    -> BB9
+    -> BB12
+BB9[18..21]
+    -> BB10
+BB10[22..24]
+    -> BB5
+    -> BB11
+BB11[25..25]
+    -> BB12
+BB12[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 17)
+BB2
+5   v6 = binaryop(add) v2 , v5:#1            (line 18)
+6   v7 = new <Application,[Lelevator/Floor>@8v6 (line 18)
+BB3
+7   putfield v1 = v7 < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> >(line 18)
+BB4
+10   goto                                    (line 19)
+BB5
+12   v9 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 19)
+BB6
+14   v10 = new <Application,Lelevator/Floor>@24(line 19)
+BB7
+16   invokespecial < Application, Lelevator/Floor, <init>()V > v10 @28 exception:v11(line 19)
+BB8
+17   arraystore v9[v13] = v10                (line 19)
+BB9
+20   v12 = binaryop(add) v13 , v5:#1         (line 19)
+BB10
+           v13 = phi  v8:#0,v12
+24   conditional branch(le) v13,v2           (line 19)
+BB11
+25   return                                  (line 20)
+BB12
+
+**CGNode:** Node: < Application, Lelevator/Lift, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lelevator/Lift, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+BB2[-1..-2]
+Instructions:
+BB0
+BB1
+1   putstatic v2:#0 < Application, Lelevator/Lift, count, <Primordial,I> >(line 18)
+2   return                                   (line 15)
+BB2
+
+**CGNode:** Node: < Application, Lelevator/Lift, <init>(ILelevator/Controls;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Lift, <init>(ILelevator/Controls;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB25
+BB2[2..4]
+    -> BB3
+    -> BB25
+BB3[5..10]
+    -> BB4
+    -> BB25
+BB4[11..11]
+    -> BB5
+    -> BB25
+BB5[12..12]
+    -> BB6
+    -> BB25
+BB6[13..15]
+    -> BB7
+    -> BB25
+BB7[16..18]
+    -> BB8
+    -> BB25
+BB8[19..21]
+    -> BB9
+    -> BB25
+BB9[22..24]
+    -> BB10
+    -> BB25
+BB10[25..27]
+    -> BB11
+    -> BB25
+BB11[28..28]
+    -> BB12
+    -> BB25
+BB12[29..33]
+    -> BB13
+    -> BB25
+BB13[34..34]
+    -> BB14
+    -> BB25
+BB14[35..39]
+    -> BB15
+    -> BB25
+BB15[40..40]
+    -> BB16
+    -> BB25
+BB16[41..43]
+    -> BB22
+BB17[44..45]
+    -> BB18
+    -> BB25
+BB18[46..48]
+    -> BB19
+    -> BB25
+BB19[49..50]
+    -> BB20
+    -> BB25
+BB20[51..53]
+    -> BB21
+    -> BB25
+BB21[54..57]
+    -> BB22
+BB22[58..60]
+    -> BB17
+    -> BB23
+BB23[61..62]
+    -> BB24
+    -> BB25
+BB24[63..63]
+    -> BB25
+BB25[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = new <Application,Ljava/lang/StringBuilder>@1(line 41)
+BB2
+4   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v5,v6:#Lift  @7 exception:v7(line 41)
+BB3
+5   v8 = getstatic < Application, Lelevator/Lift, count, <Primordial,I> >(line 41)
+8   v10 = binaryop(add) v8 , v9:#1           (line 41)
+9   putstatic v10 < Application, Lelevator/Lift, count, <Primordial,I> >(line 41)
+10   v12 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v5,v8 @19 exception:v11(line 41)
+BB4
+11   v14 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v12 @22 exception:v13(line 41)
+BB5
+12   invokespecial < Application, Ljava/lang/Thread, <init>(Ljava/lang/String;)V > v1,v14 @25 exception:v15(line 41)
+BB6
+15   putfield v1 = v3 < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> >(line 42)
+BB7
+18   putfield v1 = v9:#1 < Application, Lelevator/Lift, firstFloor, <Primordial,I> >(line 43)
+BB8
+21   putfield v1 = v2 < Application, Lelevator/Lift, lastFloor, <Primordial,I> >(line 44)
+BB9
+24   putfield v1 = v16:#0 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 45)
+BB10
+27   v17 = getfield < Application, Lelevator/Lift, firstFloor, <Primordial,I> > v1(line 46)
+BB11
+28   putfield v1 = v17 < Application, Lelevator/Lift, currentFloor, <Primordial,I> >(line 46)
+BB12
+32   v18 = binaryop(add) v2 , v9:#1          (line 47)
+33   v19 = new <Primordial,[I>@60v18         (line 47)
+BB13
+34   putfield v1 = v19 < Application, Lelevator/Lift, pickupOn, <Primordial,[I> >(line 47)
+BB14
+38   v20 = binaryop(add) v2 , v9:#1          (line 48)
+39   v21 = new <Primordial,[I>@69v20         (line 48)
+BB15
+40   putfield v1 = v21 < Application, Lelevator/Lift, peopleFor, <Primordial,[I> >(line 48)
+BB16
+43   goto                                    (line 49)
+BB17
+45   v22 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 50)
+BB18
+48   arraystore v22[v25] = v16:#0            (line 50)
+BB19
+50   v23 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 51)
+BB20
+53   arraystore v23[v25] = v16:#0            (line 51)
+BB21
+56   v24 = binaryop(add) v25 , v9:#1         (line 49)
+BB22
+           v25 = phi  v16:#0,v24
+60   conditional branch(le) v25,v2           (line 49)
+BB23
+62   invokevirtual < Application, Lelevator/Lift, start()V > v1 @102 exception:v26(line 53)
+BB24
+63   return                                  (line 54)
+BB25
+
+**CGNode:** Node: < Application, Lelevator/Controls, pushDown(II)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Controls, pushDown(II)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB30
+BB2[2..3]
+    -> BB3
+    -> BB30
+BB3[4..6]
+    -> BB4
+    -> BB30
+BB4[7..8]
+    -> BB5
+    -> BB27
+BB5[9..11]
+    -> BB6
+    -> BB27
+BB6[12..13]
+    -> BB7
+    -> BB27
+BB7[14..15]
+    -> BB8
+    -> BB27
+BB8[16..17]
+    -> BB9
+    -> BB27
+BB9[18..18]
+    -> BB10
+    -> BB27
+BB10[19..19]
+    -> BB11
+    -> BB27
+BB11[20..21]
+    -> BB12
+    -> BB27
+BB12[22..23]
+    -> BB13
+    -> BB27
+BB13[24..24]
+    -> BB14
+    -> BB27
+BB14[25..25]
+    -> BB15
+    -> BB27
+BB15[26..28]
+    -> BB16
+    -> BB27
+BB16[29..29]
+    -> BB17
+    -> BB27
+BB17[30..31]
+    -> BB18
+    -> BB27
+BB18[32..33]
+    -> BB19
+    -> BB27
+BB19[34..34]
+    -> BB20
+    -> BB27
+BB20[35..35]
+    -> BB21
+    -> BB27
+BB21[36..37]
+    -> BB25
+    -> BB22
+BB22[38..39]
+    -> BB23
+    -> BB27
+BB23[40..41]
+    -> BB24
+    -> BB27
+BB24[42..43]
+    -> BB25
+    -> BB27
+BB25[44..45]
+    -> BB26
+    -> BB27
+BB26[46..46]
+    -> BB29
+BB27[47..48]
+    -> BB28
+    -> BB27
+BB28[49..49]
+    -> BB30
+BB29[50..50]
+    -> BB30
+BB30[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 25)
+BB2
+3   v6 = arrayload v5[v2]                    (line 25)
+BB3
+6   monitorenter v6                          (line 25)
+BB4
+7   v7 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 26)
+8   v8 = new <Application,Ljava/lang/StringBuilder>@12(line 26)
+BB5
+11   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v8,v9:#*** Someone on floor  @18 exception:v10(line 26)
+BB6
+13   v12 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v8,v2 @22 exception:v11(line 26)
+BB7
+15   v15 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v12,v13:# wants to go to  @27 exception:v14(line 27)
+BB8
+17   v17 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v15,v3 @31 exception:v16(line 27)
+BB9
+18   v19 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v17 @34 exception:v18(line 27)
+BB10
+19   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v7,v19 @37 exception:v20(line 26)
+BB11
+21   v21 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 28)
+BB12
+23   v22 = arrayload v21[v2]                 (line 28)
+BB13
+24   v23 = getfield < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> > v22(line 28)
+BB14
+25   v24 = new <Application,Ljava/lang/Integer>@49(line 28)
+BB15
+28   invokespecial < Application, Ljava/lang/Integer, <init>(I)V > v24,v3 @54 exception:v25(line 28)
+BB16
+29   invokevirtual < Application, Ljava/util/Vector, addElement(Ljava/lang/Object;)V > v23,v24 @57 exception:v26(line 28)
+BB17
+31   v27 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 29)
+BB18
+33   v28 = arrayload v27[v2]                 (line 29)
+BB19
+34   v29 = getfield < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> > v28(line 29)
+BB20
+35   v31 = invokevirtual < Application, Ljava/util/Vector, size()I > v29 @69 exception:v30(line 29)
+BB21
+37   conditional branch(ne) v31,v32:#1       (line 29)
+BB22
+39   v33 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 30)
+BB23
+41   v34 = arrayload v33[v2]                 (line 30)
+BB24
+43   putfield v34 = v35:#0 < Application, Lelevator/Floor, downFlag, <Primordial,Z> >(line 30)
+BB25
+45   monitorexit v6                          (line 25)
+BB26
+46   goto                                    (line 25)
+BB27<Handler>
+           v36 = getCaughtException 
+48   monitorexit v6                          (line 25)
+BB28
+49   throw v36                               (line 25)
+BB29
+50   return                                  (line 32)
+BB30
+
+**CGNode:** Node: < Application, Lelevator/Controls, pushUp(II)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Controls, pushUp(II)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB30
+BB2[2..3]
+    -> BB3
+    -> BB30
+BB3[4..6]
+    -> BB4
+    -> BB30
+BB4[7..8]
+    -> BB5
+    -> BB27
+BB5[9..11]
+    -> BB6
+    -> BB27
+BB6[12..13]
+    -> BB7
+    -> BB27
+BB7[14..15]
+    -> BB8
+    -> BB27
+BB8[16..17]
+    -> BB9
+    -> BB27
+BB9[18..18]
+    -> BB10
+    -> BB27
+BB10[19..19]
+    -> BB11
+    -> BB27
+BB11[20..21]
+    -> BB12
+    -> BB27
+BB12[22..23]
+    -> BB13
+    -> BB27
+BB13[24..24]
+    -> BB14
+    -> BB27
+BB14[25..25]
+    -> BB15
+    -> BB27
+BB15[26..28]
+    -> BB16
+    -> BB27
+BB16[29..29]
+    -> BB17
+    -> BB27
+BB17[30..31]
+    -> BB18
+    -> BB27
+BB18[32..33]
+    -> BB19
+    -> BB27
+BB19[34..34]
+    -> BB20
+    -> BB27
+BB20[35..35]
+    -> BB21
+    -> BB27
+BB21[36..37]
+    -> BB25
+    -> BB22
+BB22[38..39]
+    -> BB23
+    -> BB27
+BB23[40..41]
+    -> BB24
+    -> BB27
+BB24[42..43]
+    -> BB25
+    -> BB27
+BB25[44..45]
+    -> BB26
+    -> BB27
+BB26[46..46]
+    -> BB29
+BB27[47..48]
+    -> BB28
+    -> BB27
+BB28[49..49]
+    -> BB30
+BB29[50..50]
+    -> BB30
+BB30[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 37)
+BB2
+3   v6 = arrayload v5[v2]                    (line 37)
+BB3
+6   monitorenter v6                          (line 37)
+BB4
+7   v7 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 38)
+8   v8 = new <Application,Ljava/lang/StringBuilder>@12(line 38)
+BB5
+11   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v8,v9:#*** Someone on floor  @18 exception:v10(line 38)
+BB6
+13   v12 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v8,v2 @22 exception:v11(line 38)
+BB7
+15   v15 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v12,v13:# wants to go to  @27 exception:v14(line 39)
+BB8
+17   v17 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v15,v3 @31 exception:v16(line 39)
+BB9
+18   v19 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v17 @34 exception:v18(line 39)
+BB10
+19   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v7,v19 @37 exception:v20(line 38)
+BB11
+21   v21 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 40)
+BB12
+23   v22 = arrayload v21[v2]                 (line 40)
+BB13
+24   v23 = getfield < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> > v22(line 40)
+BB14
+25   v24 = new <Application,Ljava/lang/Integer>@49(line 40)
+BB15
+28   invokespecial < Application, Ljava/lang/Integer, <init>(I)V > v24,v3 @54 exception:v25(line 40)
+BB16
+29   invokevirtual < Application, Ljava/util/Vector, addElement(Ljava/lang/Object;)V > v23,v24 @57 exception:v26(line 40)
+BB17
+31   v27 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 41)
+BB18
+33   v28 = arrayload v27[v2]                 (line 41)
+BB19
+34   v29 = getfield < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> > v28(line 41)
+BB20
+35   v31 = invokevirtual < Application, Ljava/util/Vector, size()I > v29 @69 exception:v30(line 41)
+BB21
+37   conditional branch(ne) v31,v32:#1       (line 41)
+BB22
+39   v33 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 42)
+BB23
+41   v34 = arrayload v33[v2]                 (line 42)
+BB24
+43   putfield v34 = v35:#0 < Application, Lelevator/Floor, upFlag, <Primordial,Z> >(line 42)
+BB25
+45   monitorexit v6                          (line 37)
+BB26
+46   goto                                    (line 37)
+BB27<Handler>
+           v36 = getCaughtException 
+48   monitorexit v6                          (line 37)
+BB28
+49   throw v36                               (line 37)
+BB29
+50   return                                  (line 44)
+BB30
+
+**CGNode:** Node: < Application, Lelevator/Floor, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Controls, <init>(I)V >:NEW <Application,Lelevator/Floor>@24 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]
+**IR:** < Application, Lelevator/Floor, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB11
+BB2[2..3]
+    -> BB3
+    -> BB11
+BB3[4..5]
+    -> BB4
+    -> BB11
+BB4[6..6]
+    -> BB5
+    -> BB11
+BB5[7..8]
+    -> BB6
+    -> BB11
+BB6[9..10]
+    -> BB7
+    -> BB11
+BB7[11..11]
+    -> BB8
+    -> BB11
+BB8[12..14]
+    -> BB9
+    -> BB11
+BB9[15..17]
+    -> BB10
+    -> BB11
+BB10[18..18]
+    -> BB11
+BB11[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 24)
+BB2
+3   v4 = new <Application,Ljava/util/Vector>@5(line 25)
+BB3
+5   invokespecial < Application, Ljava/util/Vector, <init>()V > v4 @9 exception:v5(line 25)
+BB4
+6   putfield v1 = v4 < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> >(line 25)
+BB5
+8   v6 = new <Application,Ljava/util/Vector>@16(line 26)
+BB6
+10   invokespecial < Application, Ljava/util/Vector, <init>()V > v6 @20 exception:v7(line 26)
+BB7
+11   putfield v1 = v6 < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> >(line 26)
+BB8
+14   putfield v1 = v8:#0 < Application, Lelevator/Floor, upFlag, <Primordial,Z> >(line 27)
+BB9
+17   putfield v1 = v8:#0 < Application, Lelevator/Floor, downFlag, <Primordial,Z> >(line 28)
+BB10
+18   return                                  (line 29)
+BB11
+
+**CGNode:** Node: < Application, Lelevator/Lift, run()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, run()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..4]
+    -> BB14
+BB2[5..6]
+    -> BB3
+    -> BB16
+BB3[7..8]
+    -> BB9
+    -> BB4
+BB4[9..10]
+    -> BB5
+    -> BB6
+    -> BB16
+BB5[11..11]
+    -> BB7
+BB6[12..12]
+    -> BB7
+BB7[13..14]
+    -> BB8
+    -> BB16
+BB8[15..15]
+    -> BB13
+BB9[16..17]
+    -> BB10
+    -> BB11
+    -> BB16
+BB10[18..18]
+    -> BB12
+BB11[19..19]
+    -> BB12
+BB12[20..21]
+    -> BB13
+    -> BB16
+BB13[22..25]
+    -> BB14
+BB14[26..28]
+    -> BB2
+    -> BB15
+BB15[29..29]
+    -> BB16
+BB16[-1..-2]
+Instructions:
+BB0
+BB1
+4   goto                                     (line 62)
+BB2
+6   v5 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 63)
+BB3
+8   conditional branch(ne) v5,v4:#0          (line 63)
+BB4
+10   invokestatic < Application, Lelevator/Lift, sleep(J)V > v6:#100 @18 exception:v7(line 64)
+BB5
+11   goto                                    (line 64)
+BB6<Handler>
+           v8 = getCaughtException 
+BB7
+14   invokespecial < Application, Lelevator/Lift, doIdle()V > v1 @26 exception:v10(line 65)
+BB8
+15   goto                                    (line 65)
+BB9
+17   invokestatic < Application, Lelevator/Lift, sleep(J)V > v11:#1000 @35 exception:v12(line 68)
+BB10
+18   goto                                    (line 68)
+BB11<Handler>
+           v13 = getCaughtException 
+BB12
+21   invokespecial < Application, Lelevator/Lift, doMoving()V > v1 @43 exception:v15(line 69)
+BB13
+24   v19 = binaryop(add) v21 , v18:#1        (line 71)
+BB14
+           v21 = phi  v4:#0,v19
+28   conditional branch(lt) v21,v3:#100      (line 62)
+BB15
+29   return                                  (line 73)
+BB16
+
+**CGNode:** Node: < Application, Lelevator/Lift, doIdle()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, doIdle()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..5]
+    -> BB2
+    -> BB69
+BB2[6..7]
+    -> BB3
+    -> BB69
+BB3[8..9]
+    -> BB4
+    -> BB69
+BB4[10..10]
+    -> BB5
+    -> BB69
+BB5[11..12]
+    -> BB13
+    -> BB6
+BB6[13..16]
+    -> BB7
+    -> BB69
+BB7[17..20]
+    -> BB8
+    -> BB69
+BB8[21..23]
+    -> BB9
+    -> BB69
+BB9[24..25]
+    -> BB10
+    -> BB69
+BB10[26..26]
+    -> BB11
+    -> BB69
+BB11[27..27]
+    -> BB12
+    -> BB69
+BB12[28..28]
+    -> BB24
+BB13[29..30]
+    -> BB14
+    -> BB69
+BB14[31..32]
+    -> BB15
+    -> BB69
+BB15[33..34]
+    -> BB16
+    -> BB69
+BB16[35..35]
+    -> BB17
+    -> BB69
+BB17[36..37]
+    -> BB24
+    -> BB18
+BB18[38..41]
+    -> BB19
+    -> BB69
+BB19[42..45]
+    -> BB20
+    -> BB69
+BB20[46..48]
+    -> BB21
+    -> BB69
+BB21[49..50]
+    -> BB22
+    -> BB69
+BB22[51..51]
+    -> BB23
+    -> BB69
+BB23[52..52]
+    -> BB24
+    -> BB69
+BB24[53..54]
+    -> BB25
+    -> BB69
+BB25[55..56]
+    -> BB52
+BB26[57..58]
+    -> BB27
+    -> BB69
+BB27[59..60]
+    -> BB28
+    -> BB69
+BB28[61..62]
+    -> BB29
+    -> BB69
+BB29[63..64]
+    -> BB39
+    -> BB30
+BB30[65..70]
+    -> BB31
+    -> BB69
+BB31[71..73]
+    -> BB32
+    -> BB69
+BB32[74..76]
+    -> BB33
+    -> BB69
+BB33[77..80]
+    -> BB34
+    -> BB69
+BB34[81..81]
+    -> BB36
+    -> BB35
+BB35[82..83]
+    -> BB37
+BB36[84..84]
+    -> BB37
+BB37[85..85]
+    -> BB38
+    -> BB69
+BB38[86..86]
+    -> BB51
+BB39[87..88]
+    -> BB40
+    -> BB69
+BB40[89..90]
+    -> BB41
+    -> BB69
+BB41[91..92]
+    -> BB42
+    -> BB69
+BB42[93..94]
+    -> BB51
+    -> BB43
+BB43[95..100]
+    -> BB44
+    -> BB69
+BB44[101..103]
+    -> BB45
+    -> BB69
+BB45[104..106]
+    -> BB46
+    -> BB69
+BB46[107..110]
+    -> BB47
+    -> BB69
+BB47[111..111]
+    -> BB49
+    -> BB48
+BB48[112..113]
+    -> BB50
+BB49[114..114]
+    -> BB50
+BB50[115..115]
+    -> BB51
+    -> BB69
+BB51[116..119]
+    -> BB52
+BB52[120..122]
+    -> BB55
+    -> BB53
+BB53[123..125]
+    -> BB54
+    -> BB69
+BB54[126..126]
+    -> BB26
+    -> BB55
+BB55[127..129]
+    -> BB68
+    -> BB56
+BB56[130..131]
+    -> BB57
+    -> BB69
+BB57[132..134]
+    -> BB58
+    -> BB69
+BB58[135..135]
+    -> BB59
+    -> BB69
+BB59[136..136]
+    -> BB60
+    -> BB69
+BB60[137..138]
+    -> BB61
+    -> BB69
+BB61[139..140]
+    -> BB62
+    -> BB69
+BB62[141..142]
+    -> BB64
+    -> BB63
+BB63[143..144]
+    -> BB65
+BB64[145..145]
+    -> BB65
+BB65[146..146]
+    -> BB66
+    -> BB69
+BB66[147..147]
+    -> BB67
+    -> BB69
+BB67[148..148]
+    -> BB68
+    -> BB69
+BB68[149..149]
+    -> BB69
+BB69[-1..-2]
+Instructions:
+BB0
+BB1
+5   v5 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 82)
+BB2
+7   v7 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @9 exception:v6(line 82)
+BB3
+9   v8 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 82)
+BB4
+10   v10 = invokevirtual < Application, Lelevator/Controls, claimUp(Ljava/lang/String;I)Z > v5,v7,v8 @16 exception:v9(line 82)
+BB5
+12   conditional branch(eq) v10,v3:#0        (line 82)
+BB6
+16   v25 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 85)
+BB7
+20   putfield v1 = v17:#1 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 86)
+BB8
+23   v26 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 87)
+BB9
+25   v27 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 87)
+BB10
+26   v29 = invokevirtual < Application, Lelevator/Controls, getUpPeople(I)Ljava/util/Vector; > v26,v27 @43 exception:v28(line 87)
+BB11
+27   invokespecial < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V > v1,v29 @46 exception:v30(line 87)
+BB12
+28   goto                                    (line 87)
+BB13
+30   v11 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 89)
+BB14
+32   v13 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @57 exception:v12(line 89)
+BB15
+34   v14 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 89)
+BB16
+35   v16 = invokevirtual < Application, Lelevator/Controls, claimDown(Ljava/lang/String;I)Z > v11,v13,v14 @64 exception:v15(line 89)
+BB17
+37   conditional branch(eq) v16,v3:#0        (line 89)
+BB18
+41   v18 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 92)
+BB19
+45   putfield v1 = v19:#2 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 93)
+BB20
+48   v20 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 94)
+BB21
+50   v21 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 94)
+BB22
+51   v23 = invokevirtual < Application, Lelevator/Controls, getDownPeople(I)Ljava/util/Vector; > v20,v21 @91 exception:v22(line 94)
+BB23
+52   invokespecial < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V > v1,v23 @94 exception:v24(line 94)
+BB24
+           v31 = phi  v17:#1,v3:#0,v17:#1
+54   v33 = getfield < Application, Lelevator/Lift, firstFloor, <Primordial,I> > v1(line 98)
+BB25
+56   goto                                    (line 98)
+BB26
+58   v35 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 100)
+BB27
+60   v37 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @110 exception:v36(line 100)
+BB28
+62   v39 = invokevirtual < Application, Lelevator/Controls, claimUp(Ljava/lang/String;I)Z > v35,v37,v60 @114 exception:v38(line 100)
+BB29
+64   conditional branch(eq) v39,v3:#0        (line 100)
+BB30
+70   v45 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 104)
+BB31
+73   v46 = arrayload v45[v60]                (line 104)
+BB32
+75   v47 = binaryop(or) v46 , v17:#1         (line 104)
+76   arraystore v45[v60] = v47               (line 104)
+BB33
+80   v48 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 105)
+BB34
+81   conditional branch(le) v60,v48          (line 105)
+BB35
+83   goto                                    (line 105)
+BB36
+BB37
+           v49 = phi  v17:#1,v19:#2
+85   putfield v1 = v49 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 105)
+BB38
+86   goto                                    (line 105)
+BB39
+88   v40 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 107)
+BB40
+90   v42 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @159 exception:v41(line 107)
+BB41
+92   v44 = invokevirtual < Application, Lelevator/Controls, claimDown(Ljava/lang/String;I)Z > v40,v42,v60 @163 exception:v43(line 107)
+BB42
+94   conditional branch(eq) v44,v3:#0        (line 107)
+BB43
+100   v50 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 111)
+BB44
+103   v51 = arrayload v50[v60]               (line 111)
+BB45
+105   v52 = binaryop(or) v51 , v19:#2        (line 111)
+106   arraystore v50[v60] = v52              (line 111)
+BB46
+110   v53 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 112)
+BB47
+111   conditional branch(le) v60,v53         (line 112)
+BB48
+113   goto                                   (line 112)
+BB49
+BB50
+           v54 = phi  v17:#1,v19:#2
+115   putfield v1 = v54 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 112)
+BB51
+           v55 = phi  v17:#1,v58,v17:#1
+118   v57 = binaryop(add) v60 , v17:#1       (line 98)
+BB52
+           v58 = phi  v31,v55
+           v60 = phi  v33,v57
+122   conditional branch(ne) v58,v3:#0       (line 98)
+BB53
+125   v34 = getfield < Application, Lelevator/Lift, lastFloor, <Primordial,I> > v1(line 98)
+BB54
+126   conditional branch(le) v60,v34         (line 98)
+BB55
+129   conditional branch(eq) v58,v3:#0       (line 116)
+BB56
+130   v61 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 117)
+131   v62 = new <Application,Ljava/lang/StringBuilder>@222(line 117)
+BB57
+134   v64 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @227 exception:v63(line 117)
+BB58
+135   v66 = invokestatic < Application, Ljava/lang/String, valueOf(Ljava/lang/Object;)Ljava/lang/String; > v64 @230 exception:v65(line 117)
+BB59
+136   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v62,v66 @233 exception:v67(line 117)
+BB60
+138   v70 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v62,v68:# is now moving  @238 exception:v69(line 117)
+BB61
+140   v71 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 118)
+BB62
+142   conditional branch(ne) v71,v17:#1      (line 118)
+BB63
+144   goto                                   (line 118)
+BB64
+BB65
+           v74 = phi  v73:#UP,v72:#DOWN
+146   v76 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v70,v74 @256 exception:v75(line 118)
+BB66
+147   v78 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v76 @259 exception:v77(line 118)
+BB67
+148   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v61,v78 @262 exception:v79(line 117)
+BB68
+149   return                                 (line 120)
+BB69
+
+**CGNode:** Node: < Application, Lelevator/Lift, doMoving()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, doMoving()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB123
+BB2[3..4]
+    -> BB3
+    -> BB123
+BB3[5..6]
+    -> BB5
+    -> BB4
+BB4[7..8]
+    -> BB6
+BB5[9..9]
+    -> BB6
+BB6[10..11]
+    -> BB7
+    -> BB123
+BB7[12..13]
+    -> BB8
+    -> BB123
+BB8[14..16]
+    -> BB9
+    -> BB123
+BB9[17..18]
+    -> BB14
+    -> BB10
+BB10[19..20]
+    -> BB11
+    -> BB123
+BB11[21..22]
+    -> BB12
+    -> BB123
+BB12[23..23]
+    -> BB14
+    -> BB13
+BB13[24..26]
+    -> BB14
+    -> BB123
+BB14[27..28]
+    -> BB15
+    -> BB123
+BB15[29..30]
+    -> BB20
+    -> BB16
+BB16[31..32]
+    -> BB17
+    -> BB123
+BB17[33..34]
+    -> BB18
+    -> BB123
+BB18[35..35]
+    -> BB20
+    -> BB19
+BB19[36..38]
+    -> BB20
+    -> BB123
+BB20[39..40]
+    -> BB21
+    -> BB123
+BB21[41..43]
+    -> BB22
+    -> BB123
+BB22[44..44]
+    -> BB23
+    -> BB123
+BB23[45..45]
+    -> BB24
+    -> BB123
+BB24[46..47]
+    -> BB25
+    -> BB123
+BB25[48..49]
+    -> BB26
+    -> BB123
+BB26[50..50]
+    -> BB27
+    -> BB123
+BB27[51..51]
+    -> BB28
+    -> BB123
+BB28[52..52]
+    -> BB29
+    -> BB123
+BB29[53..54]
+    -> BB30
+    -> BB123
+BB30[55..56]
+    -> BB31
+    -> BB123
+BB31[57..57]
+    -> BB32
+    -> BB123
+BB32[58..59]
+    -> BB50
+    -> BB33
+BB33[60..61]
+    -> BB34
+    -> BB123
+BB34[62..64]
+    -> BB35
+    -> BB123
+BB35[65..65]
+    -> BB36
+    -> BB123
+BB36[66..66]
+    -> BB37
+    -> BB123
+BB37[67..68]
+    -> BB38
+    -> BB123
+BB38[69..70]
+    -> BB39
+    -> BB123
+BB39[71..72]
+    -> BB40
+    -> BB123
+BB40[73..73]
+    -> BB41
+    -> BB123
+BB41[74..74]
+    -> BB42
+    -> BB123
+BB42[75..76]
+    -> BB43
+    -> BB123
+BB43[77..78]
+    -> BB44
+    -> BB123
+BB44[79..79]
+    -> BB45
+    -> BB123
+BB45[80..80]
+    -> BB46
+    -> BB123
+BB46[81..81]
+    -> BB47
+    -> BB123
+BB47[82..83]
+    -> BB48
+    -> BB123
+BB48[84..85]
+    -> BB49
+    -> BB123
+BB49[86..87]
+    -> BB50
+    -> BB123
+BB50[88..89]
+    -> BB51
+    -> BB123
+BB51[90..91]
+    -> BB52
+    -> BB123
+BB52[92..92]
+    -> BB53
+    -> BB123
+BB53[93..96]
+    -> BB61
+    -> BB54
+BB54[97..98]
+    -> BB55
+    -> BB123
+BB55[99..100]
+    -> BB69
+    -> BB56
+BB56[101..102]
+    -> BB57
+    -> BB123
+BB57[103..104]
+    -> BB58
+    -> BB123
+BB58[105..106]
+    -> BB59
+    -> BB123
+BB59[107..107]
+    -> BB60
+    -> BB123
+BB60[108..109]
+    -> BB69
+    -> BB61
+BB61[110..112]
+    -> BB62
+    -> BB123
+BB62[113..114]
+    -> BB63
+    -> BB123
+BB63[115..115]
+    -> BB64
+    -> BB123
+BB64[116..116]
+    -> BB65
+    -> BB123
+BB65[117..118]
+    -> BB66
+    -> BB123
+BB66[119..120]
+    -> BB67
+    -> BB123
+BB67[121..122]
+    -> BB68
+    -> BB123
+BB68[123..125]
+    -> BB69
+    -> BB123
+BB69[126..127]
+    -> BB70
+    -> BB123
+BB70[128..129]
+    -> BB71
+    -> BB123
+BB71[130..130]
+    -> BB72
+    -> BB123
+BB72[131..134]
+    -> BB80
+    -> BB73
+BB73[135..136]
+    -> BB74
+    -> BB123
+BB74[137..138]
+    -> BB88
+    -> BB75
+BB75[139..140]
+    -> BB76
+    -> BB123
+BB76[141..142]
+    -> BB77
+    -> BB123
+BB77[143..144]
+    -> BB78
+    -> BB123
+BB78[145..145]
+    -> BB79
+    -> BB123
+BB79[146..147]
+    -> BB88
+    -> BB80
+BB80[148..150]
+    -> BB81
+    -> BB123
+BB81[151..152]
+    -> BB82
+    -> BB123
+BB82[153..153]
+    -> BB83
+    -> BB123
+BB83[154..154]
+    -> BB84
+    -> BB123
+BB84[155..156]
+    -> BB85
+    -> BB123
+BB85[157..158]
+    -> BB86
+    -> BB123
+BB86[159..160]
+    -> BB87
+    -> BB123
+BB87[161..163]
+    -> BB88
+    -> BB123
+BB88[164..165]
+    -> BB89
+    -> BB123
+BB89[166..167]
+    -> BB99
+    -> BB90
+BB90[168..169]
+    -> BB91
+    -> BB123
+BB91[170..171]
+    -> BB93
+    -> BB92
+BB92[172..172]
+    -> BB107
+BB93[173..174]
+    -> BB94
+    -> BB123
+BB94[175..176]
+    -> BB97
+    -> BB95
+BB95[177..179]
+    -> BB96
+    -> BB123
+BB96[180..180]
+    -> BB107
+BB97[181..183]
+    -> BB98
+    -> BB123
+BB98[184..184]
+    -> BB107
+BB99[185..186]
+    -> BB100
+    -> BB123
+BB100[187..188]
+    -> BB102
+    -> BB101
+BB101[189..189]
+    -> BB107
+BB102[190..191]
+    -> BB103
+    -> BB123
+BB103[192..193]
+    -> BB106
+    -> BB104
+BB104[194..196]
+    -> BB105
+    -> BB123
+BB105[197..197]
+    -> BB107
+BB106[198..200]
+    -> BB107
+    -> BB123
+BB107[201..203]
+    -> BB108
+    -> BB123
+BB108[204..204]
+    -> BB122
+    -> BB109
+BB109[205..207]
+    -> BB110
+    -> BB123
+BB110[208..208]
+    -> BB111
+    -> BB123
+BB111[209..210]
+    -> BB112
+    -> BB123
+BB112[211..212]
+    -> BB115
+    -> BB113
+BB113[213..215]
+    -> BB114
+    -> BB123
+BB114[216..216]
+    -> BB122
+BB115[217..218]
+    -> BB116
+    -> BB123
+BB116[219..220]
+    -> BB119
+    -> BB117
+BB117[221..223]
+    -> BB118
+    -> BB123
+BB118[224..224]
+    -> BB122
+BB119[225..226]
+    -> BB120
+    -> BB123
+BB120[227..228]
+    -> BB122
+    -> BB121
+BB121[229..231]
+    -> BB122
+    -> BB123
+BB122[232..232]
+    -> BB123
+BB123[-1..-2]
+Instructions:
+BB0
+BB1
+2   v3 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 127)
+BB2
+4   v4 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 127)
+BB3
+6   conditional branch(ne) v4,v5:#1          (line 127)
+BB4
+8   goto                                     (line 127)
+BB5
+BB6
+           v7 = phi  v5:#1,v6:#-1
+10   v8 = binaryop(add) v3 , v7              (line 127)
+11   putfield v1 = v8 < Application, Lelevator/Lift, currentFloor, <Primordial,I> >(line 127)
+BB7
+13   v9 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 128)
+BB8
+16   v10 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 130)
+BB9
+18   conditional branch(ne) v10,v5:#1        (line 130)
+BB10
+20   v11 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 130)
+BB11
+22   v12 = getfield < Application, Lelevator/Lift, lastFloor, <Primordial,I> > v1(line 130)
+BB12
+23   conditional branch(ne) v11,v12          (line 130)
+BB13
+26   putfield v1 = v13:#2 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 130)
+BB14
+28   v14 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 131)
+BB15
+30   conditional branch(ne) v14,v13:#2       (line 131)
+BB16
+32   v15 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 131)
+BB17
+34   v16 = getfield < Application, Lelevator/Lift, firstFloor, <Primordial,I> > v1(line 131)
+BB18
+35   conditional branch(ne) v15,v16          (line 131)
+BB19
+38   putfield v1 = v5:#1 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 131)
+BB20
+39   v17 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 132)
+40   v18 = new <Application,Ljava/lang/StringBuilder>@78(line 132)
+BB21
+43   v20 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @83 exception:v19(line 132)
+BB22
+44   v22 = invokestatic < Application, Ljava/lang/String, valueOf(Ljava/lang/Object;)Ljava/lang/String; > v20 @86 exception:v21(line 132)
+BB23
+45   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v18,v22 @89 exception:v23(line 132)
+BB24
+47   v26 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v18,v24:# now on  @94 exception:v25(line 132)
+BB25
+49   v27 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 132)
+BB26
+50   v29 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v26,v27 @101 exception:v28(line 132)
+BB27
+51   v31 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v29 @104 exception:v30(line 132)
+BB28
+52   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v17,v31 @107 exception:v32(line 132)
+BB29
+54   v33 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 134)
+BB30
+56   v34 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 134)
+BB31
+57   v35 = arrayload v33[v34]                (line 134)
+BB32
+59   conditional branch(le) v35,v36:#0       (line 134)
+BB33
+60   v37 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 135)
+61   v38 = new <Application,Ljava/lang/StringBuilder>@125(line 135)
+BB34
+64   v40 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @130 exception:v39(line 135)
+BB35
+65   v42 = invokestatic < Application, Ljava/lang/String, valueOf(Ljava/lang/Object;)Ljava/lang/String; > v40 @133 exception:v41(line 135)
+BB36
+66   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v38,v42 @136 exception:v43(line 135)
+BB37
+68   v46 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v38,v44:# delivering  @141 exception:v45(line 135)
+BB38
+70   v47 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 136)
+BB39
+72   v48 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 136)
+BB40
+73   v49 = arrayload v47[v48]                (line 136)
+BB41
+74   v51 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v46,v49 @153 exception:v50(line 136)
+BB42
+76   v54 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v51,v52:# passengers on  @158 exception:v53(line 136)
+BB43
+78   v55 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 137)
+BB44
+79   v57 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v54,v55 @165 exception:v56(line 137)
+BB45
+80   v59 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v57 @168 exception:v58(line 137)
+BB46
+81   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v37,v59 @171 exception:v60(line 135)
+BB47
+83   v61 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 138)
+BB48
+85   v62 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 138)
+BB49
+87   arraystore v61[v62] = v36:#0            (line 138)
+BB50
+89   v63 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 145)
+BB51
+91   v64 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 145)
+BB52
+92   v65 = arrayload v63[v64]                (line 145)
+BB53
+94   v66 = binaryop(and) v65 , v5:#1         (line 145)
+96   conditional branch(ne) v66,v36:#0       (line 145)
+BB54
+98   v67 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 146)
+BB55
+100   conditional branch(ne) v67,v5:#1       (line 146)
+BB56
+102   v68 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 146)
+BB57
+104   v70 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @211 exception:v69(line 146)
+BB58
+106   v71 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 146)
+BB59
+107   v73 = invokevirtual < Application, Lelevator/Controls, claimUp(Ljava/lang/String;I)Z > v68,v70,v71 @218 exception:v72(line 146)
+BB60
+109   conditional branch(eq) v73,v36:#0      (line 146)
+BB61
+112   v74 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 147)
+BB62
+114   v75 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 147)
+BB63
+115   v77 = invokevirtual < Application, Lelevator/Controls, getUpPeople(I)Ljava/util/Vector; > v74,v75 @233 exception:v76(line 147)
+BB64
+116   invokespecial < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V > v1,v77 @236 exception:v78(line 147)
+BB65
+118   v79 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 148)
+BB66
+120   v80 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 148)
+BB67
+122   v81 = arrayload v79[v80]               (line 148)
+BB68
+124   v83 = binaryop(and) v81 , v82:#-2      (line 148)
+125   arraystore v79[v80] = v83              (line 148)
+BB69
+127   v84 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 155)
+BB70
+129   v85 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 155)
+BB71
+130   v86 = arrayload v84[v85]               (line 155)
+BB72
+132   v87 = binaryop(and) v86 , v13:#2       (line 155)
+134   conditional branch(ne) v87,v36:#0      (line 155)
+BB73
+136   v88 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 156)
+BB74
+138   conditional branch(ne) v88,v13:#2      (line 156)
+BB75
+140   v89 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 156)
+BB76
+142   v91 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @280 exception:v90(line 156)
+BB77
+144   v92 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 156)
+BB78
+145   v94 = invokevirtual < Application, Lelevator/Controls, claimDown(Ljava/lang/String;I)Z > v89,v91,v92 @287 exception:v93(line 156)
+BB79
+147   conditional branch(eq) v94,v36:#0      (line 156)
+BB80
+150   v95 = getfield < Application, Lelevator/Lift, controls, <Application,Lelevator/Controls> > v1(line 157)
+BB81
+152   v96 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 157)
+BB82
+153   v98 = invokevirtual < Application, Lelevator/Controls, getDownPeople(I)Ljava/util/Vector; > v95,v96 @302 exception:v97(line 157)
+BB83
+154   invokespecial < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V > v1,v98 @305 exception:v99(line 157)
+BB84
+156   v100 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 158)
+BB85
+158   v101 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 158)
+BB86
+160   v102 = arrayload v100[v101]            (line 158)
+BB87
+162   v104 = binaryop(and) v102 , v103:#-3   (line 158)
+163   arraystore v100[v101] = v104           (line 158)
+BB88
+165   v105 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 161)
+BB89
+167   conditional branch(ne) v105,v5:#1      (line 161)
+BB90
+169   v111 = invokespecial < Application, Lelevator/Lift, stopsAbove()Z > v1 @331 exception:v110(line 164)
+BB91
+171   conditional branch(eq) v111,v36:#0     (line 164)
+BB92
+172   goto                                   (line 164)
+BB93
+174   v113 = invokespecial < Application, Lelevator/Lift, stopsBelow()Z > v1 @341 exception:v112(line 169)
+BB94
+176   conditional branch(eq) v113,v36:#0     (line 169)
+BB95
+179   putfield v1 = v13:#2 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 169)
+BB96
+180   goto                                   (line 169)
+BB97
+183   putfield v1 = v36:#0 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 171)
+BB98
+184   goto                                   (line 171)
+BB99
+186   v107 = invokespecial < Application, Lelevator/Lift, stopsBelow()Z > v1 @364 exception:v106(line 177)
+BB100
+188   conditional branch(eq) v107,v36:#0     (line 177)
+BB101
+189   goto                                   (line 177)
+BB102
+191   v109 = invokespecial < Application, Lelevator/Lift, stopsAbove()Z > v1 @374 exception:v108(line 182)
+BB103
+193   conditional branch(eq) v109,v36:#0     (line 182)
+BB104
+196   putfield v1 = v5:#1 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 182)
+BB105
+197   goto                                   (line 182)
+BB106
+200   putfield v1 = v36:#0 < Application, Lelevator/Lift, travelDir, <Primordial,I> >(line 184)
+BB107
+203   v114 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 189)
+BB108
+204   conditional branch(eq) v9,v114         (line 189)
+BB109
+205   v115 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 190)
+207   v117 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @405 exception:v116(line 190)
+BB110
+208   invokevirtual < Application, Ljava/io/PrintStream, print(Ljava/lang/String;)V > v115,v117 @408 exception:v118(line 190)
+BB111
+210   v119 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 191)
+BB112
+212   conditional branch(ne) v119,v36:#0     (line 191)
+BB113
+213   v128 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 191)
+215   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v128,v129:# becoming IDLE @423 exception:v130(line 191)
+BB114
+216   goto                                   (line 191)
+BB115
+218   v120 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 192)
+BB116
+220   conditional branch(ne) v120,v5:#1      (line 192)
+BB117
+221   v125 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 192)
+223   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v125,v126:# changing to UP @442 exception:v127(line 192)
+BB118
+224   goto                                   (line 192)
+BB119
+226   v121 = getfield < Application, Lelevator/Lift, travelDir, <Primordial,I> > v1(line 193)
+BB120
+228   conditional branch(ne) v121,v13:#2     (line 193)
+BB121
+229   v122 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 193)
+231   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v122,v123:# changing to DOWN @461 exception:v124(line 193)
+BB122
+232   return                                 (line 195)
+BB123
+
+**CGNode:** Node: < Application, Lelevator/Controls, claimUp(Ljava/lang/String;I)Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, claimUp(Ljava/lang/String;I)Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB20
+BB2[3..4]
+    -> BB19
+    -> BB3
+BB3[5..6]
+    -> BB4
+    -> BB20
+BB4[7..8]
+    -> BB5
+    -> BB20
+BB5[9..11]
+    -> BB6
+    -> BB20
+BB6[12..13]
+    -> BB7
+    -> BB17
+BB7[14..15]
+    -> BB8
+    -> BB17
+BB8[16..16]
+    -> BB9
+    -> BB17
+BB9[17..18]
+    -> BB15
+    -> BB10
+BB10[19..20]
+    -> BB11
+    -> BB17
+BB11[21..22]
+    -> BB12
+    -> BB17
+BB12[23..24]
+    -> BB13
+    -> BB17
+BB13[25..26]
+    -> BB14
+    -> BB17
+BB14[27..28]
+    -> BB20
+BB15[29..30]
+    -> BB16
+    -> BB17
+BB16[31..31]
+    -> BB19
+BB17[32..33]
+    -> BB18
+    -> BB17
+BB18[34..34]
+    -> BB20
+BB19[35..36]
+    -> BB20
+BB20[-1..-2]
+Instructions:
+BB0
+BB1
+2   v6 = invokevirtual < Application, Lelevator/Controls, checkUp(I)Z > v1,v3 @2 exception:v5(line 51)
+BB2
+4   conditional branch(eq) v6,v7:#0          (line 51)
+BB3
+6   v8 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 52)
+BB4
+8   v9 = arrayload v8[v3]                    (line 52)
+BB5
+11   monitorenter v9                         (line 52)
+BB6
+13   v10 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 53)
+BB7
+15   v11 = arrayload v10[v3]                 (line 53)
+BB8
+16   v12 = getfield < Application, Lelevator/Floor, upFlag, <Primordial,Z> > v11(line 53)
+BB9
+18   conditional branch(ne) v12,v7:#0        (line 53)
+BB10
+20   v13 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 54)
+BB11
+22   v14 = arrayload v13[v3]                 (line 54)
+BB12
+24   putfield v14 = v15:#1 < Application, Lelevator/Floor, upFlag, <Primordial,Z> >(line 54)
+BB13
+26   monitorexit v9                          (line 55)
+BB14
+28   return v15:#1                           (line 55)
+BB15
+30   monitorexit v9                          (line 52)
+BB16
+31   goto                                    (line 52)
+BB17<Handler>
+           v16 = getCaughtException 
+33   monitorexit v9                          (line 52)
+BB18
+34   throw v16                               (line 52)
+BB19
+36   return v7:#0                            (line 59)
+BB20
+
+**CGNode:** Node: < Application, Lelevator/Controls, getUpPeople(I)Ljava/util/Vector; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, getUpPeople(I)Ljava/util/Vector; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB19
+BB2[2..3]
+    -> BB3
+    -> BB19
+BB3[4..6]
+    -> BB4
+    -> BB19
+BB4[7..8]
+    -> BB5
+    -> BB17
+BB5[9..10]
+    -> BB6
+    -> BB17
+BB6[11..11]
+    -> BB7
+    -> BB17
+BB7[12..14]
+    -> BB8
+    -> BB17
+BB8[15..16]
+    -> BB9
+    -> BB17
+BB9[17..17]
+    -> BB10
+    -> BB17
+BB10[18..19]
+    -> BB11
+    -> BB17
+BB11[20..20]
+    -> BB12
+    -> BB17
+BB12[21..22]
+    -> BB13
+    -> BB17
+BB13[23..24]
+    -> BB14
+    -> BB17
+BB14[25..26]
+    -> BB15
+    -> BB17
+BB15[27..29]
+    -> BB16
+    -> BB17
+BB16[30..30]
+    -> BB19
+BB17[31..32]
+    -> BB18
+    -> BB17
+BB18[33..33]
+    -> BB19
+BB19[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 107)
+BB2
+3   v5 = arrayload v4[v2]                    (line 107)
+BB3
+6   monitorenter v5                          (line 107)
+BB4
+8   v6 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 108)
+BB5
+10   v7 = arrayload v6[v2]                   (line 108)
+BB6
+11   v8 = getfield < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> > v7(line 108)
+BB7
+14   v9 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 109)
+BB8
+16   v10 = arrayload v9[v2]                  (line 109)
+BB9
+17   v11 = new <Application,Ljava/util/Vector>@25(line 109)
+BB10
+19   invokespecial < Application, Ljava/util/Vector, <init>()V > v11 @29 exception:v12(line 109)
+BB11
+20   putfield v10 = v11 < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> >(line 109)
+BB12
+22   v13 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 110)
+BB13
+24   v14 = arrayload v13[v2]                 (line 110)
+BB14
+26   putfield v14 = v15:#0 < Application, Lelevator/Floor, upFlag, <Primordial,Z> >(line 110)
+BB15
+29   monitorexit v5                          (line 111)
+BB16
+30   return v8                               (line 111)
+BB17<Handler>
+           v16 = getCaughtException 
+32   monitorexit v5                          (line 107)
+BB18
+33   throw v16                               (line 107)
+BB19
+
+**CGNode:** Node: < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, addPeople(Ljava/util/Vector;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB24
+BB2[2..4]
+    -> BB3
+    -> BB24
+BB3[5..5]
+    -> BB4
+    -> BB24
+BB4[6..6]
+    -> BB5
+    -> BB24
+BB5[7..8]
+    -> BB6
+    -> BB24
+BB6[9..10]
+    -> BB7
+    -> BB24
+BB7[11..11]
+    -> BB8
+    -> BB24
+BB8[12..13]
+    -> BB9
+    -> BB24
+BB9[14..15]
+    -> BB10
+    -> BB24
+BB10[16..16]
+    -> BB11
+    -> BB24
+BB11[17..17]
+    -> BB12
+    -> BB24
+BB12[18..18]
+    -> BB13
+    -> BB24
+BB13[19..20]
+    -> BB14
+    -> BB24
+BB14[21..22]
+    -> BB21
+BB15[23..24]
+    -> BB16
+    -> BB24
+BB16[25..25]
+    -> BB17
+    -> BB24
+BB17[26..26]
+    -> BB18
+    -> BB24
+BB18[27..29]
+    -> BB19
+    -> BB24
+BB19[30..32]
+    -> BB20
+    -> BB24
+BB20[33..35]
+    -> BB21
+    -> BB24
+BB21[36..37]
+    -> BB22
+    -> BB24
+BB22[38..39]
+    -> BB15
+    -> BB23
+BB23[40..40]
+    -> BB24
+BB24[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = getstatic < Application, Ljava/lang/System, out, <Application,Ljava/io/PrintStream> >(line 220)
+1   v5 = new <Application,Ljava/lang/StringBuilder>@3(line 220)
+BB2
+4   v7 = invokevirtual < Application, Lelevator/Lift, getName()Ljava/lang/String; > v1 @8 exception:v6(line 220)
+BB3
+5   v9 = invokestatic < Application, Ljava/lang/String, valueOf(Ljava/lang/Object;)Ljava/lang/String; > v7 @11 exception:v8(line 220)
+BB4
+6   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v5,v9 @14 exception:v10(line 220)
+BB5
+8   v13 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v5,v11:# picking up  @19 exception:v12(line 220)
+BB6
+10   v15 = invokevirtual < Application, Ljava/util/Vector, size()I > v2 @23 exception:v14(line 220)
+BB7
+11   v17 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v13,v15 @26 exception:v16(line 220)
+BB8
+13   v20 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v17,v18:# passengers on  @31 exception:v19(line 221)
+BB9
+15   v21 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 221)
+BB10
+16   v23 = invokevirtual < Application, Ljava/lang/StringBuilder, append(I)Ljava/lang/StringBuilder; > v20,v21 @38 exception:v22(line 221)
+BB11
+17   v25 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v23 @41 exception:v24(line 221)
+BB12
+18   invokevirtual < Application, Ljava/io/PrintStream, println(Ljava/lang/String;)V > v4,v25 @44 exception:v26(line 220)
+BB13
+20   v28 = invokevirtual < Application, Ljava/util/Vector, elements()Ljava/util/Enumeration; > v2 @48 exception:v27(line 222)
+BB14
+22   goto                                    (line 222)
+BB15
+24   v33 = invokeinterface < Application, Ljava/util/Enumeration, nextElement()Ljava/lang/Object; > v28 @56 exception:v32(line 223)
+BB16
+25   v34 = checkcast <Application,Ljava/lang/Integer>v33(line 223)
+BB17
+26   v36 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v34 @64 exception:v35(line 223)
+BB18
+29   v37 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 224)
+BB19
+32   v38 = arrayload v37[v36]                (line 224)
+BB20
+34   v40 = binaryop(add) v38 , v39:#1        (line 224)
+35   arraystore v37[v36] = v40               (line 224)
+BB21
+37   v30 = invokeinterface < Application, Ljava/util/Enumeration, hasMoreElements()Z > v28 @79 exception:v29(line 222)
+BB22
+39   conditional branch(ne) v30,v31:#0       (line 222)
+BB23
+40   return                                  (line 226)
+BB24
+
+**CGNode:** Node: < Application, Lelevator/Controls, claimDown(Ljava/lang/String;I)Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, claimDown(Ljava/lang/String;I)Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB20
+BB2[3..4]
+    -> BB19
+    -> BB3
+BB3[5..6]
+    -> BB4
+    -> BB20
+BB4[7..8]
+    -> BB5
+    -> BB20
+BB5[9..11]
+    -> BB6
+    -> BB20
+BB6[12..13]
+    -> BB7
+    -> BB17
+BB7[14..15]
+    -> BB8
+    -> BB17
+BB8[16..16]
+    -> BB9
+    -> BB17
+BB9[17..18]
+    -> BB15
+    -> BB10
+BB10[19..20]
+    -> BB11
+    -> BB17
+BB11[21..22]
+    -> BB12
+    -> BB17
+BB12[23..24]
+    -> BB13
+    -> BB17
+BB13[25..26]
+    -> BB14
+    -> BB17
+BB14[27..28]
+    -> BB20
+BB15[29..30]
+    -> BB16
+    -> BB17
+BB16[31..31]
+    -> BB19
+BB17[32..33]
+    -> BB18
+    -> BB17
+BB18[34..34]
+    -> BB20
+BB19[35..36]
+    -> BB20
+BB20[-1..-2]
+Instructions:
+BB0
+BB1
+2   v6 = invokevirtual < Application, Lelevator/Controls, checkDown(I)Z > v1,v3 @2 exception:v5(line 67)
+BB2
+4   conditional branch(eq) v6,v7:#0          (line 67)
+BB3
+6   v8 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 68)
+BB4
+8   v9 = arrayload v8[v3]                    (line 68)
+BB5
+11   monitorenter v9                         (line 68)
+BB6
+13   v10 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 69)
+BB7
+15   v11 = arrayload v10[v3]                 (line 69)
+BB8
+16   v12 = getfield < Application, Lelevator/Floor, downFlag, <Primordial,Z> > v11(line 69)
+BB9
+18   conditional branch(ne) v12,v7:#0        (line 69)
+BB10
+20   v13 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 70)
+BB11
+22   v14 = arrayload v13[v3]                 (line 70)
+BB12
+24   putfield v14 = v15:#1 < Application, Lelevator/Floor, downFlag, <Primordial,Z> >(line 70)
+BB13
+26   monitorexit v9                          (line 71)
+BB14
+28   return v15:#1                           (line 71)
+BB15
+30   monitorexit v9                          (line 68)
+BB16
+31   goto                                    (line 68)
+BB17<Handler>
+           v16 = getCaughtException 
+33   monitorexit v9                          (line 68)
+BB18
+34   throw v16                               (line 68)
+BB19
+36   return v7:#0                            (line 75)
+BB20
+
+**CGNode:** Node: < Application, Lelevator/Controls, getDownPeople(I)Ljava/util/Vector; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, getDownPeople(I)Ljava/util/Vector; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB19
+BB2[2..3]
+    -> BB3
+    -> BB19
+BB3[4..6]
+    -> BB4
+    -> BB19
+BB4[7..8]
+    -> BB5
+    -> BB17
+BB5[9..10]
+    -> BB6
+    -> BB17
+BB6[11..11]
+    -> BB7
+    -> BB17
+BB7[12..14]
+    -> BB8
+    -> BB17
+BB8[15..16]
+    -> BB9
+    -> BB17
+BB9[17..17]
+    -> BB10
+    -> BB17
+BB10[18..19]
+    -> BB11
+    -> BB17
+BB11[20..20]
+    -> BB12
+    -> BB17
+BB12[21..22]
+    -> BB13
+    -> BB17
+BB13[23..24]
+    -> BB14
+    -> BB17
+BB14[25..26]
+    -> BB15
+    -> BB17
+BB15[27..29]
+    -> BB16
+    -> BB17
+BB16[30..30]
+    -> BB19
+BB17[31..32]
+    -> BB18
+    -> BB17
+BB18[33..33]
+    -> BB19
+BB19[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 120)
+BB2
+3   v5 = arrayload v4[v2]                    (line 120)
+BB3
+6   monitorenter v5                          (line 120)
+BB4
+8   v6 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 121)
+BB5
+10   v7 = arrayload v6[v2]                   (line 121)
+BB6
+11   v8 = getfield < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> > v7(line 121)
+BB7
+14   v9 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 122)
+BB8
+16   v10 = arrayload v9[v2]                  (line 122)
+BB9
+17   v11 = new <Application,Ljava/util/Vector>@25(line 122)
+BB10
+19   invokespecial < Application, Ljava/util/Vector, <init>()V > v11 @29 exception:v12(line 122)
+BB11
+20   putfield v10 = v11 < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> >(line 122)
+BB12
+22   v13 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 123)
+BB13
+24   v14 = arrayload v13[v2]                 (line 123)
+BB14
+26   putfield v14 = v15:#0 < Application, Lelevator/Floor, downFlag, <Primordial,Z> >(line 123)
+BB15
+29   monitorexit v5                          (line 124)
+BB16
+30   return v8                               (line 124)
+BB17<Handler>
+           v16 = getCaughtException 
+32   monitorexit v5                          (line 120)
+BB18
+33   throw v16                               (line 120)
+BB19
+
+**CGNode:** Node: < Application, Lelevator/Lift, stopsAbove()Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, stopsAbove()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB16
+BB2[4..7]
+    -> BB12
+BB3[8..9]
+    -> BB4
+    -> BB16
+BB4[10..11]
+    -> BB5
+    -> BB16
+BB5[12..13]
+    -> BB10
+    -> BB6
+BB6[14..15]
+    -> BB7
+    -> BB16
+BB7[16..17]
+    -> BB8
+    -> BB16
+BB8[18..19]
+    -> BB10
+    -> BB9
+BB9[20..21]
+    -> BB11
+BB10[22..22]
+    -> BB11
+BB11[23..27]
+    -> BB12
+BB12[28..30]
+    -> BB15
+    -> BB13
+BB13[31..33]
+    -> BB14
+    -> BB16
+BB14[34..34]
+    -> BB3
+    -> BB15
+BB15[35..36]
+    -> BB16
+BB16[-1..-2]
+Instructions:
+BB0
+BB1
+3   v4 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 202)
+BB2
+5   v6 = binaryop(add) v4 , v5:#1            (line 202)
+7   goto                                     (line 202)
+BB3
+9   v8 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 203)
+BB4
+11   v9 = arrayload v8[v15]                  (line 203)
+BB5
+13   conditional branch(ne) v9,v3:#0         (line 203)
+BB6
+15   v10 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 203)
+BB7
+17   v11 = arrayload v10[v15]                (line 203)
+BB8
+19   conditional branch(ne) v11,v3:#0        (line 203)
+BB9
+21   goto                                    (line 203)
+BB10
+BB11
+           v12 = phi  v3:#0,v5:#1
+26   v13 = binaryop(add) v15 , v5:#1         (line 202)
+BB12
+           v14 = phi  v3:#0,v12
+           v15 = phi  v6,v13
+30   conditional branch(ne) v14,v3:#0        (line 202)
+BB13
+33   v7 = getfield < Application, Lelevator/Lift, lastFloor, <Primordial,I> > v1(line 202)
+BB14
+34   conditional branch(le) v15,v7           (line 202)
+BB15
+36   return v14                              (line 204)
+BB16
+
+**CGNode:** Node: < Application, Lelevator/Lift, stopsBelow()Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Lift, stopsBelow()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..3]
+    -> BB2
+    -> BB16
+BB2[4..7]
+    -> BB12
+BB3[8..9]
+    -> BB4
+    -> BB16
+BB4[10..11]
+    -> BB5
+    -> BB16
+BB5[12..13]
+    -> BB10
+    -> BB6
+BB6[14..15]
+    -> BB7
+    -> BB16
+BB7[16..17]
+    -> BB8
+    -> BB16
+BB8[18..19]
+    -> BB10
+    -> BB9
+BB9[20..21]
+    -> BB11
+BB10[22..22]
+    -> BB11
+BB11[23..27]
+    -> BB12
+BB12[28..30]
+    -> BB15
+    -> BB13
+BB13[31..33]
+    -> BB14
+    -> BB16
+BB14[34..34]
+    -> BB3
+    -> BB15
+BB15[35..36]
+    -> BB16
+BB16[-1..-2]
+Instructions:
+BB0
+BB1
+3   v4 = getfield < Application, Lelevator/Lift, currentFloor, <Primordial,I> > v1(line 212)
+BB2
+5   v6 = binaryop(sub) v4 , v5:#1            (line 212)
+7   goto                                     (line 212)
+BB3
+9   v8 = getfield < Application, Lelevator/Lift, pickupOn, <Primordial,[I> > v1(line 213)
+BB4
+11   v9 = arrayload v8[v16]                  (line 213)
+BB5
+13   conditional branch(ne) v9,v3:#0         (line 213)
+BB6
+15   v10 = getfield < Application, Lelevator/Lift, peopleFor, <Primordial,[I> > v1(line 213)
+BB7
+17   v11 = arrayload v10[v16]                (line 213)
+BB8
+19   conditional branch(ne) v11,v3:#0        (line 213)
+BB9
+21   goto                                    (line 213)
+BB10
+BB11
+           v12 = phi  v3:#0,v5:#1
+26   v14 = binaryop(add) v16 , v13:#-1       (line 212)
+BB12
+           v15 = phi  v3:#0,v12
+           v16 = phi  v6,v14
+30   conditional branch(ne) v15,v3:#0        (line 212)
+BB13
+33   v7 = getfield < Application, Lelevator/Lift, firstFloor, <Primordial,I> > v1(line 212)
+BB14
+34   conditional branch(ge) v16,v7           (line 212)
+BB15
+36   return v15                              (line 214)
+BB16
+
+**CGNode:** Node: < Application, Lelevator/Controls, checkUp(I)Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, checkUp(I)Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB22
+BB2[2..3]
+    -> BB3
+    -> BB22
+BB3[4..6]
+    -> BB4
+    -> BB22
+BB4[7..8]
+    -> BB5
+    -> BB20
+BB5[9..10]
+    -> BB6
+    -> BB20
+BB6[11..11]
+    -> BB7
+    -> BB20
+BB7[12..12]
+    -> BB8
+    -> BB20
+BB8[13..14]
+    -> BB10
+    -> BB9
+BB9[15..16]
+    -> BB11
+BB10[17..17]
+    -> BB11
+BB11[18..21]
+    -> BB17
+    -> BB12
+BB12[22..23]
+    -> BB13
+    -> BB20
+BB13[24..25]
+    -> BB14
+    -> BB20
+BB14[26..26]
+    -> BB15
+    -> BB20
+BB15[27..28]
+    -> BB17
+    -> BB16
+BB16[29..30]
+    -> BB18
+BB17[31..31]
+    -> BB18
+BB18[32..35]
+    -> BB19
+    -> BB20
+BB19[36..36]
+    -> BB22
+BB20[37..38]
+    -> BB21
+    -> BB20
+BB21[39..39]
+    -> BB22
+BB22[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 83)
+BB2
+3   v5 = arrayload v4[v2]                    (line 83)
+BB3
+6   monitorenter v5                          (line 83)
+BB4
+8   v6 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 84)
+BB5
+10   v7 = arrayload v6[v2]                   (line 84)
+BB6
+11   v8 = getfield < Application, Lelevator/Floor, upPeople, <Application,Ljava/util/Vector> > v7(line 84)
+BB7
+12   v10 = invokevirtual < Application, Ljava/util/Vector, size()I > v8 @18 exception:v9(line 84)
+BB8
+14   conditional branch(eq) v10,v11:#0       (line 84)
+BB9
+16   goto                                    (line 84)
+BB10
+BB11
+           v13 = phi  v12:#1,v11:#0
+21   conditional branch(eq) v13,v11:#0       (line 85)
+BB12
+23   v14 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 85)
+BB13
+25   v15 = arrayload v14[v2]                 (line 85)
+BB14
+26   v16 = getfield < Application, Lelevator/Floor, upFlag, <Primordial,Z> > v15(line 85)
+BB15
+28   conditional branch(ne) v16,v11:#0       (line 85)
+BB16
+30   goto                                    (line 85)
+BB17
+BB18
+           v17 = phi  v12:#1,v11:#0
+35   monitorexit v5                          (line 86)
+BB19
+36   return v17                              (line 86)
+BB20<Handler>
+           v18 = getCaughtException 
+38   monitorexit v5                          (line 83)
+BB21
+39   throw v18                               (line 83)
+BB22
+
+**CGNode:** Node: < Application, Lelevator/Controls, checkDown(I)Z > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Controls>@187 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{< Application, Lelevator/Elevator, <init>(Ljava/lang/String;)V >:NEW <Application,Lelevator/Lift>@226 in ReceiverStringContext: [SITE_IN_NODE{< Application, Lelevator/Elevator, main([Ljava/lang/String;)V >:NEW <Application,Lelevator/Elevator>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]} :: SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,[Ljava/lang/String>@1 in Everywhere}]}]
+**IR:** < Application, Lelevator/Controls, checkDown(I)Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB22
+BB2[2..3]
+    -> BB3
+    -> BB22
+BB3[4..6]
+    -> BB4
+    -> BB22
+BB4[7..8]
+    -> BB5
+    -> BB20
+BB5[9..10]
+    -> BB6
+    -> BB20
+BB6[11..11]
+    -> BB7
+    -> BB20
+BB7[12..12]
+    -> BB8
+    -> BB20
+BB8[13..14]
+    -> BB10
+    -> BB9
+BB9[15..16]
+    -> BB11
+BB10[17..17]
+    -> BB11
+BB11[18..21]
+    -> BB17
+    -> BB12
+BB12[22..23]
+    -> BB13
+    -> BB20
+BB13[24..25]
+    -> BB14
+    -> BB20
+BB14[26..26]
+    -> BB15
+    -> BB20
+BB15[27..28]
+    -> BB17
+    -> BB16
+BB16[29..30]
+    -> BB18
+BB17[31..31]
+    -> BB18
+BB18[32..35]
+    -> BB19
+    -> BB20
+BB19[36..36]
+    -> BB22
+BB20[37..38]
+    -> BB21
+    -> BB20
+BB21[39..39]
+    -> BB22
+BB22[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 95)
+BB2
+3   v5 = arrayload v4[v2]                    (line 95)
+BB3
+6   monitorenter v5                          (line 95)
+BB4
+8   v6 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 96)
+BB5
+10   v7 = arrayload v6[v2]                   (line 96)
+BB6
+11   v8 = getfield < Application, Lelevator/Floor, downPeople, <Application,Ljava/util/Vector> > v7(line 96)
+BB7
+12   v10 = invokevirtual < Application, Ljava/util/Vector, size()I > v8 @18 exception:v9(line 96)
+BB8
+14   conditional branch(eq) v10,v11:#0       (line 96)
+BB9
+16   goto                                    (line 96)
+BB10
+BB11
+           v13 = phi  v12:#1,v11:#0
+21   conditional branch(eq) v13,v11:#0       (line 97)
+BB12
+23   v14 = getfield < Application, Lelevator/Controls, floors, <Application,[Lelevator/Floor> > v1(line 97)
+BB13
+25   v15 = arrayload v14[v2]                 (line 97)
+BB14
+26   v16 = getfield < Application, Lelevator/Floor, downFlag, <Primordial,Z> > v15(line 97)
+BB15
+28   conditional branch(ne) v16,v11:#0       (line 97)
+BB16
+30   goto                                    (line 97)
+BB17
+BB18
+           v17 = phi  v12:#1,v11:#0
+35   monitorexit v5                          (line 98)
+BB19
+36   return v17                              (line 98)
+BB20<Handler>
+           v18 = getCaughtException 
+38   monitorexit v5                          (line 95)
+BB21
+39   throw v18                               (line 95)
+BB22
+

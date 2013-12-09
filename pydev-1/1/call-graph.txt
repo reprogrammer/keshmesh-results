@@ -1,0 +1,403 @@
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, <init>()V > Context: JavaTypeContext<point: <Application,Lorg/python/pydev/outline/PyOutlinePage>>
+**IR:** synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, <init>()V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: < Application, Lorg/python/pydev/outline/PyOutlinePage, updateItems([Ljava/lang/Object;)V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/outline/PyOutlinePage>@1 in Everywhere}]
+**IR:** < Application, Lorg/python/pydev/outline/PyOutlinePage, updateItems([Ljava/lang/Object;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB10
+BB2[2..3]
+    -> BB3
+    -> BB10
+BB3[4..5]
+    -> BB6
+    -> BB4
+BB4[6..7]
+    -> BB5
+    -> BB14
+BB5[8..8]
+    -> BB14
+BB6[9..10]
+    -> BB7
+    -> BB10
+BB7[11..14]
+    -> BB12
+    -> BB8
+BB8[15..18]
+    -> BB9
+    -> BB10
+BB9[19..19]
+    -> BB12
+BB10[20..22]
+    -> BB11
+    -> BB14
+BB11[23..24]
+    -> BB14
+BB12[25..26]
+    -> BB13
+    -> BB14
+BB13[27..27]
+    -> BB14
+BB14[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, unlinkAll()V > v1 @1 exception:v4(line 176)
+BB2
+3   v6 = invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, isDisposed()Z > v1 @5 exception:v5(line 177)
+BB3
+5   conditional branch(eq) v6,v7:#0          (line 177)
+BB4
+7   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, relinkAll()V > v1 @12 exception:v15(line 185)
+BB5
+8   return                                   (line 178)
+BB6
+10   v9 = invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; > v1 @17 exception:v8(line 180)
+BB7
+14   conditional branch(eq) v9,v10:#null     (line 181)
+BB8
+18   invokevirtual < Application, Lorg/eclipse/jface/viewers/TreeViewer, update([Ljava/lang/Object;[Ljava/lang/String;)V > v9,v2,v10:#null @28 exception:v11(line 182)
+BB9
+19   goto                                    (line 182)
+BB10<Handler>
+           v12 = getCaughtException 
+22   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, relinkAll()V > v1 @36 exception:v13(line 185)
+BB11
+24   throw v12                               (line 186)
+BB12
+26   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, relinkAll()V > v1 @42 exception:v14(line 185)
+BB13
+27   return                                  (line 187)
+BB14
+
+**CGNode:** Node: < Application, Lorg/python/pydev/outline/PyOutlinePage, unlinkAll()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/outline/PyOutlinePage>@1 in Everywhere}]
+**IR:** < Application, Lorg/python/pydev/outline/PyOutlinePage, unlinkAll()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB21
+BB2[2..4]
+    -> BB3
+    -> BB21
+BB3[5..7]
+    -> BB4
+    -> BB18
+BB4[8..8]
+    -> BB5
+    -> BB18
+BB5[9..11]
+    -> BB6
+    -> BB18
+BB6[12..12]
+    -> BB7
+    -> BB18
+BB7[13..14]
+    -> BB8
+    -> BB18
+BB8[15..15]
+    -> BB9
+    -> BB18
+BB9[16..17]
+    -> BB16
+    -> BB10
+BB10[18..20]
+    -> BB11
+    -> BB18
+BB11[21..21]
+    -> BB12
+    -> BB18
+BB12[22..23]
+    -> BB13
+    -> BB18
+BB13[24..25]
+    -> BB16
+    -> BB14
+BB14[26..27]
+    -> BB15
+    -> BB18
+BB15[28..28]
+    -> BB16
+    -> BB18
+BB16[29..30]
+    -> BB17
+    -> BB18
+BB17[31..31]
+    -> BB20
+BB18[32..33]
+    -> BB19
+    -> BB18
+BB19[34..34]
+    -> BB21
+BB20[35..35]
+    -> BB21
+BB21[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 320)
+BB2
+4   monitorenter v3                          (line 320)
+BB3
+7   v4 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 321)
+BB4
+8   v6 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v4 @12 exception:v5(line 321)
+BB5
+10   v8 = binaryop(sub) v6 , v7:#1           (line 321)
+11   v10 = invokestatic < Application, Ljava/lang/Integer, valueOf(I)Ljava/lang/Integer; > v8 @17 exception:v9(line 321)
+BB6
+12   putfield v1 = v10 < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> >(line 321)
+BB7
+14   v11 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 322)
+BB8
+15   v13 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v11 @27 exception:v12(line 322)
+BB9
+17   conditional branch(ne) v13,v14:#0       (line 322)
+BB10
+20   v15 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, selectionListener, <Application,Lorg/eclipse/jface/viewers/ISelectionChangedListener> > v1(line 323)
+BB11
+21   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, removeSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V > v1,v15 @38 exception:v16(line 323)
+BB12
+23   v17 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkWithEditor, <Application,Lorg/python/pydev/outline/OutlineLinkWithEditorAction> > v1(line 324)
+BB13
+25   conditional branch(eq) v17,v18:#null    (line 324)
+BB14
+27   v19 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkWithEditor, <Application,Lorg/python/pydev/outline/OutlineLinkWithEditorAction> > v1(line 325)
+BB15
+28   invokevirtual < Application, Lorg/python/pydev/outline/OutlineLinkWithEditorAction, unlink()V > v19 @52 exception:v20(line 325)
+BB16
+30   monitorexit v3                          (line 320)
+BB17
+31   goto                                    (line 320)
+BB18<Handler>
+           v21 = getCaughtException 
+33   monitorexit v3                          (line 320)
+BB19
+34   throw v21                               (line 320)
+BB20
+35   return                                  (line 329)
+BB21
+
+**CGNode:** Node: < Application, Lorg/python/pydev/outline/PyOutlinePage, isDisposed()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/outline/PyOutlinePage>@1 in Everywhere}]
+**IR:** < Application, Lorg/python/pydev/outline/PyOutlinePage, isDisposed()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB5
+BB2[2..2]
+    -> BB3
+    -> BB5
+BB3[3..3]
+    -> BB4
+    -> BB5
+BB4[4..4]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; > v1 @1 exception:v3(line 120)
+BB2
+2   v6 = invokevirtual < Application, Lorg/eclipse/jface/viewers/TreeViewer, getTree()Lorg/eclipse/swt/widgets/Tree; > v4 @4 exception:v5(line 120)
+BB3
+3   v8 = invokevirtual < Application, Lorg/eclipse/swt/widgets/Tree, isDisposed()Z > v6 @7 exception:v7(line 120)
+BB4
+4   return v8                                (line 120)
+BB5
+
+**CGNode:** Node: < Application, Lorg/python/pydev/outline/PyOutlinePage, relinkAll()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/outline/PyOutlinePage>@1 in Everywhere}]
+**IR:** < Application, Lorg/python/pydev/outline/PyOutlinePage, relinkAll()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB28
+BB2[2..4]
+    -> BB3
+    -> BB28
+BB3[5..7]
+    -> BB4
+    -> BB25
+BB4[8..8]
+    -> BB5
+    -> BB25
+BB5[9..11]
+    -> BB6
+    -> BB25
+BB6[12..12]
+    -> BB7
+    -> BB25
+BB7[13..14]
+    -> BB8
+    -> BB25
+BB8[15..15]
+    -> BB9
+    -> BB25
+BB9[16..17]
+    -> BB17
+    -> BB10
+BB10[18..20]
+    -> BB11
+    -> BB25
+BB11[21..21]
+    -> BB12
+    -> BB25
+BB12[22..23]
+    -> BB13
+    -> BB25
+BB13[24..25]
+    -> BB23
+    -> BB14
+BB14[26..27]
+    -> BB15
+    -> BB25
+BB15[28..28]
+    -> BB16
+    -> BB25
+BB16[29..29]
+    -> BB23
+BB17[30..31]
+    -> BB18
+    -> BB25
+BB18[32..32]
+    -> BB19
+    -> BB25
+BB19[33..34]
+    -> BB23
+    -> BB20
+BB20[35..35]
+    -> BB21
+    -> BB25
+BB21[36..38]
+    -> BB22
+    -> BB25
+BB22[39..39]
+    -> BB25
+BB23[40..41]
+    -> BB24
+    -> BB25
+BB24[42..42]
+    -> BB27
+BB25[43..44]
+    -> BB26
+    -> BB25
+BB26[45..45]
+    -> BB28
+BB27[46..46]
+    -> BB28
+BB28[-1..-2]
+Instructions:
+BB0
+BB1
+1   v3 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 335)
+BB2
+4   monitorenter v3                          (line 335)
+BB3
+7   v4 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 336)
+BB4
+8   v6 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v4 @12 exception:v5(line 336)
+BB5
+10   v8 = binaryop(add) v6 , v7:#1           (line 336)
+11   v10 = invokestatic < Application, Ljava/lang/Integer, valueOf(I)Ljava/lang/Integer; > v8 @17 exception:v9(line 336)
+BB6
+12   putfield v1 = v10 < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> >(line 336)
+BB7
+14   v11 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 337)
+BB8
+15   v13 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v11 @27 exception:v12(line 337)
+BB9
+17   conditional branch(ne) v13,v7:#1        (line 337)
+BB10
+20   v20 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, selectionListener, <Application,Lorg/eclipse/jface/viewers/ISelectionChangedListener> > v1(line 338)
+BB11
+21   invokevirtual < Application, Lorg/python/pydev/outline/PyOutlinePage, addSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V > v1,v20 @39 exception:v21(line 338)
+BB12
+23   v22 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkWithEditor, <Application,Lorg/python/pydev/outline/OutlineLinkWithEditorAction> > v1(line 339)
+BB13
+25   conditional branch(eq) v22,v23:#null    (line 339)
+BB14
+27   v24 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkWithEditor, <Application,Lorg/python/pydev/outline/OutlineLinkWithEditorAction> > v1(line 340)
+BB15
+28   invokevirtual < Application, Lorg/python/pydev/outline/OutlineLinkWithEditorAction, relink()V > v24 @53 exception:v25(line 340)
+BB16
+29   goto                                    (line 340)
+BB17
+31   v14 = getfield < Application, Lorg/python/pydev/outline/PyOutlinePage, linkLevel, <Application,Ljava/lang/Integer> > v1(line 342)
+BB18
+32   v16 = invokevirtual < Application, Ljava/lang/Integer, intValue()I > v14 @63 exception:v15(line 342)
+BB19
+34   conditional branch(le) v16,v7:#1        (line 342)
+BB20
+35   v17 = new <Application,Ljava/lang/RuntimeException>@70(line 343)
+BB21
+38   invokespecial < Application, Ljava/lang/RuntimeException, <init>(Ljava/lang/String;)V > v17,v18:#Error: relinking without unlinking 1st @77 exception:v19(line 343)
+BB22
+39   throw v17                               (line 343)
+BB23
+41   monitorexit v3                          (line 335)
+BB24
+42   goto                                    (line 335)
+BB25<Handler>
+           v26 = getCaughtException 
+44   monitorexit v3                          (line 335)
+BB26
+45   throw v26                               (line 335)
+BB27
+46   return                                  (line 346)
+BB28
+
+**CGNode:** Node: < Application, Lorg/python/pydev/outline/PyOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/python/pydev/outline/PyOutlinePage>@1 in Everywhere}]
+**IR:** < Application, Lorg/python/pydev/outline/PyOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokespecial < Application, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; > v1 @1 exception:v3(line 201)
+BB2
+2   return v4                                (line 201)
+BB3
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, removeSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V > Context: JavaTypeContext<point: <Application,Lorg/python/pydev/outline/PyOutlinePage>>
+**IR:** synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, removeSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, addSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V > Context: JavaTypeContext<point: <Application,Lorg/python/pydev/outline/PyOutlinePage>>
+**IR:** synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, addSelectionChangedListener(Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V >
+CFG:
+BB0[-1..-2]
+Instructions:
+BB0
+
+**CGNode:** Node: synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; > Context: JavaTypeContext<point: <Application,Lorg/python/pydev/outline/PyOutlinePage>>
+**IR:** synthetic < Extension, Lorg/eclipse/ui/views/contentoutline/ContentOutlinePage, getTreeViewer()Lorg/eclipse/jface/viewers/TreeViewer; >
+CFG:
+BB0[0..0]
+    -> BB1
+BB1[-1..-2]
+Instructions:
+BB0
+0   return v2                                
+BB1
+

@@ -1,0 +1,1097 @@
+**CGNode:** Node: < Application, Lorg/apache/naming/java/javaURLContextFactory, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/naming/java/javaURLContextFactory, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+BB2[-1..-2]
+Instructions:
+BB0
+BB1
+1   putstatic v2:#null < Application, Lorg/apache/naming/java/javaURLContextFactory, initialContext, <Application,Ljavax/naming/Context> >(line 73)
+2   return                                   (line 54)
+BB2
+
+**CGNode:** Node: < Application, Lorg/apache/naming/java/javaURLContextFactory, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/naming/java/javaURLContextFactory, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 54)
+BB2
+2   return                                   (line 54)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB20
+BB2[1..2]
+    -> BB5
+    -> BB3
+BB3[3..3]
+    -> BB4
+    -> BB20
+BB4[4..5]
+    -> BB8
+    -> BB5
+BB5[6..6]
+    -> BB6
+    -> BB20
+BB6[7..10]
+    -> BB7
+    -> BB20
+BB7[11..11]
+    -> BB20
+BB8[12..14]
+    -> BB19
+    -> BB9
+BB9[15..16]
+    -> BB10
+    -> BB20
+BB10[17..19]
+    -> BB11
+    -> BB20
+BB11[20..22]
+    -> BB15
+    -> BB12
+BB12[23..23]
+    -> BB13
+    -> BB17
+BB13[24..27]
+    -> BB14
+    -> BB17
+BB14[28..28]
+    -> BB15
+BB15[29..30]
+    -> BB16
+    -> BB17
+BB16[31..31]
+    -> BB19
+BB17[32..33]
+    -> BB18
+    -> BB17
+BB18[34..34]
+    -> BB20
+BB19[35..36]
+    -> BB20
+BB20[-1..-2]
+Instructions:
+BB0
+BB1
+0   v5 = invokestatic < Application, Lorg/apache/naming/ContextBindings, isThreadBound()Z > @0 exception:v4(line 102)
+BB2
+2   conditional branch(ne) v5,v6:#0          (line 102)
+BB3
+3   v8 = invokestatic < Application, Lorg/apache/naming/ContextBindings, isClassLoaderBound()Z > @6 exception:v7(line 103)
+BB4
+5   conditional branch(eq) v8,v6:#0          (line 103)
+BB5
+6   v19 = new <Application,Lorg/apache/naming/SelectorContext>@12(line 105)
+BB6
+10   invokespecial < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;Z)V > v19,v2,v20:#1 @18 exception:v21(line 105)
+BB7
+11   return v19                              (line 105)
+BB8
+12   v9 = getstatic < Application, Lorg/apache/naming/java/javaURLContextFactory, initialContext, <Application,Ljavax/naming/Context> >(line 110)
+14   conditional branch(ne) v9,v10:#null     (line 110)
+BB9
+16   v12 = invokevirtual < Application, Ljava/lang/Object, getClass()Ljava/lang/Class; > v1 @29 exception:v11(line 111)
+BB10
+19   monitorenter v12                        (line 111)
+BB11
+20   v13 = getstatic < Application, Lorg/apache/naming/java/javaURLContextFactory, initialContext, <Application,Ljavax/naming/Context> >(line 112)
+22   conditional branch(ne) v13,v10:#null    (line 112)
+BB12
+23   v14 = new <Application,Lorg/apache/naming/NamingContext>@41(line 113)
+BB13
+27   invokespecial < Application, Lorg/apache/naming/NamingContext, <init>(Ljava/util/Hashtable;Ljava/lang/String;)V > v14,v2,v15:#initialContext @48 exception:v16(line 113)
+BB14
+28   putstatic v14 < Application, Lorg/apache/naming/java/javaURLContextFactory, initialContext, <Application,Ljavax/naming/Context> >(line 113)
+BB15
+30   monitorexit v12                         (line 111)
+BB16
+31   goto                                    (line 111)
+BB17<Handler>
+           v17 = getCaughtException 
+33   monitorexit v12                         (line 111)
+BB18
+34   throw v17                               (line 111)
+BB19
+35   v18 = getstatic < Application, Lorg/apache/naming/java/javaURLContextFactory, initialContext, <Application,Ljavax/naming/Context> >(line 118)
+36   return v18                              (line 118)
+BB20
+
+**CGNode:** Node: < Application, Lorg/apache/naming/ContextBindings, isThreadBound()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/naming/ContextBindings, isThreadBound()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..2]
+    -> BB3
+    -> BB4
+BB3[3..3]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = getstatic < Application, Lorg/apache/naming/ContextBindings, threadBindings, <Application,Ljava/util/Hashtable> >(line 229)
+1   v4 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @3 exception:v3(line 229)
+BB2
+2   v6 = invokevirtual < Application, Ljava/util/Hashtable, containsKey(Ljava/lang/Object;)Z > v2,v4 @6 exception:v5(line 229)
+BB3
+3   return v6                                (line 229)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/naming/ContextBindings, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/naming/ContextBindings, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB13
+BB2[1..2]
+    -> BB3
+    -> BB13
+BB3[3..4]
+    -> BB4
+    -> BB13
+BB4[5..6]
+    -> BB5
+    -> BB13
+BB5[7..8]
+    -> BB6
+    -> BB13
+BB6[9..10]
+    -> BB7
+    -> BB13
+BB7[11..12]
+    -> BB8
+    -> BB13
+BB8[13..14]
+    -> BB9
+    -> BB13
+BB9[15..16]
+    -> BB10
+    -> BB13
+BB10[17..18]
+    -> BB11
+    -> BB13
+BB11[19..21]
+    -> BB12
+    -> BB13
+BB12[22..23]
+    -> BB13
+BB13[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Ljava/util/Hashtable>@0(line 47)
+BB2
+2   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v2 @4 exception:v3(line 47)
+BB3
+3   putstatic v2 < Application, Lorg/apache/naming/ContextBindings, contextNameBindings, <Application,Ljava/util/Hashtable> >(line 46)
+4   v4 = new <Application,Ljava/util/Hashtable>@10(line 54)
+BB4
+6   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v4 @14 exception:v5(line 54)
+BB5
+7   putstatic v4 < Application, Lorg/apache/naming/ContextBindings, threadBindings, <Application,Ljava/util/Hashtable> >(line 53)
+8   v6 = new <Application,Ljava/util/Hashtable>@20(line 61)
+BB6
+10   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v6 @24 exception:v7(line 61)
+BB7
+11   putstatic v6 < Application, Lorg/apache/naming/ContextBindings, threadNameBindings, <Application,Ljava/util/Hashtable> >(line 60)
+12   v8 = new <Application,Ljava/util/Hashtable>@30(line 68)
+BB8
+14   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v8 @34 exception:v9(line 68)
+BB9
+15   putstatic v8 < Application, Lorg/apache/naming/ContextBindings, clBindings, <Application,Ljava/util/Hashtable> >(line 67)
+16   v10 = new <Application,Ljava/util/Hashtable>@40(line 75)
+BB10
+18   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v10 @44 exception:v11(line 75)
+BB11
+19   putstatic v10 < Application, Lorg/apache/naming/ContextBindings, clNameBindings, <Application,Ljava/util/Hashtable> >(line 74)
+21   v14 = invokestatic < Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; > v12:#org.apache.naming @52 exception:v13(line 82)
+BB12
+22   putstatic v14 < Application, Lorg/apache/naming/ContextBindings, sm, <Application,Lorg/apache/naming/StringManager> >(line 81)
+23   return                                  (line 37)
+BB13
+
+**CGNode:** Node: < Application, Lorg/apache/naming/ContextBindings, isClassLoaderBound()Z > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]
+**IR:** < Application, Lorg/apache/naming/ContextBindings, isClassLoaderBound()Z >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB10
+BB2[1..1]
+    -> BB3
+    -> BB10
+BB3[2..2]
+    -> BB4
+BB4[3..5]
+    -> BB5
+    -> BB10
+BB5[6..7]
+    -> BB7
+    -> BB6
+BB6[8..9]
+    -> BB10
+BB7[10..11]
+    -> BB8
+    -> BB10
+BB8[12..15]
+    -> BB4
+    -> BB9
+BB9[16..17]
+    -> BB10
+BB10[-1..-2]
+Instructions:
+BB0
+BB1
+0   v3 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @0 exception:v2(line 358)
+BB2
+1   v5 = invokevirtual < Application, Ljava/lang/Thread, getContextClassLoader()Ljava/lang/ClassLoader; > v3 @3 exception:v4(line 358)
+BB3
+BB4
+           v13 = phi  v11,v5
+3   v6 = getstatic < Application, Lorg/apache/naming/ContextBindings, clBindings, <Application,Ljava/util/Hashtable> >(line 360)
+5   v8 = invokevirtual < Application, Ljava/util/Hashtable, containsKey(Ljava/lang/Object;)Z > v6,v13 @11 exception:v7(line 360)
+BB5
+7   conditional branch(eq) v8,v9:#0          (line 360)
+BB6
+9   return v14:#1                            (line 361)
+BB7
+11   v11 = invokevirtual < Application, Ljava/lang/ClassLoader, getParent()Ljava/lang/ClassLoader; > v13 @20 exception:v10(line 363)
+BB8
+15   conditional branch(ne) v11,v12:#null    (line 363)
+BB9
+17   return v9:#0                            (line 364)
+BB10
+
+**CGNode:** Node: < Application, Lorg/apache/naming/SelectorContext, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/naming/SelectorContext, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB6
+BB2[2..3]
+    -> BB3
+    -> BB6
+BB3[4..4]
+    -> BB4
+    -> BB6
+BB4[5..7]
+    -> BB5
+    -> BB6
+BB5[8..9]
+    -> BB6
+BB6[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokevirtual < Application, Ljava/lang/String, length()I > v2:#java: @2 exception:v3(line 53)
+BB2
+2   putstatic v4 < Application, Lorg/apache/naming/SelectorContext, prefixLength, <Primordial,I> >(line 53)
+3   v5 = load_metadata: <Primordial,Lorg/apache/naming/SelectorContext>, <Primordial,Ljava/lang/Class>(line 63)
+BB3
+4   v7 = invokestatic < Application, Lorg/apache/juli/logging/LogFactory, getLog(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; > v5 @10 exception:v6(line 63)
+BB4
+5   putstatic v7 < Application, Lorg/apache/naming/SelectorContext, log, <Application,Lorg/apache/juli/logging/Log> >(line 62)
+7   v10 = invokestatic < Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; > v8:#org.apache.naming @18 exception:v9(line 98)
+BB5
+8   putstatic v10 < Application, Lorg/apache/naming/SelectorContext, sm, <Application,Lorg/apache/naming/StringManager> >(line 98)
+9   return                                   (line 38)
+BB6
+
+**CGNode:** Node: < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;Z)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >:NEW <Application,Lorg/apache/naming/SelectorContext>@12 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;Z)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB4
+BB2[3..5]
+    -> BB3
+    -> BB4
+BB3[6..6]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+2   invokespecial < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;)V > v1,v2 @2 exception:v5(line 81)
+BB2
+5   putfield v1 = v3 < Application, Lorg/apache/naming/SelectorContext, initialContext, <Primordial,Z> >(line 82)
+BB3
+6   return                                   (line 83)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/naming/NamingContext, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/naming/NamingContext, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB7
+BB2[1..2]
+    -> BB3
+    -> BB7
+BB3[3..4]
+    -> BB4
+    -> BB7
+BB4[5..5]
+    -> BB5
+    -> BB7
+BB5[6..8]
+    -> BB6
+    -> BB7
+BB6[9..10]
+    -> BB7
+BB7[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Lorg/apache/naming/NameParserImpl>@0(line 58)
+BB2
+2   invokespecial < Application, Lorg/apache/naming/NameParserImpl, <init>()V > v2 @4 exception:v3(line 58)
+BB3
+3   putstatic v2 < Application, Lorg/apache/naming/NamingContext, nameParser, <Application,Ljavax/naming/NameParser> >(line 58)
+4   v4 = load_metadata: <Primordial,Lorg/apache/naming/NamingContext>, <Primordial,Ljava/lang/Class>(line 62)
+BB4
+5   v6 = invokestatic < Application, Lorg/apache/juli/logging/LogFactory, getLog(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; > v4 @12 exception:v5(line 62)
+BB5
+6   putstatic v6 < Application, Lorg/apache/naming/NamingContext, log, <Application,Lorg/apache/juli/logging/Log> >(line 61)
+8   v9 = invokestatic < Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; > v7:#org.apache.naming @20 exception:v8(line 111)
+BB6
+9   putstatic v9 < Application, Lorg/apache/naming/NamingContext, sm, <Application,Lorg/apache/naming/StringManager> >(line 111)
+10   return                                  (line 49)
+BB7
+
+**CGNode:** Node: < Application, Lorg/apache/naming/NamingContext, <init>(Ljava/util/Hashtable;Ljava/lang/String;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >:NEW <Application,Lorg/apache/naming/NamingContext>@41 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/naming/NamingContext, <init>(Ljava/util/Hashtable;Ljava/lang/String;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB20
+BB2[2..3]
+    -> BB3
+    -> BB20
+BB3[4..5]
+    -> BB4
+    -> BB20
+BB4[6..6]
+    -> BB5
+    -> BB20
+BB5[7..8]
+    -> BB6
+    -> BB20
+BB6[9..10]
+    -> BB7
+    -> BB20
+BB7[11..11]
+    -> BB8
+    -> BB20
+BB8[12..14]
+    -> BB9
+    -> BB20
+BB9[15..17]
+    -> BB19
+    -> BB10
+BB10[18..19]
+    -> BB11
+    -> BB20
+BB11[20..21]
+    -> BB17
+BB12[22..23]
+    -> BB13
+    -> BB20
+BB13[24..24]
+    -> BB14
+    -> BB20
+BB14[25..30]
+    -> BB15
+    -> BB20
+BB15[31..31]
+    -> BB16
+    -> BB20
+BB16[32..32]
+    -> BB17
+BB17[33..34]
+    -> BB18
+    -> BB20
+BB18[35..36]
+    -> BB12
+    -> BB19
+BB19[37..37]
+    -> BB20
+BB20[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v5(line 71)
+BB2
+3   v6 = new <Application,Ljava/util/HashMap>@5(line 73)
+BB3
+5   invokespecial < Application, Ljava/util/HashMap, <init>()V > v6 @9 exception:v7(line 73)
+BB4
+6   putfield v1 = v6 < Application, Lorg/apache/naming/NamingContext, bindings, <Application,Ljava/util/HashMap> >(line 73)
+BB5
+8   v8 = new <Application,Ljava/util/Hashtable>@16(line 74)
+BB6
+10   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v8 @20 exception:v9(line 74)
+BB7
+11   putfield v1 = v8 < Application, Lorg/apache/naming/NamingContext, env, <Application,Ljava/util/Hashtable> >(line 74)
+BB8
+14   putfield v1 = v3 < Application, Lorg/apache/naming/NamingContext, name, <Application,Ljava/lang/String> >(line 76)
+BB9
+17   conditional branch(eq) v2,v10:#null     (line 78)
+BB10
+19   v12 = invokevirtual < Application, Ljava/util/Hashtable, keys()Ljava/util/Enumeration; > v2 @36 exception:v11(line 79)
+BB11
+21   goto                                    (line 80)
+BB12
+23   v17 = invokeinterface < Application, Ljava/util/Enumeration, nextElement()Ljava/lang/Object; > v12 @44 exception:v16(line 81)
+BB13
+24   v18 = checkcast <Application,Ljava/lang/String>v17(line 81)
+BB14
+30   v20 = invokevirtual < Application, Ljava/util/Hashtable, get(Ljava/lang/Object;)Ljava/lang/Object; > v2,v18 @60 exception:v19(line 82)
+BB15
+31   v22 = invokevirtual < Application, Lorg/apache/naming/NamingContext, addToEnvironment(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; > v1,v18,v20 @63 exception:v21(line 82)
+BB16
+BB17
+34   v14 = invokeinterface < Application, Ljava/util/Enumeration, hasMoreElements()Z > v12 @68 exception:v13(line 80)
+BB18
+36   conditional branch(ne) v14,v15:#0       (line 80)
+BB19
+37   return                                  (line 85)
+BB20
+
+**CGNode:** Node: < Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; > Context: ReceiverStringContext: [[<Primordial,Ljava/lang/String>]]
+**IR:** < Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB9
+BB2[3..3]
+    -> BB3
+    -> BB9
+BB3[4..7]
+    -> BB8
+    -> BB4
+BB4[8..8]
+    -> BB5
+    -> BB9
+BB5[9..11]
+    -> BB6
+    -> BB9
+BB6[12..16]
+    -> BB7
+    -> BB9
+BB7[17..17]
+    -> BB8
+BB8[18..19]
+    -> BB9
+BB9[-1..-2]
+Instructions:
+BB0
+BB1
+0   v3 = getstatic < Application, Lorg/apache/naming/StringManager, managers, <Application,Ljava/util/Hashtable> >(line 163)
+2   v5 = invokevirtual < Application, Ljava/util/Hashtable, get(Ljava/lang/Object;)Ljava/lang/Object; > v3,v1 @4 exception:v4(line 163)
+BB2
+3   v6 = checkcast <Application,Lorg/apache/naming/StringManager>v5(line 163)
+BB3
+7   conditional branch(ne) v6,v7:#null       (line 164)
+BB4
+8   v8 = new <Application,Lorg/apache/naming/StringManager>@15(line 165)
+BB5
+11   invokespecial < Application, Lorg/apache/naming/StringManager, <init>(Ljava/lang/String;)V > v8,v1 @20 exception:v9(line 165)
+BB6
+13   v10 = getstatic < Application, Lorg/apache/naming/StringManager, managers, <Application,Ljava/util/Hashtable> >(line 166)
+16   v12 = invokevirtual < Application, Ljava/util/Hashtable, put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; > v10,v1,v8 @29 exception:v11(line 166)
+BB7
+BB8
+           v13 = phi  v6,v8
+19   return v13                              (line 168)
+BB9
+
+**CGNode:** Node: < Application, Lorg/apache/naming/StringManager, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/naming/StringManager, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..2]
+    -> BB3
+    -> BB4
+BB3[3..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Ljava/util/Hashtable>@0(line 153)
+BB2
+2   invokespecial < Application, Ljava/util/Hashtable, <init>()V > v2 @4 exception:v3(line 153)
+BB3
+3   putstatic v2 < Application, Lorg/apache/naming/StringManager, managers, <Application,Ljava/util/Hashtable> >(line 152)
+4   return                                   (line 53)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, getLog(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; > Context: ReceiverStringContext: [[<Primordial,Ljava/lang/Class>]]
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, getLog(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..2]
+    -> BB3
+    -> BB4
+BB3[3..3]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v4 = invokestatic < Application, Lorg/apache/juli/logging/LogFactory, getFactory()Lorg/apache/juli/logging/LogFactory; > @0 exception:v3(line 293)
+BB2
+2   v6 = invokevirtual < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; > v4,v1 @4 exception:v5(line 293)
+BB3
+3   return v6                                (line 293)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..2]
+    -> BB3
+    -> BB4
+BB3[3..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = new <Application,Lorg/apache/juli/logging/LogFactory>@0(line 129)
+BB2
+2   invokespecial < Application, Lorg/apache/juli/logging/LogFactory, <init>()V > v2 @4 exception:v3(line 129)
+BB3
+3   putstatic v2 < Application, Lorg/apache/juli/logging/LogFactory, singleton, <Application,Lorg/apache/juli/logging/LogFactory> >(line 129)
+4   return                                   (line 68)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >:NEW <Application,Lorg/apache/naming/SelectorContext>@12 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/naming/SelectorContext, <init>(Ljava/util/Hashtable;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB5
+BB2[2..4]
+    -> BB3
+    -> BB5
+BB3[5..7]
+    -> BB4
+    -> BB5
+BB4[8..8]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 71)
+BB2
+4   putfield v1 = v5:#0 < Application, Lorg/apache/naming/SelectorContext, initialContext, <Primordial,Z> >(line 104)
+BB3
+7   putfield v1 = v2 < Application, Lorg/apache/naming/SelectorContext, env, <Application,Ljava/util/Hashtable> >(line 72)
+BB4
+8   return                                   (line 73)
+BB5
+
+**CGNode:** Node: < Application, Lorg/apache/naming/NameParserImpl, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/NamingContext, <clinit>()V >:NEW <Application,Lorg/apache/naming/NameParserImpl>@0 in Everywhere}]
+**IR:** < Application, Lorg/apache/naming/NameParserImpl, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 33)
+BB2
+2   return                                   (line 33)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/naming/NamingContext, addToEnvironment(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >:NEW <Application,Lorg/apache/naming/NamingContext>@41 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/naming/java/javaURLContextFactory>@1 in Everywhere}]}]
+**IR:** < Application, Lorg/apache/naming/NamingContext, addToEnvironment(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB4
+BB2[2..4]
+    -> BB3
+    -> BB4
+BB3[5..5]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = getfield < Application, Lorg/apache/naming/NamingContext, env, <Application,Ljava/util/Hashtable> > v1(line 700)
+BB2
+4   v7 = invokevirtual < Application, Ljava/util/Hashtable, put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; > v5,v2,v3 @6 exception:v6(line 700)
+BB3
+5   return v7                                (line 700)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/naming/StringManager, <init>(Ljava/lang/String;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/naming/StringManager, getManager(Ljava/lang/String;)Lorg/apache/naming/StringManager; >:NEW <Application,Lorg/apache/naming/StringManager>@15 in ReceiverStringContext: [[<Primordial,Ljava/lang/String>]]}]
+**IR:** < Application, Lorg/apache/naming/StringManager, <init>(Ljava/lang/String;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB25
+BB2[2..2]
+    -> BB3
+    -> BB25
+BB3[3..5]
+    -> BB4
+    -> BB25
+BB4[6..6]
+    -> BB5
+    -> BB25
+BB5[7..8]
+    -> BB6
+    -> BB25
+BB6[9..9]
+    -> BB7
+    -> BB25
+BB7[10..13]
+    -> BB8
+    -> BB11
+    -> BB25
+BB8[14..14]
+    -> BB9
+    -> BB11
+    -> BB25
+BB9[15..15]
+    -> BB10
+    -> BB25
+BB10[16..16]
+    -> BB19
+BB11[17..18]
+    -> BB12
+    -> BB25
+BB12[19..19]
+    -> BB13
+    -> BB25
+BB13[20..23]
+    -> BB19
+    -> BB14
+BB14[24..26]
+    -> BB15
+    -> BB18
+    -> BB25
+BB15[27..28]
+    -> BB16
+    -> BB18
+    -> BB25
+BB16[29..29]
+    -> BB17
+    -> BB25
+BB17[30..30]
+    -> BB19
+BB18[31..31]
+    -> BB19
+BB19[32..33]
+    -> BB20
+    -> BB25
+BB20[34..35]
+    -> BB24
+    -> BB21
+BB21[36..38]
+    -> BB22
+    -> BB25
+BB22[39..39]
+    -> BB23
+    -> BB25
+BB23[40..40]
+    -> BB24
+    -> BB25
+BB24[41..41]
+    -> BB25
+BB25[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 69)
+BB2
+2   v5 = new <Application,Ljava/lang/StringBuilder>@4(line 70)
+BB3
+5   v7 = invokestatic < Application, Ljava/lang/String, valueOf(Ljava/lang/Object;)Ljava/lang/String; > v2 @9 exception:v6(line 70)
+BB4
+6   invokespecial < Application, Ljava/lang/StringBuilder, <init>(Ljava/lang/String;)V > v5,v7 @12 exception:v8(line 70)
+BB5
+8   v11 = invokevirtual < Application, Ljava/lang/StringBuilder, append(Ljava/lang/String;)Ljava/lang/StringBuilder; > v5,v9:#.LocalStrings @17 exception:v10(line 70)
+BB6
+9   v13 = invokevirtual < Application, Ljava/lang/StringBuilder, toString()Ljava/lang/String; > v11 @20 exception:v12(line 70)
+BB7
+13   v15 = invokestatic < Application, Ljava/util/Locale, getDefault()Ljava/util/Locale; > @26 exception:v14(line 72)
+BB8
+14   v17 = invokestatic < Application, Ljava/util/ResourceBundle, getBundle(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle; > v13,v15 @29 exception:v16(line 72)
+BB9
+15   putfield v1 = v17 < Application, Lorg/apache/naming/StringManager, bundle, <Application,Ljava/util/ResourceBundle> >(line 72)
+BB10
+16   goto                                    (line 72)
+BB11<Handler>
+           v18 = getCaughtException 
+18   v20 = invokestatic < Application, Ljava/lang/Thread, currentThread()Ljava/lang/Thread; > @39 exception:v19(line 77)
+BB12
+19   v22 = invokevirtual < Application, Ljava/lang/Thread, getContextClassLoader()Ljava/lang/ClassLoader; > v20 @42 exception:v21(line 77)
+BB13
+23   conditional branch(eq) v22,v23:#null    (line 78)
+BB14
+26   v25 = invokestatic < Application, Ljava/util/Locale, getDefault()Ljava/util/Locale; > @54 exception:v24(line 81)
+BB15
+28   v27 = invokestatic < Application, Ljava/util/ResourceBundle, getBundle(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;)Ljava/util/ResourceBundle; > v13,v25,v22 @59 exception:v26(line 80)
+BB16
+29   putfield v1 = v27 < Application, Lorg/apache/naming/StringManager, bundle, <Application,Ljava/util/ResourceBundle> >(line 80)
+BB17
+30   goto                                    (line 80)
+BB18<Handler>
+           v28 = getCaughtException 
+BB19
+33   v30 = getfield < Application, Lorg/apache/naming/StringManager, bundle, <Application,Ljava/util/ResourceBundle> > v1(line 88)
+BB20
+35   conditional branch(eq) v30,v23:#null    (line 88)
+BB21
+38   v31 = getfield < Application, Lorg/apache/naming/StringManager, bundle, <Application,Ljava/util/ResourceBundle> > v1(line 89)
+BB22
+39   v33 = invokevirtual < Application, Ljava/util/ResourceBundle, getLocale()Ljava/util/Locale; > v31 @82 exception:v32(line 89)
+BB23
+40   putfield v1 = v33 < Application, Lorg/apache/naming/StringManager, locale, <Application,Ljava/util/Locale> >(line 89)
+BB24
+41   return                                  (line 91)
+BB25
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, getFactory()Lorg/apache/juli/logging/LogFactory; > Context: ReceiverStringContext: [[<Primordial,Ljava/lang/Class>]]
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, getFactory()Lorg/apache/juli/logging/LogFactory; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+BB2[-1..-2]
+Instructions:
+BB0
+BB1
+0   v2 = getstatic < Application, Lorg/apache/juli/logging/LogFactory, singleton, <Application,Lorg/apache/juli/logging/LogFactory> >(line 278)
+1   return v2                                (line 278)
+BB2
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, <init>()V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/juli/logging/LogFactory, <clinit>()V >:NEW <Application,Lorg/apache/juli/logging/LogFactory>@0 in Everywhere}]
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, <init>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB6
+BB2[2..3]
+    -> BB3
+    -> BB6
+BB3[4..5]
+    -> BB4
+    -> BB6
+BB4[6..6]
+    -> BB5
+    -> BB6
+BB5[7..7]
+    -> BB6
+BB6[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v3(line 139)
+BB2
+3   v4 = new <Application,Ljava/util/Properties>@5(line 140)
+BB3
+5   invokespecial < Application, Ljava/util/Properties, <init>()V > v4 @9 exception:v5(line 140)
+BB4
+6   putfield v1 = v4 < Application, Lorg/apache/juli/logging/LogFactory, logConfig, <Application,Ljava/util/Properties> >(line 140)
+BB5
+7   return                                   (line 141)
+BB6
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/juli/logging/LogFactory, <clinit>()V >:NEW <Application,Lorg/apache/juli/logging/LogFactory>@0 in Everywhere}]
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/Class;)Lorg/apache/juli/logging/Log; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+    -> BB4
+BB2[3..3]
+    -> BB3
+    -> BB4
+BB3[4..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+2   v5 = invokevirtual < Application, Ljava/lang/Class, getName()Ljava/lang/String; > v2 @2 exception:v4(line 242)
+BB2
+3   v7 = invokevirtual < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; > v1,v5 @5 exception:v6(line 242)
+BB3
+4   return v7                                (line 242)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/juli/logging/LogFactory, <clinit>()V >:NEW <Application,Lorg/apache/juli/logging/LogFactory>@0 in Everywhere}]
+**IR:** < Application, Lorg/apache/juli/logging/LogFactory, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB3
+BB2[2..2]
+    -> BB3
+BB3[-1..-2]
+Instructions:
+BB0
+BB1
+1   v5 = invokestatic < Application, Lorg/apache/juli/logging/DirectJDKLog, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; > v2 @1 exception:v4(line 170)
+BB2
+2   return v5                                (line 170)
+BB3
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/DirectJDKLog, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; > Context: ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Ljava/lang/Class, getName()Ljava/lang/String; >:NEW <Primordial,Ljava/lang/String>@0 in JavaTypeContext<point: <Primordial,Ljava/lang/Class>>}]
+**IR:** < Application, Lorg/apache/juli/logging/DirectJDKLog, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..0]
+    -> BB2
+    -> BB4
+BB2[1..3]
+    -> BB3
+    -> BB4
+BB3[4..4]
+    -> BB4
+BB4[-1..-2]
+Instructions:
+BB0
+BB1
+0   v3 = new <Application,Lorg/apache/juli/logging/DirectJDKLog>@0(line 196)
+BB2
+3   invokespecial < Application, Lorg/apache/juli/logging/DirectJDKLog, <init>(Ljava/lang/String;)V > v3,v1 @5 exception:v4(line 196)
+BB3
+4   return v3                                (line 196)
+BB4
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/DirectJDKLog, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/juli/logging/DirectJDKLog, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB26
+BB2[2..3]
+    -> BB25
+    -> BB3
+BB3[4..5]
+    -> BB4
+    -> BB26
+BB4[6..7]
+    -> BB25
+    -> BB5
+BB5[8..9]
+    -> BB6
+    -> BB8
+BB6[10..10]
+    -> BB7
+    -> BB8
+BB7[11..12]
+    -> BB9
+BB8[13..13]
+    -> BB9
+BB9[14..16]
+    -> BB10
+    -> BB24
+BB10[17..17]
+    -> BB11
+    -> BB24
+BB11[18..18]
+    -> BB12
+    -> BB24
+BB12[19..19]
+    -> BB13
+    -> BB24
+BB13[20..22]
+    -> BB14
+    -> BB24
+BB14[23..25]
+    -> BB15
+    -> BB24
+BB15[26..29]
+    -> BB21
+BB16[30..32]
+    -> BB17
+    -> BB24
+BB17[33..35]
+    -> BB20
+    -> BB18
+BB18[36..38]
+    -> BB19
+    -> BB24
+BB19[39..40]
+    -> BB20
+    -> BB24
+BB20[41..44]
+    -> BB21
+BB21[45..47]
+    -> BB22
+    -> BB24
+BB22[48..48]
+    -> BB16
+    -> BB23
+BB23[49..49]
+    -> BB25
+BB24[50..50]
+    -> BB25
+BB25[51..51]
+    -> BB26
+BB26[-1..-2]
+Instructions:
+BB0
+BB1
+1   v4 = invokestatic < Application, Ljava/lang/System, getProperty(Ljava/lang/String;)Ljava/lang/String; > v2:#java.util.logging.config.class @2 exception:v3(line 43)
+BB2
+3   conditional branch(ne) v4,v5:#null       (line 43)
+BB3
+5   v8 = invokestatic < Application, Ljava/lang/System, getProperty(Ljava/lang/String;)Ljava/lang/String; > v6:#java.util.logging.config.file @10 exception:v7(line 44)
+BB4
+7   conditional branch(ne) v8,v5:#null       (line 44)
+BB5
+9   v11 = invokestatic < Application, Ljava/lang/Class, forName(Ljava/lang/String;)Ljava/lang/Class; > v9:#org.apache.juli.JdkLoggerConfig @18 exception:v10(line 48)
+BB6
+10   v13 = invokevirtual < Application, Ljava/lang/Class, newInstance()Ljava/lang/Object; > v11 @21 exception:v12(line 48)
+BB7
+12   goto                                    (line 48)
+BB8<Handler>
+           v14 = getCaughtException 
+BB9
+16   v19 = invokestatic < Application, Ljava/lang/System, getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; > v16:#org.apache.juli.formatter,v17:#java.util.logging.SimpleFormatter @33 exception:v18(line 52)
+BB10
+17   v21 = invokestatic < Application, Ljava/lang/Class, forName(Ljava/lang/String;)Ljava/lang/Class; > v19 @36 exception:v20(line 52)
+BB11
+18   v23 = invokevirtual < Application, Ljava/lang/Class, newInstance()Ljava/lang/Object; > v21 @39 exception:v22(line 52)
+BB12
+19   v24 = checkcast <Application,Ljava/util/logging/Formatter>v23(line 52)
+BB13
+22   v27 = invokestatic < Application, Ljava/util/logging/Logger, getLogger(Ljava/lang/String;)Ljava/util/logging/Logger; > v25:# @48 exception:v26(line 55)
+BB14
+25   v29 = invokevirtual < Application, Ljava/util/logging/Logger, getHandlers()[Ljava/util/logging/Handler; > v27 @53 exception:v28(line 56)
+BB15
+29   goto                                    (line 57)
+BB16
+32   v32 = arrayload v29[v38]                (line 59)
+BB17
+33   v33 = instanceof v32 <Application,Ljava/util/logging/ConsoleHandler>(line 59)
+35   conditional branch(eq) v33,v30:#0       (line 59)
+BB18
+38   v34 = arrayload v29[v38]                (line 60)
+BB19
+40   invokevirtual < Application, Ljava/util/logging/Handler, setFormatter(Ljava/util/logging/Formatter;)V > v34,v24 @75 exception:v35(line 60)
+BB20
+43   v37 = binaryop(add) v38 , v36:#1        (line 57)
+BB21
+           v38 = phi  v30:#0,v37
+47   v31 = arraylength v29                   (line 57)
+BB22
+48   conditional branch(lt) v38,v31          (line 57)
+BB23
+49   goto                                    (line 57)
+BB24<Handler>
+           v39 = getCaughtException 
+BB25
+51   return                                  (line 32)
+BB26
+
+**CGNode:** Node: < Application, Lorg/apache/juli/logging/DirectJDKLog, <init>(Ljava/lang/String;)V > Context: ReceiverStringContext: [SITE_IN_NODE{< Application, Lorg/apache/juli/logging/DirectJDKLog, getInstance(Ljava/lang/String;)Lorg/apache/juli/logging/Log; >:NEW <Application,Lorg/apache/juli/logging/DirectJDKLog>@0 in ReceiverStringContext: [SITE_IN_NODE{synthetic < Primordial, Ljava/lang/Class, getName()Ljava/lang/String; >:NEW <Primordial,Ljava/lang/String>@0 in JavaTypeContext<point: <Primordial,Ljava/lang/Class>>}]}]
+**IR:** < Application, Lorg/apache/juli/logging/DirectJDKLog, <init>(Ljava/lang/String;)V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..1]
+    -> BB2
+    -> BB5
+BB2[2..4]
+    -> BB3
+    -> BB5
+BB3[5..5]
+    -> BB4
+    -> BB5
+BB4[6..6]
+    -> BB5
+BB5[-1..-2]
+Instructions:
+BB0
+BB1
+1   invokespecial < Application, Ljava/lang/Object, <init>()V > v1 @1 exception:v4(line 70)
+BB2
+4   v6 = invokestatic < Application, Ljava/util/logging/Logger, getLogger(Ljava/lang/String;)Ljava/util/logging/Logger; > v2 @6 exception:v5(line 71)
+BB3
+5   putfield v1 = v6 < Application, Lorg/apache/juli/logging/DirectJDKLog, logger, <Application,Ljava/util/logging/Logger> >(line 71)
+BB4
+6   return                                   (line 72)
+BB5
+

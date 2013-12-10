@@ -1,0 +1,13 @@
+[Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere, v3]
+[Exc-Ret-V:Node: synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V > Context: Everywhere]
+[Exc-Ret-V:Node: < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, <clinit>()V > Context: Everywhere]
+[Exc-Ret-V:Node: < Primordial, Ljava/lang/Object, <clinit>()V > Context: Everywhere]
+[Node: < Primordial, Ljava/lang/Object, <init>()V > Context: JavaTypeContext<point: <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>>, v1]
+[Exc-Ret-V:Node: < Primordial, Ljava/lang/Object, <init>()V > Context: JavaTypeContext<point: <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>>]
+[Node: < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, nextId()I > Context: JavaTypeContext<point: <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>>, v1]
+[Exc-Ret-V:Node: < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, nextId()I > Context: JavaTypeContext<point: <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>>]
+[Exc-Ret-V:Node: < Primordial, Ljava/lang/Object, registerNatives()V > Context: Everywhere]
+SITE_IN_NODE{synthetic < Primordial, Lcom/ibm/wala/FakeRootClass, fakeRootMethod()V >:NEW <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>@1 in Everywhere}
+[<Primordial,Ljava/lang/ExceptionInInitializerError>]
+[<Primordial,Ljava/lang/OutOfMemoryError>]
+[<Primordial,Ljava/lang/NullPointerException>]

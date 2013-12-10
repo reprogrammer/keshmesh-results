@@ -1,0 +1,32 @@
+**CGNode:** Node: < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, <clinit>()V > Context: Everywhere
+**IR:** < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, <clinit>()V >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..2]
+    -> BB2
+BB2[-1..-2]
+Instructions:
+BB0
+BB1
+1   putstatic v2:#0 < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, idCounter, <Primordial,I> >(line 71)
+2   return                                   (line 71)
+BB2
+
+**CGNode:** Node: < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, nextId()I > Context: JavaTypeContext<point: <Application,Lorg/apache/derby/jdbc/EmbedPooledConnection>>
+**IR:** < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, nextId()I >
+CFG:
+BB0[-1..-2]
+    -> BB1
+BB1[0..5]
+    -> BB2
+BB2[-1..-2]
+Instructions:
+BB0
+BB1
+0   v3 = getstatic < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, idCounter, <Primordial,I> >(line 113)
+3   v5 = binaryop(add) v3 , v4:#1            (line 113)
+4   putstatic v5 < Application, Lorg/apache/derby/jdbc/EmbedPooledConnection, idCounter, <Primordial,I> >(line 113)
+5   return v3                                (line 113)
+BB2
+

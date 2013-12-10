@@ -5,7 +5,7 @@ projects.
 
 For each project we obtain the profiling results as follows.
 
-- Repeat the steps below for each level of [object sensitivity](https://github.com/reprogrammer/keshmesh/wiki/Configuring-Keshmesh): 1, 2, 3, and infinity.
+- Repeat the steps below for each level of [object sensitivity](https://github.com/reprogrammer/keshmesh/wiki/Configuring-Keshmesh): 0, 1, 2, 3, and infinity.
   - Repeat the steps below **five** times.
     1. Restart Eclipse to make sure that results of previous runs of Keshmesh are not cached.
     1. Run Keshmesh through the FindBugs interface.

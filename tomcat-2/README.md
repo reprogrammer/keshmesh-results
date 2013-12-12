@@ -7,9 +7,9 @@
 
 # Eclipse
 
-- -XX:MaxPermSize=256m -Xms40m -Xmx512m
+- -XX:MaxPermSize=256m -Xms40m -Xmx3G
 
 # Keshmesh
 
-- v1.0.0.201311301706
+- v1.0.0.201312111715
 

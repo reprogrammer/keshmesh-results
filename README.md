@@ -16,7 +16,7 @@ For each project we obtain the profiling results as follows.
 # Operating System
 
 - Ubuntu Release 12.04 (precise) 64-bit
-- Kernel Linux 3.5.0-43-generic
+- Kernel Linux 3.5.0-44-generic
 
 # Hardware
 

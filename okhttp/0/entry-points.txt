@@ -1,0 +1,2 @@
+< Application, Lcom/squareup/okhttp/internal/DiskLruCache, open(Ljava/io/File;IIJ)Lcom/squareup/okhttp/internal/DiskLruCache; >([<Application,Ljava/io/File>],[<Primordial,I>],[<Primordial,I>],[<Primordial,J>])
+< Application, Lcom/squareup/okhttp/internal/spdy/SpdyConnection, newStream(Ljava/util/List;ZZ)Lcom/squareup/okhttp/internal/spdy/SpdyStream; >([<Application,Lcom/squareup/okhttp/internal/spdy/SpdyConnection>],[<Application,Ljava/util/List>],[<Primordial,Z>],[<Primordial,Z>])

@@ -1,0 +1,1 @@
+< Application, Lorg/apache/naming/java/javaURLContextFactory, getInitialContext(Ljava/util/Hashtable;)Ljavax/naming/Context; >([<Application,Lorg/apache/naming/java/javaURLContextFactory>],[<Application,Ljava/util/Hashtable>])

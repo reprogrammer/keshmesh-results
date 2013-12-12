@@ -1,0 +1,2 @@
+< Application, Lorg/python/pydev/editor/PyReconciler, reconcile(Lorg/eclipse/jface/text/IRegion;)V >([<Application,Lorg/python/pydev/editor/PyReconciler>],[<Application,Lorg/eclipse/jface/text/IRegion>])
+< Extension, Lorg/python/pydev/parser/ParsingThread, run()V >([<Extension,Lorg/python/pydev/parser/ParsingThread>])
